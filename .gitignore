@@ -1,0 +1,28 @@
+# ===== .NET 构建产物 =====
+[Bb]in/
+[Oo]bj/
+*.dll
+*.pdb
+*.deps.json
+*.exe
+
+# ===== IDE =====
+.vs/
+.idea/
+.vscode/
+*.suo
+*.user
+*.userosscache
+*.vsidx
+slnx.sqlite
+
+# ===== 临时验证截图 / 候选图标 =====
+_talent_ui*.png
+_icon_*_zoom.png
+icon_candidates/
+icon_candidates_v*/
+
+# ===== 系统 / 日志 =====
+Thumbs.db
+.DS_Store
+*.log
