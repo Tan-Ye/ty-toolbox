@@ -1,0 +1,21 @@
+{
+  "name": "recommend_job_list",
+  "method": "GET",
+  "url": "https://www.zhipin.com/wapi/zpgeek/pc/recommend/job/list.json",
+  "query": {
+    "page": 1,
+    "pageSize": 15,
+    "city": "",
+    "encryptExpectId": "ed39c762d81fdbed1H1-3tm-FlBQw42_Wf6W",
+    "mixExpectType": "",
+    "expectInfo": "",
+    "jobType": "",
+    "salary": "",
+    "experience": "",
+    "degree": "",
+    "industry": "",
+    "scale": "",
+    "_": null
+  },
+  "_note": "query 为抓包 #3355 的原始参数；_ 为 null 时脚本自动填当前毫秒时间戳。鉴权头（cookie/token/zp_token）不存这里，执行时从 Reqable 抓包还原。"
+}
