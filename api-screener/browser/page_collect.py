@@ -9,6 +9,8 @@
   - 列表：Windows SendInput 发送真实滚轮（失败时退回 CDP 滚轮），页面自己请求
     recommend/job/list.json，脚本从 Network 响应里读取 JSON；
   - 详情：CDP Input.dispatchMouseEvent 点击岗位卡片，页面自己请求 job/detail.json；
+  - 沟通：达标岗位在详情页点击「立即沟通」，在“已向BOSS发送消息”弹窗中点
+    「留在此页」，继续浏览，不跳转聊天页；
   - 每次滚动/点击之间都有随机间隔，行为接近正常浏览。
 
 由 run_job_queue.py --collect-mode page 调用，一般不单独执行。
@@ -24,9 +26,21 @@ from typing import Callable
 from browser.cdp_client import CdpClient
 from browser.os_input import MouseController, MouseControllerError
 from core import console
+from core.errors import AbortError
 
 CARD_SELECTOR = ".job-card-box"
 EXPECT_TAB_SELECTOR = "a.expect-item"
+CHAT_BUTTON_SELECTOR = "a.op-btn-chat"
+# 问候弹窗有两套结构：旧版 zp-start-chat-greet-*，新版 greet-boss-dialog
+CHAT_STAY_SELECTORS = (
+    "a.zp-start-chat-greet-btn",       # 旧版：留在此页 / 继续沟通
+    ".greet-boss-dialog .cancel-btn",  # 新版：留在此页
+    "a, button",                       # 兜底：按“留在此页”文字找
+)
+CHAT_CLOSE_SELECTORS = (
+    "span.zp-start-chat-greet-close",
+    ".greet-boss-dialog .close",
+)
 
 
 class PageCollectError(RuntimeError):
@@ -54,6 +68,8 @@ class PageCollector:
         self._nav_breaks = 0
         self.viewport = {"w": 1280, "h": 900}
         self._wheel_fallback = False
+        self.scroll_count = 0
+        self.refresh_count = 0
 
     # ---------- 页面状态 ----------
 
@@ -142,7 +158,7 @@ class PageCollector:
             raise PageCollectError(
                 "岗位列表 DOM 未渲染（找不到 .job-card-box），请确认页面停留在职位推荐页"
             )
-        self.log(f"    页面就绪：已登录，岗位卡片 {self.card_count()} 张")
+        self.log(f"    页面已就绪，当前看到 {self.card_count()} 个岗位")
 
     def wait_for_cards(self, timeout_ms: int = 20000) -> int:
         self._wait(lambda: self.card_count() > 0, timeout_ms)
@@ -296,17 +312,17 @@ class PageCollector:
         if kind == "tab":
             seconds = random.uniform(2.0, 6.0)
             if self.client.switch_other_tab(seconds):
-                self.log(f"    [分心] 切到其他标签页 {seconds:.1f}s 再回来")
+                self.log(f"    切到其他标签页看看，{seconds:.1f} 秒后回来")
                 self.client.pump(random.uniform(0.4, 1.0))
                 return True
         elif kind == "nav":
             self._nav_breaks += 1
-            self.log("    [分心] 切到「消息」页面看一眼，再回职位页")
+            self.log("    去「消息」页面看一眼，再回职位页")
             if self._nav_break():
                 return True
         if self.mouse:
             seconds = random.uniform(3.0, 9.0)
-            self.log(f"    [分心] 切到其他应用 {seconds:.1f}s 再回来")
+            self.log(f"    切到其他应用处理一下，{seconds:.1f} 秒后回来")
             if self.mouse.switch_app(seconds):
                 self.client.pump(random.uniform(0.3, 0.8))
                 return True
@@ -367,12 +383,13 @@ class PageCollector:
         """执行一次滚轮动作（OS 滚轮优先，失败退回 CDP），返回滚动后的 scrollY。"""
         before = self._scroll_y()
         if self.mouse and not self._wheel_fallback:
-            notches = max(1, int(round(delta / 120)))
+            # 滚轮刻度取绝对值，方向由 delta 的正负决定；反向小滚也要能成功返回
+            notches = max(1, int(round(abs(delta) / 120)))
             try:
-                self.mouse.scroll(-notches)
+                self.mouse.scroll(-notches if delta > 0 else notches)
                 self.client.pump(random.uniform(0.2, 0.5))
                 after = self._scroll_y()
-                if after > before + 1:
+                if abs(after - before) > 1:
                     return after
             except MouseControllerError as error:
                 self._wheel_fallback = True
@@ -380,6 +397,11 @@ class PageCollector:
         # 原生滚轮不可用（窗口不在前台等）时用 CDP 滚轮，落点也每次不同
         x = self.viewport["w"] * random.uniform(0.16, 0.5)
         y = self.viewport["h"] * random.uniform(0.3, 0.75)
+        try:
+            # 回退到页面滚轮时也先走一段轨迹，避免指针瞬移到落点
+            self.client.mouse_move(x, y)
+        except Exception:  # noqa: BLE001 - 轨迹失败不影响滚轮
+            pass
         self.client.wheel(x, y, delta)
         self.client.pump(random.uniform(0.2, 0.5))
         return self._scroll_y()
@@ -527,6 +549,206 @@ class PageCollector:
         self.maybe_break(0.06, allow_nav=True)
         return data
 
+    # ---------- 页面内发起沟通：立即沟通 → 留在此页 ----------
+
+    def _element_point(self, selector: str, label: str | None = None) -> dict | None:
+        """在可见元素内部随机取一个能点中的坐标，避开边缘。"""
+        script = r"""(args) => {
+          const {selector, label} = args;
+          for (const el of document.querySelectorAll(selector)) {
+            const text = (el.innerText || '').replace(/\s+/g, ' ').trim();
+            if (label && !text.includes(label)) continue;
+            const rect = el.getBoundingClientRect();
+            if (rect.width <= 2 || rect.height <= 2) continue;
+            if (rect.bottom < 0 || rect.top > innerHeight || rect.right < 0 || rect.left > innerWidth) continue;
+            for (let i = 0; i < 6; i += 1) {
+              const x = rect.left + rect.width * (0.18 + Math.random() * 0.64);
+              const y = rect.top + rect.height * (0.26 + Math.random() * 0.48);
+              if (x < 2 || y < 2 || x > innerWidth - 2 || y > innerHeight - 2) continue;
+              const hit = document.elementFromPoint(x, y);
+              if (hit && (hit === el || el.contains(hit))) {
+                return {x: x, y: y, text: text.slice(0, 80)};
+              }
+            }
+          }
+          return null;
+        }"""
+        payload = json.dumps({"selector": selector, "label": label}, ensure_ascii=False)
+        try:
+            return self.client.evaluate(f"({script})({payload})")
+        except Exception:  # noqa: BLE001
+            return None
+
+    def _first_element_point(self, selectors, label: str | None = None) -> dict | None:
+        """按顺序尝试多个选择器，返回第一个能点中的坐标。"""
+        for selector in selectors:
+            point = self._element_point(selector, label)
+            if point:
+                return point
+        return None
+
+    def _detail_panel_text(self) -> str:
+        """当前可见详情面板的文字，用于确认弹窗/按钮属于刚才点击的岗位。"""
+        script = r"""(() => {
+          const boxes = [...document.querySelectorAll('.job-detail-box')];
+          const box = boxes.find(item => {
+            const rect = item.getBoundingClientRect();
+            return rect.width > 0 && rect.height > 0 && getComputedStyle(item).visibility !== 'hidden';
+          });
+          return box ? (box.innerText || '') : '';
+        })()"""
+        try:
+            return str(self.client.evaluate(script) or "")
+        except Exception:  # noqa: BLE001
+            return ""
+
+    def _chat_dialog_state(self) -> dict:
+        """读取沟通弹窗状态：是否出现「留在此页」、是否跳转聊天页、是否有风控提示。"""
+        script = r"""(() => {
+          const bodyText = document.body ? (document.body.innerText || '') : '';
+          const risk = ['安全验证', '验证码', '环境异常', '环境存在异常'].find(k => bodyText.includes(k)) || '';
+          const visible = el => {
+            const rect = el.getBoundingClientRect();
+            return rect.width > 0 && rect.height > 0;
+          };
+          const norm = el => (el.innerText || '').replace(/\s+/g, ' ').trim();
+          const stay = [...document.querySelectorAll('a, button')]
+            .filter(el => visible(el) && norm(el) === '留在此页');
+          const boxes = [...document.querySelectorAll('.greet-boss-dialog')].filter(visible);
+          const btn = document.querySelector('a.op-btn-chat');
+          return {
+            risk,
+            dialog: stay.length > 0 || boxes.length > 0,
+            chatText: btn ? norm(btn) : '',
+            url: location.href,
+          };
+        })()"""
+        try:
+            return dict(self.client.evaluate(script) or {})
+        except Exception:  # noqa: BLE001
+            return {}
+
+    def idle_wait(self, seconds: float) -> None:
+        """在详情页等发送间隔时做轻微鼠标移动/滚动，避免长时间完全静止。"""
+        end = time.monotonic() + max(0.0, seconds)
+        while time.monotonic() < end:
+            step = min(random.uniform(1.5, 3.5), end - time.monotonic())
+            if step <= 0:
+                break
+            try:
+                x = random.uniform(self.viewport["w"] * 0.55, self.viewport["w"] * 0.9)
+                y = random.uniform(self.viewport["h"] * 0.2, self.viewport["h"] * 0.7)
+                self.client.mouse_move(x, y)
+            except Exception:  # noqa: BLE001 - 等待期间的轻微动作失败可忽略
+                pass
+            self.client.pump(step)
+
+    def start_chat(
+        self, job: dict, data: dict | None = None, delay: tuple[float, float] = (2.0, 5.0)
+    ) -> dict:
+        """点击「立即沟通」，出现问候弹窗后点「留在此页」，全程拟人点击。"""
+        job_info = (data or {}).get("jobInfo") or {}
+        name = str(job_info.get("jobName") or job.get("jobName") or "")
+        panel = self._detail_panel_text()
+        if name and "".join(name.split()) not in "".join(panel.split()):
+            raise PageCollectError(f"详情面板与岗位不一致，跳过发送：{name}")
+
+        button = self._element_point(CHAT_BUTTON_SELECTOR, "立即沟通")
+        if not button:
+            state = self._chat_dialog_state()
+            if "继续沟通" in str(state.get("chatText") or ""):
+                return {"ok": True, "skipped": "already_chat"}
+            raise PageCollectError("未找到可点击的「立即沟通」按钮")
+
+        # 先悬停一下再按，落点和按住时长都有随机
+        try:
+            self.client.mouse_move(
+                button["x"] + random.uniform(-12, 12),
+                button["y"] + random.uniform(-6, 6),
+            )
+            self.client.pump(random.uniform(0.3, 0.9))
+        except Exception:  # noqa: BLE001 - 轨迹移动失败不影响点击
+            pass
+        self.client.click(button["x"], button["y"], human=True)
+
+        deadline = time.monotonic() + 12
+        while time.monotonic() < deadline:
+            self.client.pump(random.uniform(0.3, 0.7))
+            state = self._chat_dialog_state()
+            risk = str(state.get("risk") or "")
+            if risk:
+                raise AbortError("environment_abnormal", f"点击立即沟通后被风控拦截：{risk}")
+            if state.get("dialog"):
+                # 像人一样看一眼弹窗，再选择留在此页
+                self.client.pump(random.uniform(*delay))
+                stay = self._first_element_point(CHAT_STAY_SELECTORS, "留在此页")
+                if not stay:
+                    if self._wait(lambda: not self._chat_dialog_state().get("dialog"), 3000):
+                        return {"ok": True, "stayed": True}
+                    self.log("    弹窗出现了但找不到「留在此页」，先停一下")
+                    return {"ok": True, "stayed": False, "blocked": True}
+                try:
+                    self.client.mouse_move(stay["x"], stay["y"])
+                    self.client.pump(random.uniform(0.2, 0.6))
+                except Exception:  # noqa: BLE001
+                    pass
+                self.client.click(stay["x"], stay["y"], human=True)
+                if not self._wait(lambda: not self._chat_dialog_state().get("dialog"), 6000):
+                    close = self._first_element_point(CHAT_CLOSE_SELECTORS)
+                    if close:
+                        self.client.click(close["x"], close["y"])
+                        self._wait(lambda: not self._chat_dialog_state().get("dialog"), 3000)
+                if self._chat_dialog_state().get("dialog"):
+                    self.log("    弹窗没有关掉，先停一下，避免误点")
+                    return {"ok": True, "stayed": False, "blocked": True}
+                self.client.pump(random.uniform(0.4, 1.0))
+                return {"ok": True, "stayed": True}
+            url = str(state.get("url") or "")
+            chat_text = str(state.get("chatText") or "")
+            if "/web/geek/chat" in url:
+                self.log("    页面跳到了聊天页，先停一下")
+                return {"ok": True, "stayed": False, "blocked": True}
+            if "继续沟通" in chat_text:
+                return {"ok": True, "stayed": False}
+        raise PageCollectError("点击「立即沟通」后未出现问候弹窗")
+
+    def refresh_list(self) -> bool:
+        """滚到底后刷新页面，重新选回原期望，继续抓新一批推荐。"""
+        console.refresh()
+        before = len(self.client.list_payloads)
+        try:
+            # 用页面重载而不是新开标签页；刷新后仍由页面自己发列表请求
+            self.client.evaluate("(() => { location.reload(); return true; })()")
+        except Exception:  # noqa: BLE001 - 重载会中断当前 evaluate
+            pass
+        self.client.pump(random.uniform(2.0, 4.0))
+
+        if self._expect_index or self._expect_city:
+            selected = self.select_expect(self._expect_index, self._expect_city, refresh=True)
+            if not selected:
+                self.log("    刷新后没能选回原期望，先停一下")
+                return False
+        else:
+            self._wait(lambda: len(self.client.list_payloads) > before, 20000)
+
+        if not self._wait(lambda: self.card_count() > 0, 20000):
+            self.log("    刷新后没有看到岗位卡片，先停一下")
+            return False
+        self.client.pump(random.uniform(0.8, 1.6))
+        # 丢掉刷新前抓到的旧页，只保留刷新后第一页，避免重复计数
+        if self._expect_city:
+            self.reset_list(self._expect_city)
+        else:
+            # 没有识别到期望标签时，保留刷新后新增的列表，不能把新页也清掉
+            self.client.list_payloads[:] = self.client.list_payloads[before:]
+            self._list_cursor = 0
+        self.refresh_count += 1
+        if self._expect_city:
+            self.log("    刷新完成，重新选回期望，继续浏览")
+        else:
+            self.log("    刷新完成，继续浏览")
+        return True
+
     def collect_interleaved(
         self,
         target: int = 150,
@@ -539,6 +761,7 @@ class PageCollector:
         city: str | None = None,
         on_detail: Callable[[dict, dict], None] | None = None,
         on_tick: Callable[[], None] | None = None,
+        max_refreshes: int = 2,
     ) -> tuple[list[dict], dict[str, dict]]:
         """列表滚动与详情点击交替执行；只点击当前视口内的卡片。"""
         if self.mouse:
@@ -580,11 +803,14 @@ class PageCollector:
                             on_detail(job, data)
             if len(jobs) >= target and len(details) >= detail_limit:
                 break
+            start_y = self._scroll_y()
             current_y = self._scroll(random.choice((
                 random.randint(180, 420),
                 random.randint(420, 850),
                 random.randint(850, 1300),
             )))
+            self.scroll_count += 1
+            console.scroll_action(int(current_y - start_y))
             self.client.pump(random.uniform(*delay))
             if on_tick:
                 on_tick()
@@ -607,6 +833,13 @@ class PageCollector:
                 idle = 0
             last_y = max(last_y, current_y)
             if idle >= 3:
-                self.log("    已到列表底部或暂无可加载数据")
+                if self.refresh_count < max_refreshes and self.refresh_list():
+                    idle = 0
+                    # 刷新后的第一页已经在 list_payloads 里，立即入表，别等下一次滚动
+                    self._drain_list(jobs)
+                    last_y = self._scroll_y()
+                    self.client.pump(random.uniform(1.5, 3.0))
+                    continue
+                self.log("    已经浏览到列表底部，结束本轮浏览")
                 break
         return list(jobs.values()), details

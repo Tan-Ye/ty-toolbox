@@ -4,8 +4,7 @@
 
 表结构:
   jobs       岗位主表，encryptJobId 为主键；列表重复出现时覆写列表字段，详情单独合并，
-             发送状态不会被覆写。
-  send_runs  发送批次记录，用于判断 2 小时内是否已经执行过发送。
+             沟通状态不会被覆写。
 
 附带:
   - 发送日志追加到 send_log.jsonl（成功只记一条，失败保留异常信息）
@@ -22,14 +21,15 @@ from datetime import datetime, timedelta
 from pathlib import Path
 from typing import Any, Iterable
 
-from core.config import BASE_DIR
+from core import console
+from core.config import BASE_DIR, PRIORITY_KEYWORDS_FILE
 
 DB_FILE = BASE_DIR / "data" / "zhipin" / "zhipin.db"
 EXPORT_FILE = BASE_DIR / "data" / "zhipin" / "jobs.json"
 SEND_LOG_FILE = BASE_DIR / "data" / "zhipin" / "send_log.jsonl"
 
-# 命中越多分越高；短英文词用左右边界匹配，避免 json 命中 js
-PRIORITY_KEYWORDS = (
+# 内置默认关键词：params/priority_keywords.json 缺失或无效时使用
+DEFAULT_PRIORITY_KEYWORDS = (
     ("ai", 3),
     ("人工智能", 3),
     ("大模型", 3),
@@ -44,6 +44,60 @@ PRIORITY_KEYWORDS = (
     ("javascript", 2),
     ("js", 2),
 )
+
+# 按文件修改时间缓存，运行期间改配置也能生效
+_PRIORITY_CACHE: tuple[float, tuple[tuple[str, int], ...]] | None = None
+
+
+def load_priority_keywords() -> tuple[tuple[str, int], ...]:
+    """读取用户自定义的优先级关键词；文件缺失或无效时回退默认值。"""
+    global _PRIORITY_CACHE
+    try:
+        mtime = PRIORITY_KEYWORDS_FILE.stat().st_mtime
+    except OSError:
+        return DEFAULT_PRIORITY_KEYWORDS
+    if _PRIORITY_CACHE is not None and _PRIORITY_CACHE[0] == mtime:
+        return _PRIORITY_CACHE[1]
+
+    try:
+        data = json.loads(PRIORITY_KEYWORDS_FILE.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError) as exc:
+        console.error(f"优先级关键词配置读取失败，改用默认值：{exc}")
+        _PRIORITY_CACHE = (mtime, DEFAULT_PRIORITY_KEYWORDS)
+        return DEFAULT_PRIORITY_KEYWORDS
+
+    items = data.get("keywords") if isinstance(data, dict) else None
+    keywords: list[tuple[str, int]] = []
+    seen: set[str] = set()
+    for item in items or []:
+        if isinstance(item, dict):
+            keyword, weight = item.get("keyword"), item.get("weight")
+        elif isinstance(item, (list, tuple)) and len(item) == 2:
+            keyword, weight = item
+        else:
+            continue
+        if not isinstance(keyword, str) or not keyword.strip():
+            continue
+        try:
+            weight = int(weight)
+        except (TypeError, ValueError):
+            continue
+        if weight <= 0:
+            continue
+        normalized = keyword.strip().lower()
+        if normalized in seen:
+            continue
+        seen.add(normalized)
+        keywords.append((keyword.strip(), weight))
+
+    if not keywords:
+        console.error(f"优先级关键词为空或格式不正确，改用默认值：{PRIORITY_KEYWORDS_FILE}")
+        _PRIORITY_CACHE = (mtime, DEFAULT_PRIORITY_KEYWORDS)
+        return DEFAULT_PRIORITY_KEYWORDS
+
+    result = tuple(keywords)
+    _PRIORITY_CACHE = (mtime, result)
+    return result
 
 # boss 活跃度白名单：只给今日活跃或 3 日内活跃的 boss 发消息
 ACTIVE_DESC_KEYWORDS = (
@@ -109,16 +163,6 @@ CREATE TABLE IF NOT EXISTS jobs (
 
 CREATE INDEX IF NOT EXISTS idx_jobs_priority ON jobs(priority_score DESC);
 CREATE INDEX IF NOT EXISTS idx_jobs_send ON jobs(send_status);
-
-CREATE TABLE IF NOT EXISTS send_runs (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    started_at TEXT NOT NULL,
-    finished_at TEXT,
-    planned INTEGER DEFAULT 0,
-    sent INTEGER DEFAULT 0,
-    status TEXT,
-    stop_reason TEXT
-);
 """
 
 
@@ -137,8 +181,8 @@ def connect(db_path: str | Path = DB_FILE):
         conn.executescript(SCHEMA)
         yield conn
         conn.commit()
-    except Exception:
-        # 采集中途被终止时，已经写入的详情/发送记录不能丢
+    except BaseException:
+        # 采集中途被终止时（包括 Ctrl+C / SystemExit），已经写入的详情/发送记录不能丢
         try:
             conn.commit()
         except sqlite3.Error:
@@ -258,6 +302,25 @@ UPDATE jobs SET
 WHERE encrypt_job_id = :encrypt_job_id
 """
 
+# 列表 payload 可能晚于详情到达；详情先到时直接插入，避免 UPDATE 0 行被静默丢弃
+INSERT_DETAIL_SQL = """
+INSERT INTO jobs (
+    encrypt_job_id, job_name, salary_desc, job_experience, job_degree,
+    boss_name, boss_title, boss_online, boss_active_desc, brand_name,
+    brand_industry, brand_scale, brand_stage, detail_status, detail_fetched_at,
+    detail_security_id, detail_lid, session_id, position_name, location_name,
+    address, post_description, invalid_status, priority_score, priority_tags,
+    created_at, updated_at
+) VALUES (
+    :encrypt_job_id, :job_name, :salary_desc, :job_experience, :job_degree,
+    :boss_name, :boss_title, :boss_online, :boss_active_desc, :brand_name,
+    :brand_industry, :brand_scale, :brand_stage, 'ok', :fetched_at,
+    :detail_security_id, :detail_lid, :session_id, :position_name, :location_name,
+    :address, :post_description, :invalid_status, :priority_score, :priority_tags,
+    :updated_at, :updated_at
+)
+"""
+
 
 def save_detail(conn: sqlite3.Connection, job_id: str, payload: dict) -> None:
     """合并详情字段；payload 中缺失的键补 None，发送状态保持不变。"""
@@ -288,19 +351,28 @@ def save_detail(conn: sqlite3.Connection, job_id: str, payload: dict) -> None:
         "priority_tags": json.dumps(payload.get("priority_tags") or [], ensure_ascii=False),
         "updated_at": payload.get("updated_at") or now_iso(),
     }
-    conn.execute(SAVE_DETAIL_SQL, params)
+    cursor = conn.execute(SAVE_DETAIL_SQL, params)
+    if cursor.rowcount == 0:
+        conn.execute(INSERT_DETAIL_SQL, params)
 
 
 def mark_detail_failed(conn: sqlite3.Connection, job_id: str, error: str) -> None:
-    conn.execute(
+    at = now_iso()
+    cursor = conn.execute(
         "UPDATE jobs SET detail_status='failed', detail_error=?, detail_fetched_at=?, updated_at=? "
         "WHERE encrypt_job_id=?",
-        (str(error)[:500], now_iso(), now_iso(), job_id),
+        (str(error)[:500], at, at, job_id),
     )
+    if cursor.rowcount == 0:
+        conn.execute(
+            "INSERT INTO jobs (encrypt_job_id, detail_status, detail_error, detail_fetched_at, "
+            "created_at, updated_at) VALUES (?, 'failed', ?, ?, ?, ?)",
+            (job_id, str(error)[:500], at, at, at),
+        )
 
 
 def score_priority(fields: dict) -> tuple[int, list[str]]:
-    """按岗位名/标签/技能/职位名打分，命中关键词越多分越高。"""
+    """按岗位名/标签/技能/职位名打分；关键词与权重可在 params/priority_keywords.json 自定义。"""
     parts: list[str] = []
     for value in fields.values():
         if isinstance(value, (list, tuple)):
@@ -310,7 +382,7 @@ def score_priority(fields: dict) -> tuple[int, list[str]]:
     text = " ".join(parts).lower()
     score = 0
     matched: list[str] = []
-    for keyword, weight in PRIORITY_KEYWORDS:
+    for keyword, weight in load_priority_keywords():
         if keyword.isascii():
             pattern = rf"(?<![a-z0-9]){re.escape(keyword)}(?![a-z0-9])"
             hit = re.search(pattern, text) is not None
@@ -320,30 +392,6 @@ def score_priority(fields: dict) -> tuple[int, list[str]]:
             score += weight
             matched.append(keyword)
     return score, matched
-
-
-def get_send_candidates(conn: sqlite3.Connection, pool_limit: int = 150, send_limit: int = 30) -> list[sqlite3.Row]:
-    """在优先级前 pool_limit 的岗位里，取未成功发送且 boss 近期活跃的前 send_limit 个。"""
-    active_clause = "(COALESCE(boss_online, 0) = 1 OR " + " OR ".join(
-        "boss_active_desc LIKE ?" for _ in ACTIVE_DESC_KEYWORDS
-    ) + ")"
-    active_params = [f"%{keyword}%" for keyword in ACTIVE_DESC_KEYWORDS]
-    rows = conn.execute(
-        f"""
-        SELECT * FROM (
-            SELECT * FROM jobs
-            WHERE detail_status = 'ok' AND COALESCE(invalid_status, 0) = 0
-              AND {active_clause}
-            ORDER BY priority_score DESC, list_seen_at DESC
-            LIMIT ?
-        )
-        WHERE send_status IS NULL OR send_status = 'failed'
-        ORDER BY priority_score DESC, list_seen_at DESC
-        LIMIT ?
-        """,
-        (*active_params, int(pool_limit), int(send_limit)),
-    ).fetchall()
-    return list(rows)
 
 
 def count_sent_today(conn: sqlite3.Connection, day: str | None = None) -> int:
@@ -475,27 +523,6 @@ def today_stats(conn: sqlite3.Connection) -> dict:
             today,
         ),
     }
-
-
-def start_send_run(conn: sqlite3.Connection, planned: int) -> int:
-    cursor = conn.execute(
-        "INSERT INTO send_runs (started_at, planned, status) VALUES (?,?,?)",
-        (now_iso(), int(planned), "running"),
-    )
-    return int(cursor.lastrowid)
-
-
-def finish_send_run(
-    conn: sqlite3.Connection,
-    run_id: int,
-    sent: int,
-    status: str,
-    stop_reason: str | None = None,
-) -> None:
-    conn.execute(
-        "UPDATE send_runs SET finished_at=?, sent=?, status=?, stop_reason=? WHERE id=?",
-        (now_iso(), int(sent), status, stop_reason, run_id),
-    )
 
 
 def row_to_dict(row: sqlite3.Row) -> dict:

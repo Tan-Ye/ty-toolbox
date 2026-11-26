@@ -111,13 +111,7 @@ class QueueRunner:
                     result=value,
                     finished_at=now_iso(),
                 )
-                if isinstance(value, dict) and value.get("sent") is True:
-                    detail = "已发送沟通消息"
-                elif isinstance(value, dict) and value.get("skipped"):
-                    detail = f"跳过（{value.get('skipped')}）"
-                else:
-                    detail = "完成"
-                self.logger(f"  [任务] {name} → {detail}")
+                self.logger(f"  [任务] {name} → 完成")
                 if self._queue and not self._stop_event.is_set():
                     delay = random.uniform(self.min_delay, self.max_delay)
                     entry["next_delay"] = round(delay, 1)

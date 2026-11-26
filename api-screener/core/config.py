@@ -9,6 +9,7 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 LIST_PARAMS_FILE = BASE_DIR / "params" / "list_params.json"
+PRIORITY_KEYWORDS_FILE = BASE_DIR / "params" / "priority_keywords.json"
 RESULT_FILE = BASE_DIR / "data" / "screen" / "queue_result.json"
 AUTH_FILE = BASE_DIR / "data" / "browser_auth.json"
 EXPECT_FILE = BASE_DIR / "data" / "zhipin" / "expects.json"
@@ -16,8 +17,8 @@ RUN_LOCK_FILE = BASE_DIR / "data" / "run.lock"
 
 EXPECT_URL = "https://www.zhipin.com/wapi/zpgeek/pc/recommend/expect/list.json"
 DETAIL_URL = "https://www.zhipin.com/wapi/zpgeek/job/detail.json"
-ADD_URL = "https://www.zhipin.com/wapi/zpgeek/friend/add.json"
 
+# 任意 2 小时窗口内最多主动沟通多少个岗位
 SEND_LIMIT_MAX = 30
 
 DEFAULT_WORK_START = "09:00"
@@ -26,9 +27,6 @@ DEFAULT_WORK_DAYS = "1,2,3,4,5"
 
 EXIT_ABORTED = 2
 EXIT_STOPPED = 3
-EXIT_COOLDOWN = 4
-EXIT_DAILY_LIMIT = 5
-EXIT_OFF_HOURS = 6
 EXIT_NOT_LOGGED_IN = 7
 
 LOGIN_KEYWORDS = (

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""在已登录的浏览器页面内 fetch 执行 BOSS 直聘流程（薄入口）。
+"""在已登录的浏览器里真实操作 BOSS 直聘流程（薄入口）。
 
 启动方式:
   python start_chrome.py               # 启动/复用 Chrome，就绪后自动执行本脚本（默认 --stage all）
@@ -14,29 +14,27 @@
      （api 模式保留为备用，直接请求接口，容易被风控拦截）
   2. 重复岗位按 encryptJobId 覆写，详情只保留 boss/岗位/关键字段，写入 SQLite；
   3. 按关键词（ai/js/ts/node/python 等）计算优先级，导出精简 jobs.json；
-  4. 发送阶段：
-     - --stage all：采集详情后按优先级穿插发送，更接近人工浏览；
-     - --stage send：只批量补发积压岗位，按 30~60s 间隔打招呼；
-     - 任意 2 小时最多发送 30 条，每天最多 --daily-limit 条（默认 150，BOSS 每日上限）；
-     - 只给 boss 今日活跃或 3 日内活跃的岗位发；成功后记录岗位 id，永不重复发送；
-     - 启动时展示今日采集/发送概况；窗口或额度不足时由用户决定只采集、继续发送或退出。
+  4. 浏览过程中沟通（--stage all）：
+     - 详情达标时在当前页面点击「立即沟通」，出现弹窗后点「留在此页」；
+     - 不调用发送接口，全部是页面内真实点击；
+     - 任意 2 小时最多沟通 30 个，每天最多 --daily-limit 个（默认 150）；
+     - 只和 boss 今日活跃或 3 日内活跃的岗位沟通；成功后记录岗位 id，永不重复；
+     - 启动时展示今日采集/沟通概况；窗口或额度不足时由用户决定只浏览、继续沟通或退出。
 
 用法:
   python run_job_queue.py --diagnose                 # 只检查浏览器环境/登录/token，不发请求
-  python run_job_queue.py --stage collect            # 只抓取期望+列表+详情并整理
-  python run_job_queue.py --stage collect --dry-run  # 抓取整理，不发送
-  python run_job_queue.py --stage all --dry-run      # 干跑：采集 + 记录发送决策
-  python run_job_queue.py --stage send               # 只批量补发积压（受 2 小时窗口限制）
-  python run_job_queue.py                            # 采集 + 穿插发送
+  python run_job_queue.py --stage collect            # 只浏览采集，不主动沟通
+  python run_job_queue.py --stage collect --dry-run  # 只浏览采集，不主动沟通
+  python run_job_queue.py --stage all --dry-run      # 干跑：浏览采集 + 模拟沟通决策
+  python run_job_queue.py                            # 浏览采集 + 页面内主动沟通
 
-退出码：0 完成 / 2 异常终止 / 3 手动停止 / 4 发送窗口已满 / 5 当日额度用完 / 6 非工作时间
-        / 7 未登录（用户放弃登录或终端非交互）
+退出码：0 完成 / 2 异常终止 / 3 手动停止 / 7 未登录（用户放弃登录或终端非交互）
 
 代码结构（详见 agents.md）:
   core/       配置、异常、工具、单实例锁、终端输出
   browser/    CDP 客户端、页面采集、系统输入、登录检查
-  workflow/   任务队列、求职期望、采集、发送、启动面板、命令行
-  storage/    SQLite 入库、优先级、发送记录与导出
+  workflow/   任务队列、求职期望、采集、页面沟通、启动面板、命令行
+  storage/    SQLite 入库、优先级、沟通记录与导出
 """
 
 from __future__ import annotations

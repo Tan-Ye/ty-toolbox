@@ -199,8 +199,35 @@ class MouseController:
         )
         return item
 
+    def move_to(self, x: int, y: int, duration: float | None = None) -> None:
+        """把指针沿轻微弧线移到目标点，避免 SetCursorPos 直接瞬移。
+
+        滚动前先走这段轨迹，滚轮动作才像人先移动鼠标再滚动；步数、弧度和
+        每步间隔都带随机，不追求精确直线。
+        """
+        start = wintypes.POINT()
+        if not user32.GetCursorPos(ctypes.byref(start)):
+            user32.SetCursorPos(int(x), int(y))
+            return
+        sx, sy = int(start.x), int(start.y)
+        tx, ty = int(x), int(y)
+        distance = max(1.0, ((tx - sx) ** 2 + (ty - sy) ** 2) ** 0.5)
+        steps = max(8, min(28, int(distance / 45) + random.randint(6, 12)))
+        duration = duration if duration is not None else random.uniform(0.22, 0.55)
+        # 控制点稍微偏离直线，走出一段自然弧线；离得越远弧度越明显
+        cx = (sx + tx) / 2 + random.uniform(-40, 40)
+        cy = (sy + ty) / 2 + random.uniform(-30, 30)
+        for index in range(1, steps + 1):
+            t = index / steps
+            ease = t * t * (3 - 2 * t)
+            px = (1 - ease) ** 2 * sx + 2 * (1 - ease) * ease * cx + ease ** 2 * tx
+            py = (1 - ease) ** 2 * sy + 2 * (1 - ease) * ease * cy + ease ** 2 * ty
+            user32.SetCursorPos(int(px), int(py))
+            time.sleep(max(0.008, duration / steps * random.uniform(0.75, 1.25)))
+        user32.SetCursorPos(tx, ty)
+
     def scroll(self, notches: int = -5, jitter: bool = True) -> None:
-        """负值向下滚动；调用前会将指针放到列表区域并确保窗口在前台。
+        """负值向下滚动；调用前会将指针移到列表区域并确保窗口在前台。
 
         jitter=True 时每次落点略有不同，不会每次都从同一个坐标滚轮。
         """
@@ -212,7 +239,7 @@ class MouseController:
         if jitter:
             x += random.randint(-60, 40)
             y += random.randint(-120, 120)
-        user32.SetCursorPos(int(x), int(y))
+        self.move_to(int(x), int(y))
         self._send([self._wheel_input(notches)])
 
     # ---------- 窗口切换 ----------

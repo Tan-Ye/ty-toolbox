@@ -21,19 +21,17 @@ from core.config import (
     EXPECT_FILE,
     LIST_PARAMS_FILE,
     RESULT_FILE,
-    SEND_LIMIT_MAX,
 )
 from core.utils import now_iso, parse_work_days, parse_work_time
 from storage import job_store
 from workflow.collecting import run_collect
-from workflow.sending import run_send
 from workflow.startup import startup_gate
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="浏览器内 fetch 执行 BOSS 直聘抓取与打招呼")
-    parser.add_argument("--stage", choices=("all", "collect", "send"), default="all",
-                        help="all=抓取整理+发送，collect=只抓取整理，send=只发送")
+    parser = argparse.ArgumentParser(description="浏览器内抓包执行 BOSS 直聘岗位采集与页面内打招呼")
+    parser.add_argument("--stage", choices=("all", "collect"), default="all",
+                        help="all=浏览采集+页面内沟通，collect=只浏览采集")
     parser.add_argument("--cdp-url", default=os.environ.get("ZP_CDP_URL", "http://127.0.0.1:9222"))
     parser.add_argument("--page-match", default="zhipin.com", help="用来匹配 BOSS 标签页的 URL 片段")
     parser.add_argument("--token", default=None, help="手动指定 token 请求头")
@@ -50,6 +48,8 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--collect-mode", choices=("page", "api"), default="page",
                         help="采集方式：page=滚动页面抓包（默认），api=直接请求接口（易触发风控）")
     parser.add_argument("--max-scrolls", type=int, default=150, help="页面模式下最多滚动次数")
+    parser.add_argument("--max-refreshes", type=int, default=2,
+                        help="滚到底后最多刷新几次，0=不刷新")
     parser.add_argument("--scroll-min-delay", type=float, default=2.0, help="滚动间隔下限（秒）")
     parser.add_argument("--scroll-max-delay", type=float, default=4.0, help="滚动间隔上限（秒）")
     parser.add_argument("--list-pages", type=int, default=10, help="列表最多抓取几页（每页 15 条）")
@@ -57,11 +57,9 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--list-target", type=int, default=0,
                         help="页面模式下列表最多采集多少条（默认等于 --detail-limit）")
     parser.add_argument("--pool-limit", type=int, default=150, help="参与排序的优先级池大小")
-    parser.add_argument("--send-limit", type=int, default=SEND_LIMIT_MAX,
-                        help="单次运行最多发送多少条（最大 30）")
-    parser.add_argument("--daily-limit", type=int, default=150, help="每天最多发送多少条（跨批次累计，默认 150）")
-    parser.add_argument("--inline-min-priority", type=int, default=6,
-                        help="穿插发送的最低优先级分数，默认 6")
+    parser.add_argument("--daily-limit", type=int, default=150, help="每天最多沟通多少个岗位（默认 150）")
+    parser.add_argument("--inline-min-priority", type=int, default=3,
+                        help="主动沟通的最低优先级分数，默认 3")
     parser.add_argument("--inline-warmup", type=int, default=3,
                         help="浏览前 N 个详情不发送，默认 3")
     parser.add_argument("--inline-skip-rate", type=float, default=0.1,
@@ -78,8 +76,8 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--list-page-max-delay", type=float, default=20, help="列表翻页最大间隔（秒）")
     parser.add_argument("--detail-min-delay", type=float, default=3, help="详情任务最小间隔（秒）")
     parser.add_argument("--detail-max-delay", type=float, default=6, help="详情任务最大间隔（秒）")
-    parser.add_argument("--send-min-delay", type=float, default=30, help="发送任务最小间隔（秒）")
-    parser.add_argument("--send-max-delay", type=float, default=60, help="发送任务最大间隔（秒）")
+    parser.add_argument("--send-min-delay", type=float, default=30, help="两次主动沟通的最小间隔（秒）")
+    parser.add_argument("--send-max-delay", type=float, default=60, help="两次主动沟通的最大间隔（秒）")
     parser.add_argument("--cooldown-hours", "--window-hours", dest="cooldown_hours",
                         type=float, default=2, help="发送滚动窗口小时数（默认 2）")
     parser.add_argument("--db", default=str(job_store.DB_FILE), help="SQLite 数据库路径")
@@ -87,7 +85,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--send-log", default=str(job_store.SEND_LOG_FILE), help="发送日志 jsonl 路径")
     parser.add_argument("--timeout", type=float, default=30, help="单次请求超时（秒）")
     parser.add_argument("--dry-run", action="store_true",
-                        help="干跑：采集并记录发送决策，不真正发送")
+                        help="干跑：只模拟沟通决策，不点击「立即沟通」")
     parser.add_argument("--diagnose", action="store_true", help="只检查浏览器环境和 token 候选，不发请求")
     parser.add_argument("--out", default=str(RESULT_FILE), help="队列运行结果 JSON")
     return parser.parse_args()
@@ -117,10 +115,6 @@ def validate_args(args: argparse.Namespace) -> None:
         raise SystemExit("--list-target 不能小于 0")
     if args.pool_limit <= 0:
         raise SystemExit("--pool-limit 必须大于 0")
-    if args.send_limit <= 0:
-        raise SystemExit("--send-limit 必须大于 0")
-    if args.send_limit > SEND_LIMIT_MAX:
-        raise SystemExit(f"--send-limit 最大 {SEND_LIMIT_MAX}")
     if args.daily_limit <= 0:
         raise SystemExit("--daily-limit 必须大于 0")
     if args.inline_min_priority < 0:
@@ -133,6 +127,8 @@ def validate_args(args: argparse.Namespace) -> None:
         raise SystemExit("--expect-index 不能小于 0（0 表示自动选择）")
     if args.max_scrolls <= 0:
         raise SystemExit("--max-scrolls 必须大于 0")
+    if args.max_refreshes < 0:
+        raise SystemExit("--max-refreshes 不能小于 0")
     if not (0 < args.scroll_min_delay <= args.scroll_max_delay):
         raise SystemExit("滚动间隔应满足 0 < --scroll-min-delay <= --scroll-max-delay")
     args.work_start = parse_work_time(args.work_start)
@@ -140,11 +136,10 @@ def validate_args(args: argparse.Namespace) -> None:
     args.work_days = parse_work_days(args.work_days)
     if args.work_start >= args.work_end:
         raise SystemExit("--work-start 必须早于 --work-end")
-    if args.send_limit > SEND_LIMIT_MAX:
-        print(f"[提示] 单批发送上限固定为 {SEND_LIMIT_MAX}，--send-limit 已收敛到 {SEND_LIMIT_MAX}")
-        args.send_limit = SEND_LIMIT_MAX
-    if args.dry_run and args.stage == "send":
-        raise SystemExit("--dry-run 不能与 --stage send 同时使用")
+    if args.send_min_delay < 0 or args.send_max_delay < 0:
+        raise SystemExit("--send-min-delay/--send-max-delay 不能小于 0")
+    if args.send_min_delay > args.send_max_delay:
+        raise SystemExit("--send-min-delay 不能大于 --send-max-delay")
 
 
 def main() -> int:
@@ -190,26 +185,10 @@ def main() -> int:
             console.finish(EXIT_NOT_LOGGED_IN)
             return EXIT_NOT_LOGGED_IN
 
-    result = {"started_at": now_iso(), "dry_run": args.dry_run, "stage": args.stage, "collect": None, "send": None}
-    exit_code = 0
-
-    if args.stage in ("all", "collect"):
-        exit_code, result["collect"] = run_collect(args, token, zp_token)
-        if exit_code != 0 or args.dry_run:
-            if args.dry_run:
-                print("\n--dry-run：已跳过发送阶段")
-            result["finished_at"] = now_iso()
-            save_result(args.out, result)
-            console.finish(exit_code)
-            return exit_code
-
-    if args.stage in ("all", "send"):
-        if args.stage == "all":
-            print("\n[提示] stage all 已在采集时穿插发送，本轮不再追加批量发送；积压岗位留给 --stage send")
-            result["send"] = {"skipped": "inline"}
-        else:
-            exit_code, result["send"] = run_send(args, token, zp_token)
-
+    result = {"started_at": now_iso(), "dry_run": args.dry_run, "stage": args.stage, "collect": None}
+    exit_code, result["collect"] = run_collect(args, token, zp_token)
+    if args.dry_run and exit_code == 0:
+        print("\n--dry-run：只模拟沟通决策，没有点击「立即沟通」")
     result["finished_at"] = now_iso()
     save_result(args.out, result)
     console.finish(exit_code)

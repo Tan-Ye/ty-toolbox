@@ -7,6 +7,7 @@ from __future__ import annotations
 import argparse
 import random
 import sqlite3
+import time
 from pathlib import Path
 
 from browser.auth import make_client_factory, print_recovery
@@ -78,6 +79,8 @@ def make_list_task(
     def task() -> dict:
         list_url, base_query = load_list_params(params_file)
         expect = expect_state.get("expect") or {}
+        expect_name = expect.get("positionName") or expect.get("position") or "当前"
+        console.info(f"已取得「{expect_name}」期望岗位列表")
         jobs_by_id: dict[str, dict] = {}
         pages_done = 0
         for page in range(1, pages + 1):
@@ -99,12 +102,14 @@ def make_list_task(
                 if job_id:
                     jobs_by_id[job_id] = job  # 重复岗位直接覆写
             pages_done = page
-            print(f"    第 {page} 页：{len(jobs)} 条，累计去重 {len(jobs_by_id)} 条")
+            console.info(
+                f"已取得第 {page} 页岗位列表，新增 {len(jobs)} 个，共 {len(jobs_by_id)} 个"
+            )
             if not jobs or not zp_data.get("hasMore"):
                 break
             if page < pages:
                 delay = random.uniform(*page_delay)
-                print(f"    等待 {delay:.1f}s 后请求下一页")
+                console.info(f"稍等 {delay:.1f} 秒，再看看下一页")
                 if not runner.wait(delay):
                     raise AbortError("stopped", "收到终止信号，列表分页停止")
 
@@ -181,14 +186,42 @@ def make_detail_task(job: dict, get_client, db_path: Path):
     return task
 
 
-def run_collect_page(args: argparse.Namespace, token: str | None, zp_token: str | None) -> tuple[int, dict]:
+def _load_known_ids(conn, args: argparse.Namespace) -> tuple[set[str], int]:
+    """已发送/已明确不达标的详情跳过；达标但未发送的旧详情本轮重新点击补发。"""
+    skip: set[str] = set()
+    retry = 0
+    rows = conn.execute(
+        "SELECT encrypt_job_id, priority_score, boss_online, boss_active_desc, "
+        "send_status, invalid_status FROM jobs WHERE detail_status='ok'"
+    )
+    for row in rows:
+        job_id = str(row["encrypt_job_id"] or "")
+        if not job_id:
+            continue
+        if args.stage != "all":
+            skip.add(job_id)
+            continue
+        if row["send_status"] == "sent":
+            skip.add(job_id)
+            continue
+        not_eligible = (
+            bool(row["invalid_status"])
+            or int(row["priority_score"] or 0) < args.inline_min_priority
+            or not job_store.is_active(row["boss_online"], row["boss_active_desc"])
+        )
+        if not_eligible:
+            skip.add(job_id)
+        else:
+            retry += 1
+    return skip, retry
+
+
+def run_collect_page(args: argparse.Namespace) -> tuple[int, dict]:
     """页面模式：滚动列表、点击卡片，只抓浏览器自己发出的请求。"""
     print("\n[阶段] 页面滚动采集（浏览器内抓包）")
     list_target = args.list_target or args.detail_limit
-    print(f"目标岗位：详情 {args.detail_limit} 条、列表 {list_target} 条，滚动次数上限：{args.max_scrolls}")
-    print(f"滚动间隔：{args.scroll_min_delay:g}~{args.scroll_max_delay:g}s，"
-          f"点击间隔：{args.detail_min_delay:g}~{args.detail_max_delay:g}s")
-    print(f"数据库：{args.db}\n")
+    print(f"准备慢慢浏览岗位列表，计划查看 {args.detail_limit} 个详情\n")
+    started = time.monotonic()
 
     client = CdpClient(cdp_url=args.cdp_url, page_match=args.page_match, timeout=args.timeout)
     sender: InlineSender | None = None
@@ -209,13 +242,14 @@ def run_collect_page(args: argparse.Namespace, token: str | None, zp_token: str 
             if selected:
                 console.step(4, f"开始采集（列表 {list_target} 条、详情 {args.detail_limit} 条）")
                 collector.scroll_to_top()
-                print(f"列表已渲染：{collector.wait_for_cards()} 张卡片")
+                console.info(f"职位列表已加载，当前看到 {collector.wait_for_cards()} 个岗位")
                 ok, cities = collector.verify_city(chosen_city)
                 if not ok:
                     raise PageCollectError(
                         f"期望「{selected}」返回的岗位城市不是「{chosen_city}」：{cities}"
                     )
                 collector.reset_list(chosen_city)
+                console.expect_list(selected)
             else:
                 raise PageCollectError(
                     f"未能切换到期望「{tabs[index - 1]}」，请确认页面后重试"
@@ -223,26 +257,29 @@ def run_collect_page(args: argparse.Namespace, token: str | None, zp_token: str 
         else:
             console.step(3, "页面未识别到求职期望标签，使用当前列表")
             console.step(4, "开始采集")
+            console.expect_list("当前推荐")
 
         saved = 0
         failed = 0
         saved_ids: set[str] = set()
 
         with job_store.connect(args.db) as conn:
-            known = {
-                row[0]
-                for row in conn.execute(
-                    "SELECT encrypt_job_id FROM jobs WHERE detail_status='ok'"
-                )
-            }
+            known, retry = _load_known_ids(conn, args)
             if known:
-                print(f"已有详情 {len(known)} 条，采集时跳过这些岗位")
+                console.info(f"有 {len(known)} 个岗位之前看过，本轮不再重复查看")
+            if retry:
+                console.info(f"另有 {retry} 个之前没来得及打招呼的岗位，这轮会再看一次")
 
             if args.stage == "all":
-                sender = InlineSender(args, token, zp_token, conn, log=print)
-                print(
-                    f"[内联] 已开启：优先级 >= {args.inline_min_priority}，"
-                    f"预热 {args.inline_warmup} 个详情，随机跳过 {args.inline_skip_rate:.0%}"
+                sender = InlineSender(
+                    args,
+                    conn,
+                    page_send=collector.start_chat,
+                    wait_callback=collector.idle_wait,
+                )
+                console.info(
+                    f"开始浏览：优先级 ≥{args.inline_min_priority} 的岗位会主动打招呼；"
+                    f"前 {args.inline_warmup} 个先看看；随机跳过 {args.inline_skip_rate:.0%}"
                 )
 
             def persist(job_id: str, job: dict, data: dict, allow_send: bool) -> None:
@@ -281,9 +318,10 @@ def run_collect_page(args: argparse.Namespace, token: str | None, zp_token: str 
                 city=chosen_city or None,
                 on_detail=on_detail,
                 on_tick=on_tick,
+                max_refreshes=args.max_refreshes,
             )
             job_by_id = {job.get("encryptJobId"): job for job in jobs}
-            console.info(f"抓取完成：列表 {len(jobs)} 条、详情 {len(details)} 条，开始整理入库")
+            console.info(f"浏览完成：共看到 {len(jobs)} 个岗位，查看 {len(details)} 个详情")
             job_store.upsert_list_jobs(conn, jobs)
             for job_id, data in details.items():
                 if job_id not in saved_ids:
@@ -293,30 +331,58 @@ def run_collect_page(args: argparse.Namespace, token: str | None, zp_token: str 
                 info = sender.summary()
                 if info["dry_run"]:
                     console.info(
-                        f"内联干跑：本应发送 {info['sent']} 条，"
-                        f"随机跳过 {info['skipped']} 条，待发 {info['pending']} 条"
+                        f"干跑：本来会和 {info['sent']} 个岗位打招呼，"
+                        f"随机跳过 {info['skipped']} 个"
                     )
                 else:
                     console.info(
-                        f"内联发送：成功 {info['sent']} 条，失败 {info['failed']} 条，"
-                        f"随机跳过 {info['skipped']} 条，待发 {info['pending']} 条"
+                        f"本次沟通：成功 {info['sent']} 个，失败 {info['failed']} 个，"
+                        f"随机跳过 {info['skipped']} 个"
+                    )
+                if info["details_seen"] == 0:
+                    console.info("本轮没有新的岗位详情，之前没来得及打招呼的岗位下次会再看到")
+                elif info["sent"] == 0:
+                    console.info(
+                        "本轮看过的岗位都没有发起沟通"
+                        "（优先级/活跃度/随机跳过/额度/页面点击失败）"
+                    )
+                if info["pending"]:
+                    console.info(
+                        f"还有 {info['pending']} 个岗位没来得及打招呼，留到下次继续"
                     )
             exported = job_store.export_json(conn, args.export_json, args.pool_limit)
 
-        console.info(f"入库完成：详情成功 {saved} 条，失败 {failed} 条")
+        console.info(f"岗位信息整理完成：成功 {saved} 个，失败 {failed} 个")
         console.info(
-            f"数据库共 {exported['total_in_db']} 条，导出 {exported['exported']} 条"
+            f"已整理 {exported['total_in_db']} 个岗位，导出 {exported['exported']} 个"
             f" -> {args.export_json}"
         )
+        elapsed = time.monotonic() - started
+        inline_info = sender.summary() if sender else None
+        console.summary({
+            "duration_sec": elapsed,
+            "scrolls": collector.scroll_count,
+            "refreshes": collector.refresh_count,
+            "jobs": len(jobs),
+            "details_ok": saved,
+            "details_failed": failed,
+            "inline": inline_info,
+            "exported": exported["exported"],
+            "jobs_in_db": exported["total_in_db"],
+            "export_path": str(args.export_json),
+        })
         return 0, {
             "mode": "page",
             "expectTabs": tabs,
             "collected": len(jobs),
             "details_ok": saved,
             "details_failed": failed,
+            "scrolls": collector.scroll_count,
+            "refreshes": collector.refresh_count,
+            "duration_sec": round(elapsed, 1),
             "jobs_in_db": exported["total_in_db"],
             "exported": str(args.export_json),
-            "inline": sender.summary() if sender else None,
+            "inline": inline_info,
         }
     except AbortError as error:
         console.error(f"内联发送终止：{error}")
@@ -345,8 +411,6 @@ def run_collect_page(args: argparse.Namespace, token: str | None, zp_token: str 
         console.info("可能还有另一个脚本在运行；请先退出那个终端，或检查 data/run.lock")
         return EXIT_ABORTED, {"mode": "page", "error": str(error)}
     finally:
-        if sender:
-            sender.close()
         client.close()
         print("[浏览器] 已断开")
 
@@ -354,7 +418,7 @@ def run_collect_page(args: argparse.Namespace, token: str | None, zp_token: str 
 def run_collect(args: argparse.Namespace, token: str | None, zp_token: str | None) -> tuple[int, dict]:
     """采集入口：默认页面模式，api 模式保留为备用。"""
     if args.collect_mode == "page":
-        return run_collect_page(args, token, zp_token)
+        return run_collect_page(args)
 
     params_file = Path(args.list_params)
     if not params_file.is_file():

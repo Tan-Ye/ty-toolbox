@@ -34,7 +34,7 @@ def load_auth(
         if (data.get("token") or data.get("zp_token")) and age_hours >= 12:
             print(
                 f"[提示] {auth_path.name} 已 {age_hours:.0f} 小时未更新，"
-                "token 可能已过期；发送失败时请删除该文件。"
+                "token 可能已过期；只有 --collect-mode api 需要它，页面模式可忽略。"
             )
     return token, zp_token
 

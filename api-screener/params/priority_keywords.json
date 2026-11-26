@@ -1,0 +1,28 @@
+{
+  "_help": "岗位优先级关键词：命中越多分数越高。英文按整词匹配（如 js 不会命中 json），中文按包含匹配；weight 为加分，正整数。直接增删 keywords 即可，修改后下次采集自动生效。",
+  "keywords": [
+    {"keyword": "前端", "weight": 4},
+    {"keyword": "vue", "weight": 5},
+    {"keyword": "react", "weight": 4},
+    {"keyword": "javascript", "weight": 4},
+    {"keyword": "js", "weight": 3},
+    {"keyword": "typescript", "weight": 3},
+    {"keyword": "ts", "weight": 2},
+    {"keyword": "node", "weight": 3},
+    {"keyword": "nodejs", "weight": 2},
+    {"keyword": "全栈", "weight": 3},
+    {"keyword": "python", "weight": 3},
+    {"keyword": "css", "weight": 2},
+    {"keyword": "html", "weight": 2},
+    {"keyword": "html5", "weight": 2},
+    {"keyword": "nuxt", "weight": 2},
+    {"keyword": "angular", "weight": 2},
+    {"keyword": "webpack", "weight": 1},
+    {"keyword": "ai", "weight": 2},
+    {"keyword": "人工智能", "weight": 2},
+    {"keyword": "大模型", "weight": 2},
+    {"keyword": "llm", "weight": 2},
+    {"keyword": "agent", "weight": 2},
+    {"keyword": "aigc", "weight": 1}
+  ]
+}

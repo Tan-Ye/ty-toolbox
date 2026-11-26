@@ -5,13 +5,12 @@
 流程：
   - 如果调试端口已经在监听，直接复用；
   - 否则启动 Chrome 并打开 BOSS 职位页；
-  - Chrome 就绪后自动执行 run_job_queue.py，默认 --stage all（采集 + 穿插发送）；
+  - Chrome 就绪后自动执行 run_job_queue.py，默认 --stage all（浏览采集 + 页面内沟通）；
   - 只想采集时加 --stage collect；未登录时由 run_job_queue.py 在终端提示登录。
 
 用法:
-  python start_chrome.py                  # 启动/复用 Chrome，然后采集 + 穿插发送
-  python start_chrome.py --stage collect  # 只采集，不发送
-  python start_chrome.py --stage send     # 只批量补发积压
+  python start_chrome.py                  # 启动/复用 Chrome，然后浏览采集 + 主动沟通
+  python start_chrome.py --stage collect  # 只浏览采集，不主动沟通
   python start_chrome.py --no-run         # 只启动 Chrome，不自动执行第二步
   python start_chrome.py --port 9222 --profile .chrome-profile
 """
@@ -101,7 +100,7 @@ def main() -> int:
     parser = argparse.ArgumentParser(description="启动 Chrome 并自动进入采集/穿插发送流程")
     parser.add_argument("--port", type=int, default=9222, help="调试端口，默认 9222")
     parser.add_argument("--profile", default=str(DEFAULT_PROFILE), help="Chrome 独立用户目录")
-    parser.add_argument("--url", default=DEFAULT_URL, help="打开并用于后续 fetch 的页面")
+    parser.add_argument("--url", default=DEFAULT_URL, help="打开并用于采集的职位页")
     parser.add_argument("--wait", type=float, default=30, help="等待调试端口就绪的秒数")
     parser.add_argument("--no-run", action="store_true", help="只启动 Chrome，不自动执行第二步")
     args, extra = parser.parse_known_args()
