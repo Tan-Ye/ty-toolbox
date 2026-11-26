@@ -26,3 +26,14 @@ icon_candidates_v*/
 Thumbs.db
 .DS_Store
 *.log
+
+# ===== BehaviorCollector 运行时数据（DB/日志/浏览器缓冲，禁止提交）=====
+behavior-collector/data/
+behavior-collector/src/**/data/
+behavior-collector/config.json
+behavior-collector/BehaviorCollector.lnk
+
+# ===== 本地工具链 / 临时验证产物 =====
+.dotnet/
+.nuget/
+.tmp/
