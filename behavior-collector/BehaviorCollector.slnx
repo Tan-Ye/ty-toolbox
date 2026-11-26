@@ -1,0 +1,10 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/BehaviorCollector.App/BehaviorCollector.App.csproj" />
+    <Project Path="src/BehaviorCollector.Collectors/BehaviorCollector.Collectors.csproj" />
+    <Project Path="src/BehaviorCollector.Core/BehaviorCollector.Core.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/BehaviorCollector.Tests/BehaviorCollector.Tests.csproj" />
+  </Folder>
+</Solution>

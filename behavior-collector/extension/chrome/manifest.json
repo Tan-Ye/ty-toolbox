@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "BehaviorCollector 浏览器采集",
+  "version": "0.1.0",
+  "description": "把 Chrome 标签页、URL 与窗口切换事件写入本机 BehaviorCollector。仅本机，不联网、不上传。",
+  "minimum_chrome_version": "116",
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAukBKsaR47QQD39URL0JBEkhUXTW5pG+gb8ac0pscAv0wBG3JX1K1NKMIwfOODmmNmvagGjkMxcr8KJSGCqccq4Yb2rit69V/4HTzBG/sNQyRbxl42CGQdTXvNCuguNdQLf9WBKdQjeBWaNu2FoCTYn8R2sBz11Jgx5zSBKwKFC0hGfXxW2HSHFhLHldiVHFKh1xh3F5xa4pNGAOaWgG8IVQ3+QDgiKTeyzqSqwYPkd5LR09t7WueLOT2EG6VQN/sD22wYOmjfegS8xYWgkAmQ9OhZvBq96epkkiD2Kqs+3hx0E/6utiP9n8YPQtySO9nN4qL/+faAXraTBbz64LtsQIDAQAB",
+  "permissions": [
+    "tabs",
+    "webNavigation",
+    "storage",
+    "nativeMessaging"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
