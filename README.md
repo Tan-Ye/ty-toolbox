@@ -17,3 +17,10 @@ BOSS 直聘自动采集与打招呼工具。复用已登录的真实 Chrome 页�
 - 源码：[ModBehaviour.cs](./DuckovMods/GuozuYa/ModBehaviour.cs)
 - 模组信息：[info.ini](./DuckovMods/GuozuYa/info.ini)
 - 图标：[preview.png](./DuckovMods/GuozuYa/preview.png)
+
+### [behavior-collector](./behavior-collector)
+
+Windows 电脑操作痕迹采集层（M0–M2 + M4 已实现，M3/UIA 后置）。常驻托盘采集应用启停、前台窗口、键鼠输入、Chrome 标签页与 URL、空闲区间，结构化写入本地 SQLite；只做采集，不做分析。技术栈：C# / .NET 10 + CsWin32 + SharpHook + SQLite。
+
+- 方案与里程碑：[behavior-collector/PLAN.md](./behavior-collector/PLAN.md)
+- 会话交接：[behavior-collector/HANDOFF.md](./behavior-collector/HANDOFF.md)
