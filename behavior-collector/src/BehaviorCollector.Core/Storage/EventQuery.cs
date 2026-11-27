@@ -8,7 +8,8 @@ public sealed record StatusSnapshot(
     IReadOnlyDictionary<string, int> TodayByKind,
     long TotalEvents,
     DateTimeOffset? LastEventAt,
-    long DbSizeBytes);
+    long DbSizeBytes,
+    bool Paused);
 
 /// <summary>只读查询：status 与 export。</summary>
 public static class EventQuery
@@ -21,7 +22,7 @@ public static class EventQuery
 
         if (!File.Exists(dbPath))
         {
-            return new StatusSnapshot(0, new Dictionary<string, int>(), 0, null, 0);
+            return new StatusSnapshot(0, new Dictionary<string, int>(), 0, null, 0, false);
         }
 
         using var conn = Database.CreateConnection(dbPath, readOnly: true);
@@ -60,7 +61,17 @@ public static class EventQuery
             }
         }
 
-        return new StatusSnapshot(todayTotal, byKind, total, last, new FileInfo(dbPath).Length);
+        // 暂停状态：最近一条 pause.start / pause.end 即当前状态（跨进程可查）。
+        var paused = false;
+        using (var cmd = conn.CreateCommand())
+        {
+            cmd.CommandText =
+                "SELECT kind FROM events WHERE kind IN ('pause.start', 'pause.end') ORDER BY ts DESC, id DESC LIMIT 1;";
+            var value = cmd.ExecuteScalar();
+            paused = value is string kind && string.Equals(kind, "pause.start", StringComparison.Ordinal);
+        }
+
+        return new StatusSnapshot(todayTotal, byKind, total, last, new FileInfo(dbPath).Length, paused);
     }
 
     /// <summary>导出 [from, to) 的事件为 JSONL，返回条数。</summary>

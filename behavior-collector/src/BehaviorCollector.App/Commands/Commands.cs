@@ -17,6 +17,7 @@ internal static class StatusCommand
         var payload = new
         {
             running = SingleInstance.IsRunning(),
+            paused = snapshot.Paused,
             dataDir = paths.DataDirectory,
             dbPath = paths.DatabasePath,
             dbSizeMb = Math.Round(snapshot.DbSizeBytes / 1024.0 / 1024.0, 2),

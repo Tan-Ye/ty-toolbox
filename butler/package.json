@@ -1,0 +1,25 @@
+{
+  "name": "butler",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "个人助理的时间线分析器：只读 BehaviorCollector 的 events.db，输出任意区间回放与日报",
+  "exports": {
+    ".": {
+      "types": "./src/lib.d.ts",
+      "default": "./src/lib.js"
+    },
+    "./lib": {
+      "types": "./src/lib.d.ts",
+      "default": "./src/lib.js"
+    }
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "kinds": "node src/index.js kinds",
+    "range": "node src/index.js range",
+    "daily": "node src/index.js daily"
+  }
+}

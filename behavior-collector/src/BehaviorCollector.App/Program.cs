@@ -34,7 +34,7 @@ internal static class Program
         }
 
         var mode = args.FirstOrDefault()?.ToLowerInvariant();
-        if (mode is "--status" or "export" or "--export" or "--quit" or "--help" or "-h")
+        if (mode is "--status" or "export" or "--export" or "--quit" or "--pause" or "--resume" or "--help" or "-h")
         {
             ConsoleBootstrap.AttachToParent();
             if (mode is "--help" or "-h")
@@ -46,6 +46,11 @@ internal static class Program
             if (mode is "--quit")
             {
                 return QuitRunningInstance();
+            }
+
+            if (mode is "--pause" or "--resume")
+            {
+                return SignalPause(mode == "--pause");
             }
 
             var (paths, config) = AppBootstrap.LoadConfiguration(withWatcher: false);
@@ -351,6 +356,29 @@ internal static class Program
         }
     }
 
+    /// <summary>跨进程暂停/继续：发一个命名事件给正在运行的托盘实例。</summary>
+    private static int SignalPause(bool paused)
+    {
+        var eventName = paused ? TrayApplicationContext.PauseEventName : TrayApplicationContext.ResumeEventName;
+        try
+        {
+            using var signal = EventWaitHandle.OpenExisting(eventName);
+            signal.Set();
+            Console.WriteLine(paused ? "已通知 BehaviorCollector 暂停采集" : "已通知 BehaviorCollector 继续采集");
+            return 0;
+        }
+        catch (WaitHandleCannotBeOpenedException)
+        {
+            Console.Error.WriteLine("BehaviorCollector 未在运行");
+            return 1;
+        }
+        catch (UnauthorizedAccessException)
+        {
+            Console.Error.WriteLine("无权通知 BehaviorCollector");
+            return 1;
+        }
+    }
+
     private static void PrintHelp()
     {
         Console.WriteLine($"""
@@ -360,6 +388,8 @@ internal static class Program
               BehaviorCollector                          启动托盘采集
               BehaviorCollector --status                 输出今日/累计统计 JSON
               BehaviorCollector export --from 2026-11-01 --to 2026-11-26 [--out events.jsonl]
+              BehaviorCollector --pause                  暂停采集（通知运行中的实例）
+              BehaviorCollector --resume                 继续采集（通知运行中的实例）
               BehaviorCollector --quit                   通知正在运行的实例退出
               BehaviorCollector --browser-host           Native Messaging 模式（由 Chrome 自动调用）
 

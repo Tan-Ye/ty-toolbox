@@ -162,6 +162,11 @@ public sealed class InputCollector : BackgroundService
     {
         try
         {
+            if (!_config.Current.Input.CollectKeys)
+            {
+                return;
+            }
+
             if (ShouldSkipInput())
             {
                 return;
@@ -271,6 +276,11 @@ public sealed class InputCollector : BackgroundService
     {
         try
         {
+            if (!_config.Current.Input.CollectMouseMove)
+            {
+                return;
+            }
+
             if (ShouldSkipInput())
             {
                 return;

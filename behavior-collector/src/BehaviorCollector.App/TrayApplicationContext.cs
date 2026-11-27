@@ -13,10 +13,14 @@ namespace BehaviorCollector.App;
 internal sealed class TrayApplicationContext : ApplicationContext
 {
     public const string QuitEventName = @"Local\BehaviorCollector.Quit";
+    public const string PauseEventName = @"Local\BehaviorCollector.Pause";
+    public const string ResumeEventName = @"Local\BehaviorCollector.Resume";
 
     private readonly NotifyIcon _notifyIcon;
     private readonly ToolStripMenuItem _pauseItem;
     private readonly EventWaitHandle _quitEvent;
+    private readonly EventWaitHandle _pauseSignal;
+    private readonly EventWaitHandle _resumeSignal;
     private readonly System.Windows.Forms.Timer _timer;
     private readonly EventBus _bus;
     private readonly PauseState _pause;
@@ -62,6 +66,8 @@ internal sealed class TrayApplicationContext : ApplicationContext
         _notifyIcon.DoubleClick += (_, _) => ShowStatus();
 
         _quitEvent = new EventWaitHandle(false, EventResetMode.AutoReset, QuitEventName);
+        _pauseSignal = new EventWaitHandle(false, EventResetMode.AutoReset, PauseEventName);
+        _resumeSignal = new EventWaitHandle(false, EventResetMode.AutoReset, ResumeEventName);
         _timer = new System.Windows.Forms.Timer { Interval = 1000 };
         _timer.Tick += OnTimerTick;
         _timer.Start();
@@ -97,6 +103,18 @@ internal sealed class TrayApplicationContext : ApplicationContext
         if (_quitEvent.WaitOne(0))
         {
             RequestExit();
+            return;
+        }
+
+        // 跨进程控制：--pause / --resume 各发一个命名事件，这里轮询置位。
+        if (_pauseSignal.WaitOne(0))
+        {
+            _pause.Set(true);
+        }
+
+        if (_resumeSignal.WaitOne(0))
+        {
+            _pause.Set(false);
         }
     }
 
@@ -151,6 +169,8 @@ internal sealed class TrayApplicationContext : ApplicationContext
             _timer.Dispose();
             _notifyIcon.Dispose();
             _quitEvent.Dispose();
+            _pauseSignal.Dispose();
+            _resumeSignal.Dispose();
             _pause.Changed -= OnPauseChanged;
         }
 

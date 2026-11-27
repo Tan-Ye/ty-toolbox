@@ -24,3 +24,9 @@ Windows 电脑操作痕迹采集层（M0–M2 + M4 已实现，M3/UIA 后置）�
 
 - 方案与里程碑：[behavior-collector/PLAN.md](./behavior-collector/PLAN.md)
 - 会话交接：[behavior-collector/HANDOFF.md](./behavior-collector/HANDOFF.md)
+
+### [butler](./butler)
+
+行为数据的时间线分析器：只读 behavior-collector 的 `events.db`，把事件整理成任意区间的回放和按天的日报（应用时长、用途分布、站点分布、搜索记录、专注碎片、采集空档），并把日报压成一条 ≤200 字的摘要写进 Kotana 的长期记忆（`memory` 命令，元数据里留溯源指针）。只读、本地、无网络请求。技术栈：Node.js 24 + `node:sqlite`。
+
+- 用法与扩展方式：[butler/README.md](./butler/README.md)

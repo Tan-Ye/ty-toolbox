@@ -1,0 +1,2194 @@
+{
+  "from": 1795622400000,
+  "to": 1795708800000,
+  "spanMs": 86400000,
+  "activeMs": 5987526,
+  "idleMs": 1064642,
+  "unrecordedMs": 79347832,
+  "appList": [
+    {
+      "name": "英雄联盟",
+      "apps": [
+        "leagueclientux.exe",
+        "league of legends.exe"
+      ],
+      "category": "游戏",
+      "ms": 2668382
+    },
+    {
+      "name": "Windows Terminal",
+      "apps": [
+        "windowsterminal.exe"
+      ],
+      "category": "开发",
+      "ms": 740188
+    },
+    {
+      "name": "资源管理器",
+      "apps": [
+        "explorer.exe"
+      ],
+      "category": "系统",
+      "ms": 546751
+    },
+    {
+      "name": "Trae",
+      "apps": [
+        "trae cn.exe"
+      ],
+      "category": "开发",
+      "ms": 537177
+    },
+    {
+      "name": "DeepSeek Harness",
+      "apps": [
+        "deepseek harness.exe"
+      ],
+      "category": "AI 工具",
+      "ms": 435718
+    },
+    {
+      "name": "PowerShell",
+      "apps": [
+        "powershell.exe"
+      ],
+      "category": "开发",
+      "ms": 430026
+    },
+    {
+      "name": "Chrome",
+      "apps": [
+        "chrome.exe"
+      ],
+      "category": "浏览器",
+      "ms": 391691
+    },
+    {
+      "name": "VMware Player",
+      "apps": [
+        "vmplayer.exe"
+      ],
+      "category": "系统工具",
+      "ms": 107047
+    },
+    {
+      "name": "任务管理器",
+      "apps": [
+        "taskmgr.exe"
+      ],
+      "category": "系统工具",
+      "ms": 81939
+    },
+    {
+      "name": "Pallas",
+      "apps": [
+        "pallas.exe"
+      ],
+      "category": "开发",
+      "ms": 23244
+    },
+    {
+      "name": "Edge",
+      "apps": [
+        "msedge.exe"
+      ],
+      "category": "浏览器",
+      "ms": 15811
+    },
+    {
+      "name": "Clash Verge",
+      "apps": [
+        "clash-verge.exe"
+      ],
+      "category": "系统工具",
+      "ms": 5847
+    },
+    {
+      "name": "NVIDIA",
+      "apps": [
+        "nvidia app.exe"
+      ],
+      "category": "系统工具",
+      "ms": 3705
+    }
+  ],
+  "switches": 92,
+  "clickCount": 28,
+  "searches": [
+    {
+      "ts": 1795678947494,
+      "engine": "Bing",
+      "query": "vmware tools"
+    },
+    {
+      "ts": 1795679146352,
+      "engine": "Bing",
+      "query": "dsh插件市场"
+    },
+    {
+      "ts": 1795696681070,
+      "engine": "Bing",
+      "query": "win11专业版镜像"
+    },
+    {
+      "ts": 1795696682474,
+      "engine": "Bing",
+      "query": "百度翻译"
+    },
+    {
+      "ts": 1795696695645,
+      "engine": "Bing",
+      "query": "豆包"
+    }
+  ],
+  "gaps": [
+    {
+      "from": 1795677915655,
+      "to": 1795678859130,
+      "ms": 943475
+    },
+    {
+      "from": 1795679219379,
+      "to": 1795680473549,
+      "ms": 1254170
+    },
+    {
+      "from": 1795682199492,
+      "to": 1795695557378,
+      "ms": 13357886
+    },
+    {
+      "from": 1795697038944,
+      "to": 1795697876983,
+      "ms": 838039
+    },
+    {
+      "from": 1795697902511,
+      "to": 1795699788100,
+      "ms": 1885589
+    },
+    {
+      "from": 1795701763428,
+      "to": 1795705910816,
+      "ms": 4147388
+    },
+    {
+      "from": 1795705910816,
+      "to": 1795707475720,
+      "ms": 1564904
+    }
+  ],
+  "segments": [
+    {
+      "from": 1795677159386,
+      "to": 1795677160400,
+      "app": "trae cn.exe",
+      "title": "继续完成 BehaviorCollector 开发",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795677159386
+    },
+    {
+      "from": 1795677160400,
+      "to": 1795677171496,
+      "app": "trae cn.exe",
+      "title": "继续完成 BehaviorCollector 开发",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795677160400
+    },
+    {
+      "from": 1795677171496,
+      "to": 1795677179954,
+      "app": "chrome.exe",
+      "title": "扩展程序 - Google Chrome",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795677171496
+    },
+    {
+      "from": 1795677179954,
+      "to": 1795677190457,
+      "app": "chrome.exe",
+      "title": "DevTools",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795677179954
+    },
+    {
+      "from": 1795677190457,
+      "to": 1795677195928,
+      "app": "chrome.exe",
+      "title": "扩展程序 - Google Chrome",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795677190457
+    },
+    {
+      "from": 1795677195928,
+      "to": 1795677204842,
+      "app": "trae cn.exe",
+      "title": "继续完成 BehaviorCollector 开发",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795677195928
+    },
+    {
+      "from": 1795677204842,
+      "to": 1795677214689,
+      "app": "chrome.exe",
+      "title": "扩展程序 - Google Chrome",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795677204842
+    },
+    {
+      "from": 1795677214689,
+      "to": 1795677217923,
+      "app": "explorer.exe",
+      "title": "software-and-data (D:) - 文件资源管理器",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795677214689
+    },
+    {
+      "from": 1795677217923,
+      "to": 1795677227711,
+      "app": "explorer.exe",
+      "title": "code-tasks - 文件资源管理器",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795677217923
+    },
+    {
+      "from": 1795677227711,
+      "to": 1795677233429,
+      "app": "explorer.exe",
+      "title": "chrome - 文件资源管理器",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795677227711
+    },
+    {
+      "from": 1795677233429,
+      "to": 1795677244986,
+      "app": "trae cn.exe",
+      "title": "继续完成 BehaviorCollector 开发",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795677233429
+    },
+    {
+      "from": 1795677244986,
+      "to": 1795677262123,
+      "app": "leagueclientux.exe",
+      "title": "League of Legends",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795677244986
+    },
+    {
+      "from": 1795677262123,
+      "to": 1795677307679,
+      "app": "leagueclientux.exe",
+      "title": "League of Legends",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795677262123
+    },
+    {
+      "from": 1795677307679,
+      "to": 1795677313526,
+      "app": "clash-verge.exe",
+      "title": "Clash Verge",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795677307679
+    },
+    {
+      "from": 1795677313526,
+      "to": 1795677319561,
+      "app": "trae cn.exe",
+      "title": "继续完成 BehaviorCollector 开发",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795677313526
+    },
+    {
+      "from": 1795677319561,
+      "to": 1795677379734,
+      "app": "league of legends.exe",
+      "title": "League of Legends (TM) Client",
+      "url": null,
+      "fullscreen": true,
+      "lastConfirm": 1795677319561
+    },
+    {
+      "from": 1795678859130,
+      "to": 1795678862009,
+      "app": "pallas.exe",
+      "title": "",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795678859130
+    },
+    {
+      "from": 1795678862009,
+      "to": 1795678867654,
+      "app": "trae cn.exe",
+      "title": "继续完成 BehaviorCollector 开发",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795678862009
+    },
+    {
+      "from": 1795678867654,
+      "to": 1795678888452,
+      "app": "trae cn.exe",
+      "title": "继续完成 BehaviorCollector 开发",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795678867654
+    },
+    {
+      "from": 1795678888452,
+      "to": 1795678902312,
+      "app": "explorer.exe",
+      "title": "behavior-collector - 文件资源管理器",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795678888452
+    },
+    {
+      "from": 1795678902312,
+      "to": 1795678917413,
+      "app": "trae cn.exe",
+      "title": "继续完成 BehaviorCollector 开发",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795678902312
+    },
+    {
+      "from": 1795678917413,
+      "to": 1795678928394,
+      "app": "chrome.exe",
+      "title": "扩展程序 - Google Chrome",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795678917413
+    },
+    {
+      "from": 1795678928394,
+      "to": 1795678938792,
+      "app": "trae cn.exe",
+      "title": "继续完成 BehaviorCollector 开发",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795678928394
+    },
+    {
+      "from": 1795678938792,
+      "to": 1795678948053,
+      "app": "chrome.exe",
+      "title": "扩展程序 - Google Chrome",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795678938792
+    },
+    {
+      "from": 1795678948053,
+      "to": 1795678956605,
+      "app": "chrome.exe",
+      "title": "安装 VMware Tools",
+      "url": "https://techdocs.broadcom.com/cn/zh-cn/vmware-cis/vsphere/tools/12-5-0/vmware-tools-administration-12-5-0/installing-vmware-tools.html",
+      "fullscreen": false,
+      "lastConfirm": 1795678948066
+    },
+    {
+      "from": 1795678956605,
+      "to": 1795678965140,
+      "app": "chrome.exe",
+      "title": "扩展程序 - Google Chrome",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795678956605
+    },
+    {
+      "from": 1795678965140,
+      "to": 1795678971025,
+      "app": "chrome.exe",
+      "title": "DevTools",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795678965140
+    },
+    {
+      "from": 1795678971025,
+      "to": 1795678979483,
+      "app": "chrome.exe",
+      "title": "扩展程序 - BehaviorCollector 浏览器采集 - Google Chrome",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795678971025
+    },
+    {
+      "from": 1795678979483,
+      "to": 1795678987968,
+      "app": "trae cn.exe",
+      "title": "继续完成 BehaviorCollector 开发",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795678979483
+    },
+    {
+      "from": 1795678987968,
+      "to": 1795678991238,
+      "app": "leagueclientux.exe",
+      "title": "League of Legends",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795678987968
+    },
+    {
+      "from": 1795678991238,
+      "to": 1795678999870,
+      "app": "trae cn.exe",
+      "title": "继续完成 BehaviorCollector 开发",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795678991238
+    },
+    {
+      "from": 1795678999870,
+      "to": 1795679026209,
+      "app": "explorer.exe",
+      "title": "behavior-collector - 文件资源管理器",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795678999870
+    },
+    {
+      "from": 1795679026209,
+      "to": 1795679034339,
+      "app": "explorer.exe",
+      "title": "behavior-collector - 文件资源管理器",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795679030311
+    },
+    {
+      "from": 1795679034339,
+      "to": 1795679060981,
+      "app": "trae cn.exe",
+      "title": "继续完成 BehaviorCollector 开发",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795679034339
+    },
+    {
+      "from": 1795679060981,
+      "to": 1795679065805,
+      "app": "explorer.exe",
+      "title": "tests - 文件资源管理器",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795679060981
+    },
+    {
+      "from": 1795679065805,
+      "to": 1795679085769,
+      "app": "explorer.exe",
+      "title": "data - 文件资源管理器",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795679065805
+    },
+    {
+      "from": 1795679085769,
+      "to": 1795679098038,
+      "app": "explorer.exe",
+      "title": "系统托盘溢出窗口。",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795679085769
+    },
+    {
+      "from": 1795679098038,
+      "to": 1795679219008,
+      "app": "trae cn.exe",
+      "title": "继续完成 BehaviorCollector 开发",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795679098038
+    },
+    {
+      "from": 1795679219379,
+      "to": 1795679819379,
+      "app": "league of legends.exe",
+      "title": "League of Legends (TM) Client",
+      "url": null,
+      "fullscreen": true,
+      "lastConfirm": 1795679219379
+    },
+    {
+      "from": 1795680473571,
+      "to": 1795680476311,
+      "app": "explorer.exe",
+      "title": "net10.0-windows - 文件资源管理器",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795680473571
+    },
+    {
+      "from": 1795680476311,
+      "to": 1795680484355,
+      "app": "explorer.exe",
+      "title": "系统托盘溢出窗口。",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795680476311
+    },
+    {
+      "from": 1795680484355,
+      "to": 1795680504434,
+      "app": "taskmgr.exe",
+      "title": "任务管理器",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795680484355
+    },
+    {
+      "from": 1795680504434,
+      "to": 1795680530567,
+      "app": "taskmgr.exe",
+      "title": "任务管理器",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795680504434
+    },
+    {
+      "from": 1795680530567,
+      "to": 1795680543603,
+      "app": "trae cn.exe",
+      "title": "继续完成 BehaviorCollector 开发",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795680530567
+    },
+    {
+      "from": 1795680543603,
+      "to": 1795680553695,
+      "app": "explorer.exe",
+      "title": "系统托盘溢出窗口。",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795680543603
+    },
+    {
+      "from": 1795680553695,
+      "to": 1795680557598,
+      "app": "explorer.exe",
+      "title": "net10.0-windows - 文件资源管理器",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795680556588
+    },
+    {
+      "from": 1795680557598,
+      "to": 1795680563562,
+      "app": "explorer.exe",
+      "title": "系统托盘溢出窗口。",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795680557598
+    },
+    {
+      "from": 1795680563562,
+      "to": 1795680572708,
+      "app": "taskmgr.exe",
+      "title": "任务管理器",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795680563562
+    },
+    {
+      "from": 1795680572708,
+      "to": 1795680596489,
+      "app": "trae cn.exe",
+      "title": "继续完成 BehaviorCollector 开发",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795680572708
+    },
+    {
+      "from": 1795680596489,
+      "to": 1795680600091,
+      "app": "trae cn.exe",
+      "title": "继续完成 BehaviorCollector 开发",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795680596489
+    },
+    {
+      "from": 1795680600091,
+      "to": 1795680629926,
+      "app": "trae cn.exe",
+      "title": "继续完成 BehaviorCollector 开发",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795680600091
+    },
+    {
+      "from": 1795680629926,
+      "to": 1795680658201,
+      "app": "explorer.exe",
+      "title": "系统托盘溢出窗口。",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795680629926
+    },
+    {
+      "from": 1795680658201,
+      "to": 1795680667903,
+      "app": "trae cn.exe",
+      "title": "继续完成 BehaviorCollector 开发",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795680658201
+    },
+    {
+      "from": 1795680667903,
+      "to": 1795680688411,
+      "app": "taskmgr.exe",
+      "title": "任务管理器",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795680667903
+    },
+    {
+      "from": 1795680688411,
+      "to": 1795680710642,
+      "app": "trae cn.exe",
+      "title": "继续完成 BehaviorCollector 开发",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795680688411
+    },
+    {
+      "from": 1795680710642,
+      "to": 1795680716715,
+      "app": "taskmgr.exe",
+      "title": "任务管理器",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795680710642
+    },
+    {
+      "from": 1795680716715,
+      "to": 1795680728353,
+      "app": "trae cn.exe",
+      "title": "继续完成 BehaviorCollector 开发",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795680716715
+    },
+    {
+      "from": 1795680728353,
+      "to": 1795680747201,
+      "app": "explorer.exe",
+      "title": "系统托盘溢出窗口。",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795680728353
+    },
+    {
+      "from": 1795680747201,
+      "to": 1795680752724,
+      "app": "trae cn.exe",
+      "title": "继续完成 BehaviorCollector 开发",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795680747201
+    },
+    {
+      "from": 1795680752724,
+      "to": 1795680758595,
+      "app": "explorer.exe",
+      "title": "系统托盘溢出窗口。",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795680752724
+    },
+    {
+      "from": 1795680758595,
+      "to": 1795680793684,
+      "app": "trae cn.exe",
+      "title": "继续完成 BehaviorCollector 开发",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795680758595
+    },
+    {
+      "from": 1795680811809,
+      "to": 1795680817773,
+      "app": "trae cn.exe",
+      "title": "继续完成 BehaviorCollector 开发",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795680811809
+    },
+    {
+      "from": 1795680817773,
+      "to": 1795680837960,
+      "app": "powershell.exe",
+      "title": "打开文件 - 安全警告",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795680817773
+    },
+    {
+      "from": 1795680837960,
+      "to": 1795680844489,
+      "app": "trae cn.exe",
+      "title": "继续完成 BehaviorCollector 开发",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795680839490
+    },
+    {
+      "from": 1795680844489,
+      "to": 1795680866891,
+      "app": "explorer.exe",
+      "title": "系统托盘溢出窗口。",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795680844489
+    },
+    {
+      "from": 1795680923449,
+      "to": 1795680940537,
+      "app": "explorer.exe",
+      "title": "net10.0-windows - 文件资源管理器",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795680923449
+    },
+    {
+      "from": 1795680940537,
+      "to": 1795680967982,
+      "app": "trae cn.exe",
+      "title": "继续完成 BehaviorCollector 开发",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795680940537
+    },
+    {
+      "from": 1795680967982,
+      "to": 1795680972406,
+      "app": "explorer.exe",
+      "title": "系统托盘溢出窗口。",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795680967982
+    },
+    {
+      "from": 1795680972406,
+      "to": 1795681017294,
+      "app": "explorer.exe",
+      "title": "",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795681017163
+    },
+    {
+      "from": 1795681017294,
+      "to": 1795681046623,
+      "app": "explorer.exe",
+      "title": "系统托盘溢出窗口。",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795681017294
+    },
+    {
+      "from": 1795681046623,
+      "to": 1795681061677,
+      "app": "trae cn.exe",
+      "title": "继续完成 BehaviorCollector 开发",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795681046623
+    },
+    {
+      "from": 1795681061677,
+      "to": 1795681066130,
+      "app": "explorer.exe",
+      "title": "系统托盘溢出窗口。",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795681061677
+    },
+    {
+      "from": 1795681066130,
+      "to": 1795681080780,
+      "app": "explorer.exe",
+      "title": "",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795681066130
+    },
+    {
+      "from": 1795681080780,
+      "to": 1795681099781,
+      "app": "trae cn.exe",
+      "title": "继续完成 BehaviorCollector 开发",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795681080780
+    },
+    {
+      "from": 1795681099781,
+      "to": 1795681103219,
+      "app": "explorer.exe",
+      "title": "net10.0-windows - 文件资源管理器",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795681101001
+    },
+    {
+      "from": 1795681103219,
+      "to": 1795681108287,
+      "app": "trae cn.exe",
+      "title": "继续完成 BehaviorCollector 开发",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795681103219
+    },
+    {
+      "from": 1795681108287,
+      "to": 1795681121592,
+      "app": "explorer.exe",
+      "title": "net10.0-windows - 文件资源管理器",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795681108287
+    },
+    {
+      "from": 1795681121592,
+      "to": 1795681132875,
+      "app": "explorer.exe",
+      "title": "系统托盘溢出窗口。",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795681121592
+    },
+    {
+      "from": 1795681132875,
+      "to": 1795681147338,
+      "app": "trae cn.exe",
+      "title": "继续完成 BehaviorCollector 开发",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795681132875
+    },
+    {
+      "from": 1795681147338,
+      "to": 1795681158826,
+      "app": "trae cn.exe",
+      "title": "测试虚拟机MCP服务连接",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795681147338
+    },
+    {
+      "from": 1795681158826,
+      "to": 1795681171516,
+      "app": "trae cn.exe",
+      "title": "测试虚拟机MCP服务连接",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795681158826
+    },
+    {
+      "from": 1795681177255,
+      "to": 1795681294491,
+      "app": "windowsterminal.exe",
+      "title": "C:\\Program Files\\dotnet\\dotnet.exe",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795681177255
+    },
+    {
+      "from": 1795681294491,
+      "to": 1795681346353,
+      "app": "explorer.exe",
+      "title": "系统托盘溢出窗口。",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795681294491
+    },
+    {
+      "from": 1795681346432,
+      "to": 1795681366416,
+      "app": "windowsterminal.exe",
+      "title": "C:\\Program Files\\dotnet\\dotnet.exe",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795681346432
+    },
+    {
+      "from": 1795681444863,
+      "to": 1795681450044,
+      "app": "explorer.exe",
+      "title": "",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795681444863
+    },
+    {
+      "from": 1795681450044,
+      "to": 1795681462440,
+      "app": "explorer.exe",
+      "title": "data - 文件资源管理器",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795681457804
+    },
+    {
+      "from": 1795681462440,
+      "to": 1795681477095,
+      "app": "vmplayer.exe",
+      "title": "Windows 11 x64- VMware Workstation 17 Player",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795681477000
+    },
+    {
+      "from": 1795681477095,
+      "to": 1795682080063,
+      "app": "windowsterminal.exe",
+      "title": "C:\\Program Files\\dotnet\\dotnet.exe",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795681480063
+    },
+    {
+      "from": 1795695905063,
+      "to": 1795695995193,
+      "app": "deepseek harness.exe",
+      "title": "DeepSeek Harness",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795695905063
+    },
+    {
+      "from": 1795696051907,
+      "to": 1795696060946,
+      "app": "deepseek harness.exe",
+      "title": "DeepSeek Harness",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795696051907
+    },
+    {
+      "from": 1795696060946,
+      "to": 1795696067563,
+      "app": "deepseek harness.exe",
+      "title": "DeepSeek Harness",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795696060946
+    },
+    {
+      "from": 1795696067563,
+      "to": 1795696072973,
+      "app": "deepseek harness.exe",
+      "title": "DeepSeek Harness",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795696067563
+    },
+    {
+      "from": 1795696502279,
+      "to": 1795696507611,
+      "app": "deepseek harness.exe",
+      "title": "接手 M0，确认决策点 — DeepSeek Harness",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795696502279
+    },
+    {
+      "from": 1795696507611,
+      "to": 1795696656212,
+      "app": "deepseek harness.exe",
+      "title": "审查 api-screener 脚本功能 — DeepSeek Harness",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795696507611
+    },
+    {
+      "from": 1795696656212,
+      "to": 1795696666139,
+      "app": "deepseek harness.exe",
+      "title": "接手 M0，确认决策点 — DeepSeek Harness",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795696656212
+    },
+    {
+      "from": 1795696666139,
+      "to": 1795696674835,
+      "app": "chrome.exe",
+      "title": "IDE打开db文件插件 - DeepSeek - Google Chrome",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795696666139
+    },
+    {
+      "from": 1795696674835,
+      "to": 1795696685997,
+      "app": "chrome.exe",
+      "title": "zxrobin01/vmware-console-mcp: mcp tool to help agents control vmware virtual machines. support local vmware player virtrual machines and esxi servers.",
+      "url": "https://github.com/zxrobin01/vmware-console-mcp",
+      "fullscreen": false,
+      "lastConfirm": 1795696675889
+    },
+    {
+      "from": 1795696685997,
+      "to": 1795696699279,
+      "app": "chrome.exe",
+      "title": "Page not found",
+      "url": "https://www.vmware.com/info?id=151",
+      "fullscreen": false,
+      "lastConfirm": 1795696687319
+    },
+    {
+      "from": 1795696699279,
+      "to": 1795696722737,
+      "app": "chrome.exe",
+      "title": "DeepSeek - 探索未至之境 - Google Chrome",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795696699279
+    },
+    {
+      "from": 1795696722737,
+      "to": 1795696736825,
+      "app": "chrome.exe",
+      "title": "DeepSeek - 探索未至之境",
+      "url": "https://chat.deepseek.com/a/chat/s/0743df19-a8db-4708-98a6-06281e46dd61",
+      "fullscreen": false,
+      "lastConfirm": 1795696736620
+    },
+    {
+      "from": 1795696736825,
+      "to": 1795696791779,
+      "app": "chrome.exe",
+      "title": "游泳上半身前倾下沉纠正 - DeepSeek - Google Chrome",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795696736825
+    },
+    {
+      "from": 1795696791779,
+      "to": 1795696795741,
+      "app": "chrome.exe",
+      "title": "Index of tools/releases/latest/windows/",
+      "url": "https://packages-prod.broadcom.com/tools/releases/latest/windows/",
+      "fullscreen": false,
+      "lastConfirm": 1795696793416
+    },
+    {
+      "from": 1795696795741,
+      "to": 1795696800242,
+      "app": "chrome.exe",
+      "title": "dsh插件市场 - 搜索",
+      "url": "https://www.bing.com/search?q=dsh%E6%8F%92%E4%BB%B6%E5%B8%82%E5%9C%BA&PC=U316&FORM=CHROMN",
+      "fullscreen": false,
+      "lastConfirm": 1795696795741
+    },
+    {
+      "from": 1795696800242,
+      "to": 1795696817056,
+      "app": "deepseek harness.exe",
+      "title": "接手 M0，确认决策点 — DeepSeek Harness",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795696800242
+    },
+    {
+      "from": 1795696817056,
+      "to": 1795696826807,
+      "app": "trae cn.exe",
+      "title": "● events.db - ty-toolbox - TRAE CN",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795696817056
+    },
+    {
+      "from": 1795696826807,
+      "to": 1795696938677,
+      "app": "leagueclientux.exe",
+      "title": "League of Legends",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795696826807
+    },
+    {
+      "from": 1795696938677,
+      "to": 1795696944604,
+      "app": "leagueclientux.exe",
+      "title": "League of Legends",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795696938677
+    },
+    {
+      "from": 1795696944604,
+      "to": 1795696984194,
+      "app": "leagueclientux.exe",
+      "title": "League of Legends",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795696944604
+    },
+    {
+      "from": 1795696984194,
+      "to": 1795696988118,
+      "app": "explorer.exe",
+      "title": "Program Manager",
+      "url": null,
+      "fullscreen": true,
+      "lastConfirm": 1795696984328
+    },
+    {
+      "from": 1795696988118,
+      "to": 1795697588141,
+      "app": "league of legends.exe",
+      "title": "League of Legends (TM) Client",
+      "url": null,
+      "fullscreen": true,
+      "lastConfirm": 1795696988141
+    },
+    {
+      "from": 1795697876983,
+      "to": 1795697885455,
+      "app": "pallas.exe",
+      "title": "",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795697876983
+    },
+    {
+      "from": 1795697885455,
+      "to": 1795697891354,
+      "app": "leagueclientux.exe",
+      "title": "League of Legends",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795697885455
+    },
+    {
+      "from": 1795697891354,
+      "to": 1795697902511,
+      "app": "deepseek harness.exe",
+      "title": "接手 M0，确认决策点 — DeepSeek Harness",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795697891354
+    },
+    {
+      "from": 1795699934992,
+      "to": 1795699990422,
+      "app": "vmplayer.exe",
+      "title": "Windows 11 x64- VMware Workstation 17 Player",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795699934992
+    },
+    {
+      "from": 1795699990422,
+      "to": 1795700590422,
+      "app": "league of legends.exe",
+      "title": "League of Legends (TM) Client",
+      "url": null,
+      "fullscreen": true,
+      "lastConfirm": 1795699990422
+    },
+    {
+      "from": 1795701003995,
+      "to": 1795701009244,
+      "app": "pallas.exe",
+      "title": "",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795701003995
+    },
+    {
+      "from": 1795701009244,
+      "to": 1795701012464,
+      "app": "deepseek harness.exe",
+      "title": "接手 M0，确认决策点 — DeepSeek Harness",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795701009244
+    },
+    {
+      "from": 1795701012464,
+      "to": 1795701028279,
+      "app": "deepseek harness.exe",
+      "title": "审查 api-screener 脚本功能 — DeepSeek Harness",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795701012464
+    },
+    {
+      "from": 1795701028279,
+      "to": 1795701065241,
+      "app": "vmplayer.exe",
+      "title": "Windows 11 x64- VMware Workstation 17 Player",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795701028279
+    },
+    {
+      "from": 1795701065241,
+      "to": 1795701070594,
+      "app": "deepseek harness.exe",
+      "title": "审查 api-screener 脚本功能 — DeepSeek Harness",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795701065241
+    },
+    {
+      "from": 1795701070594,
+      "to": 1795701080683,
+      "app": "leagueclientux.exe",
+      "title": "League of Legends",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795701070594
+    },
+    {
+      "from": 1795701080683,
+      "to": 1795701087327,
+      "app": "pallas.exe",
+      "title": "CENTER_WEB_VIEW",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795701080683
+    },
+    {
+      "from": 1795701087327,
+      "to": 1795701097102,
+      "app": "deepseek harness.exe",
+      "title": "接手 M0，确认决策点 — DeepSeek Harness",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795701087327
+    },
+    {
+      "from": 1795701097102,
+      "to": 1795701126627,
+      "app": "leagueclientux.exe",
+      "title": "League of Legends",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795701097102
+    },
+    {
+      "from": 1795701126627,
+      "to": 1795701131443,
+      "app": "deepseek harness.exe",
+      "title": "接手 M0，确认决策点 — DeepSeek Harness",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795701126917
+    },
+    {
+      "from": 1795701131443,
+      "to": 1795701632263,
+      "app": "league of legends.exe",
+      "title": "League of Legends (TM) Client",
+      "url": null,
+      "fullscreen": true,
+      "lastConfirm": 1795701131481
+    },
+    {
+      "from": 1795701632263,
+      "to": 1795701667145,
+      "app": "league of legends.exe",
+      "title": "League of Legends (TM) Client",
+      "url": null,
+      "fullscreen": true,
+      "lastConfirm": 1795701632263
+    },
+    {
+      "from": 1795701667145,
+      "to": 1795701728674,
+      "app": "deepseek harness.exe",
+      "title": "接手 M0，确认决策点 — DeepSeek Harness",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795701688613
+    },
+    {
+      "from": 1795701728674,
+      "to": 1795701732379,
+      "app": "nvidia app.exe",
+      "title": "NVIDIA",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795701728674
+    },
+    {
+      "from": 1795707475747,
+      "to": 1795707885586,
+      "app": "powershell.exe",
+      "title": "打开文件 - 安全警告",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795707475747
+    },
+    {
+      "from": 1795707887637,
+      "to": 1795707891258,
+      "app": "leagueclientux.exe",
+      "title": "League of Legends",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795707887637
+    },
+    {
+      "from": 1795707891258,
+      "to": 1795707923441,
+      "app": "deepseek harness.exe",
+      "title": "没有真正意义上的AI助理 — DeepSeek Harness",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795707920090
+    },
+    {
+      "from": 1795707923441,
+      "to": 1795707927641,
+      "app": "chrome.exe",
+      "title": "游泳上半身前倾下沉纠正 - DeepSeek",
+      "url": "https://chat.deepseek.com/a/chat/s/0743df19-a8db-4708-98a6-06281e46dd61",
+      "fullscreen": false,
+      "lastConfirm": 1795707923441
+    },
+    {
+      "from": 1795707927641,
+      "to": 1795707966045,
+      "app": "chrome.exe",
+      "title": "DeepSeek - 探索未至之境 - Google Chrome",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795707927641
+    },
+    {
+      "from": 1795707966045,
+      "to": 1795707979754,
+      "app": "chrome.exe",
+      "title": "DeepSeek - 探索未至之境",
+      "url": "https://chat.deepseek.com/a/chat/s/87845dcc-32bb-4de8-8e6d-902395bfc79b",
+      "fullscreen": false,
+      "lastConfirm": 1795707979544
+    },
+    {
+      "from": 1795707979754,
+      "to": 1795708021209,
+      "app": "chrome.exe",
+      "title": "暗影精灵仅关屏不睡眠 - DeepSeek - Google Chrome",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795707983619
+    },
+    {
+      "from": 1795708021209,
+      "to": 1795708033528,
+      "app": "chrome.exe",
+      "title": "暗影精灵仅关屏不睡眠 - DeepSeek - Google Chrome",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795708021209
+    },
+    {
+      "from": 1795708033528,
+      "to": 1795708038787,
+      "app": "explorer.exe",
+      "title": "UnlockingWindow",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795708033528
+    },
+    {
+      "from": 1795708038787,
+      "to": 1795708078418,
+      "app": "chrome.exe",
+      "title": "暗影精灵仅关屏不睡眠 - DeepSeek - Google Chrome",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795708038787
+    },
+    {
+      "from": 1795708078418,
+      "to": 1795708118503,
+      "app": "explorer.exe",
+      "title": "",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795708078418
+    },
+    {
+      "from": 1795708118503,
+      "to": 1795708140422,
+      "app": "chrome.exe",
+      "title": "暗影精灵仅关屏不睡眠 - DeepSeek - Google Chrome",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795708118503
+    },
+    {
+      "from": 1795708140422,
+      "to": 1795708156233,
+      "app": "msedge.exe",
+      "title": "如何在 Windows 11 中调整电源和睡眠设置 - 搜索 - 用户配置 1 - Microsoft​ Edge",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795708155994
+    },
+    {
+      "from": 1795708156233,
+      "to": 1795708231154,
+      "app": "explorer.exe",
+      "title": "",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795708156233
+    }
+  ],
+  "navs": [
+    {
+      "ts": 1795677325757,
+      "phase": "nav",
+      "url": "https://example.com/bc-selftest",
+      "title": "BC selftest",
+      "host": "example.com"
+    },
+    {
+      "ts": 1795678947494,
+      "phase": "activate",
+      "url": "https://www.bing.com/search?q=vmware%20tools&qs=n&form=QBRE&sp=-1&lq=0&pq=vmware%20tools%E4%B8%8B%E8%BD%BD&sc=15-14&sk=&cvid=2958CC76DCDD407E8326262DEEAB90A6&ntref=1",
+      "title": "vmware tools - 搜索",
+      "host": "bing.com"
+    },
+    {
+      "ts": 1795678948053,
+      "phase": "activate",
+      "url": "https://techdocs.broadcom.com/cn/zh-cn/vmware-cis/vsphere/tools/12-5-0/vmware-tools-administration-12-5-0/installing-vmware-tools.html",
+      "title": "安装 VMware Tools",
+      "host": "techdocs.broadcom.com"
+    },
+    {
+      "ts": 1795678948066,
+      "phase": "nav",
+      "url": "https://techdocs.broadcom.com/cn/zh-cn/vmware-cis/vsphere/tools/12-5-0/vmware-tools-administration-12-5-0/installing-vmware-tools.html",
+      "title": "安装 VMware Tools",
+      "host": "techdocs.broadcom.com"
+    },
+    {
+      "ts": 1795678955498,
+      "phase": "activate",
+      "url": "https://techdocs.broadcom.com/cn/zh-cn/vmware-cis/vsphere/tools/12-5-0/vmware-tools-administration-12-5-0/installing-vmware-tools.html",
+      "title": "安装 VMware Tools",
+      "host": "techdocs.broadcom.com"
+    },
+    {
+      "ts": 1795678975898,
+      "phase": "activate",
+      "url": "https://github.com/zxrobin01/vmware-console-mcp",
+      "title": "zxrobin01/vmware-console-mcp: mcp tool to help agents control vmware virtual machines. support local vmware player virtrual machines and esxi servers.",
+      "host": "github.com"
+    },
+    {
+      "ts": 1795678976954,
+      "phase": "nav",
+      "url": "https://github.com/zxrobin01/vmware-console-mcp",
+      "title": "zxrobin01/vmware-console-mcp: mcp tool to help agents control vmware virtual machines. support local vmware player virtrual machines and esxi servers.",
+      "host": "github.com"
+    },
+    {
+      "ts": 1795678977026,
+      "phase": "activate",
+      "url": "https://www.vmware.com/site-search?page=1&q=tools&sort_by=Relevance&tab=",
+      "title": "Search Results",
+      "host": "vmware.com"
+    },
+    {
+      "ts": 1795679092150,
+      "phase": "activate",
+      "url": "https://www.vmware.com/site-search?page=1&q=tools&sort_by=Relevance&tab=",
+      "title": "Search Results",
+      "host": "vmware.com"
+    },
+    {
+      "ts": 1795679093448,
+      "phase": "activate",
+      "url": "https://dshmarket.com/zh/",
+      "title": "DeepSeek Harness 插件市场 — 13281 个 dsh 插件 · dsh-market",
+      "host": "dshmarket.com"
+    },
+    {
+      "ts": 1795679093456,
+      "phase": "nav",
+      "url": "https://dshmarket.com/zh/",
+      "title": "DeepSeek Harness 插件市场 — 13281 个 dsh 插件 · dsh-market",
+      "host": "dshmarket.com"
+    },
+    {
+      "ts": 1795679146352,
+      "phase": "activate",
+      "url": "https://www.bing.com/search?q=dsh%E6%8F%92%E4%BB%B6%E5%B8%82%E5%9C%BA&PC=U316&FORM=CHROMN",
+      "title": "dsh插件市场 - 搜索",
+      "host": "bing.com"
+    },
+    {
+      "ts": 1795679146364,
+      "phase": "nav",
+      "url": "https://www.bing.com/search?q=dsh%E6%8F%92%E4%BB%B6%E5%B8%82%E5%9C%BA&PC=U316&FORM=CHROMN",
+      "title": "dsh插件市场 - 搜索",
+      "host": "bing.com"
+    },
+    {
+      "ts": 1795679146848,
+      "phase": "activate",
+      "url": "https://dshmarket.com/zh/",
+      "title": "DeepSeek Harness 插件市场 — 13281 个 dsh 插件 · dsh-market",
+      "host": "dshmarket.com"
+    },
+    {
+      "ts": 1795680515100,
+      "phase": "activate",
+      "url": "https://dshmarket.com/zh/",
+      "title": "DeepSeek Harness 插件市场 — 13281 个 dsh 插件 · dsh-market",
+      "host": "dshmarket.com"
+    },
+    {
+      "ts": 1795680516435,
+      "phase": "activate",
+      "url": "https://www.bing.com/search?q=dsh%E6%8F%92%E4%BB%B6%E5%B8%82%E5%9C%BA&PC=U316&FORM=CHROMN",
+      "title": "dsh插件市场 - 搜索",
+      "host": "bing.com"
+    },
+    {
+      "ts": 1795680524599,
+      "phase": "activate",
+      "url": "https://techdocs.broadcom.com/cn/zh-cn/vmware-cis/vsphere/tools/12-5-0/vmware-tools-administration-12-5-0/installing-vmware-tools.html",
+      "title": "安装 VMware Tools",
+      "host": "techdocs.broadcom.com"
+    },
+    {
+      "ts": 1795680525127,
+      "phase": "activate",
+      "url": "https://packages-prod.broadcom.com/tools/frozen/",
+      "title": "Index of tools/frozen/",
+      "host": "packages-prod.broadcom.com"
+    },
+    {
+      "ts": 1795680526298,
+      "phase": "nav",
+      "url": "https://packages-prod.broadcom.com/tools/frozen/",
+      "title": "Index of tools/frozen/",
+      "host": "packages-prod.broadcom.com"
+    },
+    {
+      "ts": 1795680527551,
+      "phase": "activate",
+      "url": "https://techdocs.broadcom.com/cn/zh-cn/vmware-cis/vsphere/tools/12-5-0/vmware-tools-administration-12-5-0/installing-vmware-tools.html",
+      "title": "安装 VMware Tools",
+      "host": "techdocs.broadcom.com"
+    },
+    {
+      "ts": 1795680527982,
+      "phase": "activate",
+      "url": "https://www.bing.com/search?q=vmware%20tools&qs=n&form=QBRE&sp=-1&lq=0&pq=vmware%20tools%E4%B8%8B%E8%BD%BD&sc=15-14&sk=&cvid=2958CC76DCDD407E8326262DEEAB90A6&ntref=1",
+      "title": "vmware tools - 搜索",
+      "host": "bing.com"
+    },
+    {
+      "ts": 1795681938262,
+      "phase": "activate",
+      "url": "https://www.bing.com/search?q=vmware%20tools&qs=n&form=QBRE&sp=-1&lq=0&pq=vmware%20tools%E4%B8%8B%E8%BD%BD&sc=15-14&sk=&cvid=2958CC76DCDD407E8326262DEEAB90A6&ntref=1",
+      "title": "vmware tools - 搜索",
+      "host": "bing.com"
+    },
+    {
+      "ts": 1795681939157,
+      "phase": "activate",
+      "url": "https://chat.deepseek.com/a/chat/s/9d8267ac-f772-48bc-b025-3f549dad92a7",
+      "title": "Agent可接入虚拟机 - DeepSeek",
+      "host": "chat.deepseek.com"
+    },
+    {
+      "ts": 1795681941841,
+      "phase": "nav",
+      "url": "https://chat.deepseek.com/",
+      "title": "Agent可接入虚拟机 - DeepSeek",
+      "host": "chat.deepseek.com"
+    },
+    {
+      "ts": 1795681956434,
+      "phase": "nav",
+      "url": "https://chat.deepseek.com/a/chat/s/9a20f348-5274-4d34-9799-7f421bc6064b",
+      "title": "DeepSeek - 探索未至之境",
+      "host": "chat.deepseek.com"
+    },
+    {
+      "ts": 1795681990526,
+      "phase": "activate",
+      "url": "https://chat.deepseek.com/a/chat/s/9a20f348-5274-4d34-9799-7f421bc6064b",
+      "title": "DeepSeek - 探索未至之境",
+      "host": "chat.deepseek.com"
+    },
+    {
+      "ts": 1795681990545,
+      "phase": "nav",
+      "url": "https://chat.deepseek.com/a/chat/s/9a20f348-5274-4d34-9799-7f421bc6064b",
+      "title": "IDE打开db文件插件 - DeepSeek",
+      "host": "chat.deepseek.com"
+    },
+    {
+      "ts": 1795682107586,
+      "phase": "activate",
+      "url": "https://chat.deepseek.com/a/chat/s/9a20f348-5274-4d34-9799-7f421bc6064b",
+      "title": "IDE打开db文件插件 - DeepSeek",
+      "host": "chat.deepseek.com"
+    },
+    {
+      "ts": 1795682109376,
+      "phase": "activate",
+      "url": "https://www.deepseek.com/",
+      "title": "DeepSeek | 深度求索",
+      "host": "deepseek.com"
+    },
+    {
+      "ts": 1795682110206,
+      "phase": "activate",
+      "url": "https://chat.deepseek.com/a/chat/s/9a20f348-5274-4d34-9799-7f421bc6064b",
+      "title": "IDE打开db文件插件 - DeepSeek",
+      "host": "chat.deepseek.com"
+    },
+    {
+      "ts": 1795682183164,
+      "phase": "activate",
+      "url": "https://chat.deepseek.com/a/chat/s/9a20f348-5274-4d34-9799-7f421bc6064b",
+      "title": "IDE打开db文件插件 - DeepSeek",
+      "host": "chat.deepseek.com"
+    },
+    {
+      "ts": 1795682191893,
+      "phase": "activate",
+      "url": "https://www.deepseek.com/",
+      "title": "DeepSeek | 深度求索",
+      "host": "deepseek.com"
+    },
+    {
+      "ts": 1795682193402,
+      "phase": "activate",
+      "url": "https://chat.deepseek.com/a/chat/s/9a20f348-5274-4d34-9799-7f421bc6064b",
+      "title": "IDE打开db文件插件 - DeepSeek",
+      "host": "chat.deepseek.com"
+    },
+    {
+      "ts": 1795682199492,
+      "phase": "activate",
+      "url": "https://chat.deepseek.com/a/chat/s/9a20f348-5274-4d34-9799-7f421bc6064b",
+      "title": "IDE打开db文件插件 - DeepSeek",
+      "host": "chat.deepseek.com"
+    },
+    {
+      "ts": 1795695557378,
+      "phase": "activate",
+      "url": "https://chat.deepseek.com/a/chat/s/9a20f348-5274-4d34-9799-7f421bc6064b",
+      "title": "IDE打开db文件插件 - DeepSeek",
+      "host": "chat.deepseek.com"
+    },
+    {
+      "ts": 1795696669270,
+      "phase": "activate",
+      "url": "https://dshmarket.com/zh/",
+      "title": "DeepSeek Harness 插件市场 — 13281 个 dsh 插件 · dsh-market",
+      "host": "dshmarket.com"
+    },
+    {
+      "ts": 1795696669304,
+      "phase": "nav",
+      "url": "https://dshmarket.com/zh/",
+      "title": "DeepSeek Harness 插件市场 — 13281 个 dsh 插件 · dsh-market",
+      "host": "dshmarket.com"
+    },
+    {
+      "ts": 1795696670011,
+      "phase": "activate",
+      "url": "https://tokeness.ai/dashboard/models",
+      "title": "数据看板 - Tokeness",
+      "host": "tokeness.ai"
+    },
+    {
+      "ts": 1795696672272,
+      "phase": "nav",
+      "url": "https://tokeness.ai/dashboard/models",
+      "title": "数据看板 - Tokeness",
+      "host": "tokeness.ai"
+    },
+    {
+      "ts": 1795696674284,
+      "phase": "activate",
+      "url": "https://www.bing.com/search?q=dsh%E6%8F%92%E4%BB%B6%E5%B8%82%E5%9C%BA&PC=U316&FORM=CHROMN",
+      "title": "dsh插件市场 - 搜索",
+      "host": "bing.com"
+    },
+    {
+      "ts": 1795696674301,
+      "phase": "nav",
+      "url": "https://www.bing.com/search?q=dsh%E6%8F%92%E4%BB%B6%E5%B8%82%E5%9C%BA&PC=U316&FORM=CHROMN",
+      "title": "dsh插件市场 - 搜索",
+      "host": "bing.com"
+    },
+    {
+      "ts": 1795696674835,
+      "phase": "activate",
+      "url": "https://github.com/zxrobin01/vmware-console-mcp",
+      "title": "zxrobin01/vmware-console-mcp: mcp tool to help agents control vmware virtual machines. support local vmware player virtrual machines and esxi servers.",
+      "host": "github.com"
+    },
+    {
+      "ts": 1795696675889,
+      "phase": "nav",
+      "url": "https://github.com/zxrobin01/vmware-console-mcp",
+      "title": "zxrobin01/vmware-console-mcp: mcp tool to help agents control vmware virtual machines. support local vmware player virtrual machines and esxi servers.",
+      "host": "github.com"
+    },
+    {
+      "ts": 1795696677973,
+      "phase": "activate",
+      "url": "https://win11.ithome.com/archiver/655/926.htm",
+      "title": "微软 Win11/10/7 原版 ISO 光盘镜像下载大全（2026-9-29 更新）",
+      "host": "win11.ithome.com"
+    },
+    {
+      "ts": 1795696678127,
+      "phase": "nav",
+      "url": "https://win11.ithome.com/archiver/655/926.htm",
+      "title": "微软 Win11/10/7 原版 ISO 光盘镜像下载大全（2026-9-29 更新）",
+      "host": "win11.ithome.com"
+    },
+    {
+      "ts": 1795696678670,
+      "phase": "activate",
+      "url": "https://win11.ithome.com/",
+      "title": "Win11之家 - 软媒Windows11之家, Win11下载, Win11激活, Windows 11正式版下载, Win11官方原版ISO镜像下载",
+      "host": "win11.ithome.com"
+    },
+    {
+      "ts": 1795696678683,
+      "phase": "nav",
+      "url": "https://win11.ithome.com/",
+      "title": "Win11之家 - 软媒Windows11之家, Win11下载, Win11激活, Windows 11正式版下载, Win11官方原版ISO镜像下载",
+      "host": "win11.ithome.com"
+    },
+    {
+      "ts": 1795696679805,
+      "phase": "activate",
+      "url": "https://www.ithome.com/0/728/396.htm",
+      "title": "“极简版 Win11”开发者推出新作 tiny11 core：适用于虚拟机，仅需 3GB 空间 - IT之家",
+      "host": "ithome.com"
+    },
+    {
+      "ts": 1795696679860,
+      "phase": "nav",
+      "url": "https://www.ithome.com/0/728/396.htm",
+      "title": "“极简版 Win11”开发者推出新作 tiny11 core：适用于虚拟机，仅需 3GB 空间 - IT之家",
+      "host": "ithome.com"
+    },
+    {
+      "ts": 1795696680298,
+      "phase": "activate",
+      "url": "https://www.deepseek.com/",
+      "title": "DeepSeek | 深度求索",
+      "host": "deepseek.com"
+    },
+    {
+      "ts": 1795696681070,
+      "phase": "activate",
+      "url": "https://www.bing.com/search?q=win11%E4%B8%93%E4%B8%9A%E7%89%88%E9%95%9C%E5%83%8F&PC=U316&FORM=CHROMN&ntref=1&mkt=zh-CN",
+      "title": "win11专业版镜像 - 搜索",
+      "host": "bing.com"
+    },
+    {
+      "ts": 1795696681319,
+      "phase": "nav",
+      "url": "https://cn.bing.com/search?q=win11%E4%B8%93%E4%B8%9A%E7%89%88%E9%95%9C%E5%83%8F&PC=U316&FORM=CHROMN&ntref=1&mkt=zh-CN",
+      "title": "win11专业版镜像 - 搜索",
+      "host": "cn.bing.com"
+    },
+    {
+      "ts": 1795696681825,
+      "phase": "activate",
+      "url": "https://www.deepseek.com/",
+      "title": "DeepSeek | 深度求索",
+      "host": "deepseek.com"
+    },
+    {
+      "ts": 1795696682474,
+      "phase": "activate",
+      "url": "https://cn.bing.com/search?q=%E7%99%BE%E5%BA%A6%E7%BF%BB%E8%AF%91&PC=U316&FORM=CHROMN",
+      "title": "百度翻译 - 搜索",
+      "host": "cn.bing.com"
+    },
+    {
+      "ts": 1795696683881,
+      "phase": "activate",
+      "url": "https://techdocs.broadcom.com/",
+      "title": "TechDocs",
+      "host": "techdocs.broadcom.com"
+    },
+    {
+      "ts": 1795696684450,
+      "phase": "nav",
+      "url": "https://techdocs.broadcom.com/",
+      "title": "TechDocs",
+      "host": "techdocs.broadcom.com"
+    },
+    {
+      "ts": 1795696685400,
+      "phase": "activate",
+      "url": "https://cn.bing.com/search?q=%E7%99%BE%E5%BA%A6%E7%BF%BB%E8%AF%91&PC=U316&FORM=CHROMN",
+      "title": "百度翻译 - 搜索",
+      "host": "cn.bing.com"
+    },
+    {
+      "ts": 1795696685997,
+      "phase": "activate",
+      "url": "https://www.vmware.com/info?id=151",
+      "title": "Page not found",
+      "host": "vmware.com"
+    },
+    {
+      "ts": 1795696687319,
+      "phase": "nav",
+      "url": "https://www.vmware.com/info?id=151",
+      "title": "vmware.com/info?id=151",
+      "host": "vmware.com"
+    },
+    {
+      "ts": 1795696692302,
+      "phase": "activate",
+      "url": "https://cn.bing.com/search?q=%E7%99%BE%E5%BA%A6%E7%BF%BB%E8%AF%91&PC=U316&FORM=CHROMN",
+      "title": "百度翻译 - 搜索",
+      "host": "cn.bing.com"
+    },
+    {
+      "ts": 1795696693406,
+      "phase": "activate",
+      "url": "https://techdocs.broadcom.com/cn/zh-cn/vmware-cis/vsphere/tools/12-5-0/vmware-tools-administration-12-5-0/installing-vmware-tools.html",
+      "title": "安装 VMware Tools",
+      "host": "techdocs.broadcom.com"
+    },
+    {
+      "ts": 1795696693418,
+      "phase": "nav",
+      "url": "https://techdocs.broadcom.com/cn/zh-cn/vmware-cis/vsphere/tools/12-5-0/vmware-tools-administration-12-5-0/installing-vmware-tools.html",
+      "title": "安装 VMware Tools",
+      "host": "techdocs.broadcom.com"
+    },
+    {
+      "ts": 1795696695033,
+      "phase": "activate",
+      "url": "https://packages-prod.broadcom.com/tools/frozen/",
+      "title": "Index of tools/frozen/",
+      "host": "packages-prod.broadcom.com"
+    },
+    {
+      "ts": 1795696695645,
+      "phase": "activate",
+      "url": "https://www.bing.com/search?q=%E8%B1%86%E5%8C%85&PC=U316&FORM=CHROMN",
+      "title": "豆包 - 搜索",
+      "host": "bing.com"
+    },
+    {
+      "ts": 1795696695834,
+      "phase": "nav",
+      "url": "https://cn.bing.com/search?q=%E8%B1%86%E5%8C%85&PC=U316&FORM=CHROMN",
+      "title": "豆包 - 搜索",
+      "host": "cn.bing.com"
+    },
+    {
+      "ts": 1795696696546,
+      "phase": "activate",
+      "url": "https://chat.deepseek.com/a/chat/s/9a20f348-5274-4d34-9799-7f421bc6064b",
+      "title": "IDE打开db文件插件 - DeepSeek",
+      "host": "chat.deepseek.com"
+    },
+    {
+      "ts": 1795696697522,
+      "phase": "activate",
+      "url": "https://www.deepseek.com/",
+      "title": "DeepSeek | 深度求索",
+      "host": "deepseek.com"
+    },
+    {
+      "ts": 1795696698300,
+      "phase": "activate",
+      "url": "https://chat.deepseek.com/a/chat/s/9a20f348-5274-4d34-9799-7f421bc6064b",
+      "title": "IDE打开db文件插件 - DeepSeek",
+      "host": "chat.deepseek.com"
+    },
+    {
+      "ts": 1795696699080,
+      "phase": "nav",
+      "url": "https://chat.deepseek.com/",
+      "title": "IDE打开db文件插件 - DeepSeek",
+      "host": "chat.deepseek.com"
+    },
+    {
+      "ts": 1795696722737,
+      "phase": "nav",
+      "url": "https://chat.deepseek.com/a/chat/s/0743df19-a8db-4708-98a6-06281e46dd61",
+      "title": "DeepSeek - 探索未至之境",
+      "host": "chat.deepseek.com"
+    },
+    {
+      "ts": 1795696736620,
+      "phase": "nav",
+      "url": "https://chat.deepseek.com/a/chat/s/0743df19-a8db-4708-98a6-06281e46dd61",
+      "title": "游泳上半身前倾下沉纠正 - DeepSeek",
+      "host": "chat.deepseek.com"
+    },
+    {
+      "ts": 1795696786540,
+      "phase": "activate",
+      "url": "https://chat.deepseek.com/a/chat/s/0743df19-a8db-4708-98a6-06281e46dd61",
+      "title": "游泳上半身前倾下沉纠正 - DeepSeek",
+      "host": "chat.deepseek.com"
+    },
+    {
+      "ts": 1795696788290,
+      "phase": "activate",
+      "url": "https://github.com/zxrobin01/vmware-console-mcp",
+      "title": "zxrobin01/vmware-console-mcp: mcp tool to help agents control vmware virtual machines. support local vmware player virtrual machines and esxi servers.",
+      "host": "github.com"
+    },
+    {
+      "ts": 1795696790844,
+      "phase": "activate",
+      "url": "https://www.bing.com/search?q=dsh%E6%8F%92%E4%BB%B6%E5%B8%82%E5%9C%BA&PC=U316&FORM=CHROMN",
+      "title": "dsh插件市场 - 搜索",
+      "host": "bing.com"
+    },
+    {
+      "ts": 1795696791779,
+      "phase": "activate",
+      "url": "https://packages-prod.broadcom.com/tools/releases/latest/windows/",
+      "title": "Index of tools/releases/latest/windows/",
+      "host": "packages-prod.broadcom.com"
+    },
+    {
+      "ts": 1795696793416,
+      "phase": "nav",
+      "url": "https://packages-prod.broadcom.com/tools/releases/latest/windows/",
+      "title": "Index of tools/releases/latest/windows/",
+      "host": "packages-prod.broadcom.com"
+    },
+    {
+      "ts": 1795696795741,
+      "phase": "activate",
+      "url": "https://www.bing.com/search?q=dsh%E6%8F%92%E4%BB%B6%E5%B8%82%E5%9C%BA&PC=U316&FORM=CHROMN",
+      "title": "dsh插件市场 - 搜索",
+      "host": "bing.com"
+    },
+    {
+      "ts": 1795696813421,
+      "phase": "activate",
+      "url": "https://www.bing.com/search?q=dsh%E6%8F%92%E4%BB%B6%E5%B8%82%E5%9C%BA&PC=U316&FORM=CHROMN",
+      "title": "dsh插件市场 - 搜索",
+      "host": "bing.com"
+    },
+    {
+      "ts": 1795699788100,
+      "phase": "activate",
+      "url": "https://www.bing.com/search?q=dsh%E6%8F%92%E4%BB%B6%E5%B8%82%E5%9C%BA&PC=U316&FORM=CHROMN",
+      "title": "dsh插件市场 - 搜索",
+      "host": "bing.com"
+    },
+    {
+      "ts": 1795701763428,
+      "phase": "activate",
+      "url": "https://chat.deepseek.com/a/chat/s/0743df19-a8db-4708-98a6-06281e46dd61",
+      "title": "游泳上半身前倾下沉纠正 - DeepSeek",
+      "host": "chat.deepseek.com"
+    },
+    {
+      "ts": 1795705910816,
+      "phase": "activate",
+      "url": "https://chat.deepseek.com/a/chat/s/0743df19-a8db-4708-98a6-06281e46dd61",
+      "title": "游泳上半身前倾下沉纠正 - DeepSeek",
+      "host": "chat.deepseek.com"
+    },
+    {
+      "ts": 1795707923441,
+      "phase": "activate",
+      "url": "https://chat.deepseek.com/a/chat/s/0743df19-a8db-4708-98a6-06281e46dd61",
+      "title": "游泳上半身前倾下沉纠正 - DeepSeek",
+      "host": "chat.deepseek.com"
+    },
+    {
+      "ts": 1795707927445,
+      "phase": "nav",
+      "url": "https://chat.deepseek.com/",
+      "title": "游泳上半身前倾下沉纠正 - DeepSeek",
+      "host": "chat.deepseek.com"
+    },
+    {
+      "ts": 1795707966045,
+      "phase": "nav",
+      "url": "https://chat.deepseek.com/a/chat/s/87845dcc-32bb-4de8-8e6d-902395bfc79b",
+      "title": "DeepSeek - 探索未至之境",
+      "host": "chat.deepseek.com"
+    },
+    {
+      "ts": 1795707979544,
+      "phase": "nav",
+      "url": "https://chat.deepseek.com/a/chat/s/87845dcc-32bb-4de8-8e6d-902395bfc79b",
+      "title": "暗影精灵仅关屏不睡眠 - DeepSeek",
+      "host": "chat.deepseek.com"
+    }
+  ],
+  "categories": [
+    {
+      "category": "游戏",
+      "ms": 2668382
+    },
+    {
+      "category": "开发",
+      "ms": 1730635
+    },
+    {
+      "category": "系统",
+      "ms": 546751
+    },
+    {
+      "category": "AI 工具",
+      "ms": 435718
+    },
+    {
+      "category": "浏览器",
+      "ms": 407502
+    },
+    {
+      "category": "系统工具",
+      "ms": 198538
+    }
+  ],
+  "sites": [
+    {
+      "host": "chat.deepseek.com",
+      "count": 12,
+      "category": "AI"
+    },
+    {
+      "host": "bing.com",
+      "count": 9,
+      "category": "搜索"
+    },
+    {
+      "host": "techdocs.broadcom.com",
+      "count": 5,
+      "category": "开发文档"
+    },
+    {
+      "host": "deepseek.com",
+      "count": 5,
+      "category": "AI"
+    },
+    {
+      "host": "cn.bing.com",
+      "count": 5,
+      "category": "搜索"
+    },
+    {
+      "host": "github.com",
+      "count": 3,
+      "category": "开发文档"
+    },
+    {
+      "host": "dshmarket.com",
+      "count": 3,
+      "category": "开发文档"
+    },
+    {
+      "host": "packages-prod.broadcom.com",
+      "count": 3,
+      "category": "开发文档"
+    },
+    {
+      "host": "vmware.com",
+      "count": 2,
+      "category": "开发文档"
+    },
+    {
+      "host": "win11.ithome.com",
+      "count": 2,
+      "category": "资讯"
+    },
+    {
+      "host": "example.com",
+      "count": 1,
+      "category": "其他"
+    },
+    {
+      "host": "tokeness.ai",
+      "count": 1,
+      "category": "其他"
+    },
+    {
+      "host": "ithome.com",
+      "count": 1,
+      "category": "资讯"
+    }
+  ],
+  "focus": {
+    "longestMs": 602968,
+    "longestApp": "Windows Terminal",
+    "avgSegmentMs": 41871,
+    "hourlySwitches": [
+      {
+        "hour": 15,
+        "count": 34
+      },
+      {
+        "hour": 16,
+        "count": 44
+      },
+      {
+        "hour": 20,
+        "count": 20
+      },
+      {
+        "hour": 21,
+        "count": 13
+      },
+      {
+        "hour": 22,
+        "count": 2
+      },
+      {
+        "hour": 23,
+        "count": 13
+      }
+    ]
+  },
+  "firstActivity": 1795677159386,
+  "lastActivity": 1795708231154,
+  "windowMs": 86400000
+}

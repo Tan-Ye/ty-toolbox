@@ -61,15 +61,24 @@ public sealed class StorageConfig
 public sealed class CollectorsConfig
 {
     public bool Window { get; set; } = true;
-    public bool Process { get; set; } = true;
+
+    /// <summary>进程启停采集。默认关：日报和区间回放用 app.start/stop + 前台窗口就够，进程级事件约占总量 23% 且信息与 app 级重复。</summary>
+    public bool Process { get; set; } = false;
     public bool Input { get; set; } = true;
     public bool Browser { get; set; } = true;
 }
 
 public sealed class InputConfig
 {
-    /// <summary>鼠标移动降采样频率上限，默认 20Hz。</summary>
+    /// <summary>鼠标移动降采样频率上限。仅在 CollectMouseMove=true 时生效。</summary>
     public int MouseMoveHz { get; set; } = 20;
+
+    /// <summary>是否采集鼠标移动轨迹。默认关：日报和区间回放用不上逐条移动，逐条移动占事件量约 25%。</summary>
+    public bool CollectMouseMove { get; set; } = false;
+
+    /// <summary>是否采集逐键事件（按键只存不可逆 HMAC）。默认关：需要的是输入密度而不是按键轨迹，逐键事件也会扩大全局钩子的暴露面。</summary>
+    public bool CollectKeys { get; set; } = false;
+
     public int IdleThresholdSeconds { get; set; } = 60;
 }
 

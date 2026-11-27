@@ -1,0 +1,124 @@
+{
+  "from": 1795707600000,
+  "to": 1795708020000,
+  "spanMs": 420000,
+  "activeMs": 132363,
+  "idleMs": 0,
+  "unrecordedMs": 287637,
+  "appList": [
+    {
+      "name": "Chrome",
+      "apps": [
+        "chrome.exe"
+      ],
+      "category": "浏览器",
+      "ms": 96559
+    },
+    {
+      "name": "DeepSeek Harness",
+      "apps": [
+        "deepseek harness.exe"
+      ],
+      "category": "AI 工具",
+      "ms": 32183
+    },
+    {
+      "name": "英雄联盟",
+      "apps": [
+        "leagueclientux.exe"
+      ],
+      "category": "游戏",
+      "ms": 3621
+    }
+  ],
+  "switches": 2,
+  "clickCount": 1,
+  "searches": [],
+  "gaps": [],
+  "segments": [
+    {
+      "from": 1795707887637,
+      "to": 1795707891258,
+      "app": "leagueclientux.exe",
+      "title": "League of Legends",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795707887637
+    },
+    {
+      "from": 1795707891258,
+      "to": 1795707923441,
+      "app": "deepseek harness.exe",
+      "title": "没有真正意义上的AI助理 — DeepSeek Harness",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795707920090
+    },
+    {
+      "from": 1795707923441,
+      "to": 1795707927641,
+      "app": "chrome.exe",
+      "title": "游泳上半身前倾下沉纠正 - DeepSeek",
+      "url": "https://chat.deepseek.com/a/chat/s/0743df19-a8db-4708-98a6-06281e46dd61",
+      "fullscreen": false,
+      "lastConfirm": 1795707923441
+    },
+    {
+      "from": 1795707927641,
+      "to": 1795707966045,
+      "app": "chrome.exe",
+      "title": "DeepSeek - 探索未至之境 - Google Chrome",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795707927641
+    },
+    {
+      "from": 1795707966045,
+      "to": 1795707979754,
+      "app": "chrome.exe",
+      "title": "DeepSeek - 探索未至之境",
+      "url": "https://chat.deepseek.com/a/chat/s/87845dcc-32bb-4de8-8e6d-902395bfc79b",
+      "fullscreen": false,
+      "lastConfirm": 1795707979544
+    },
+    {
+      "from": 1795707979754,
+      "to": 1795708020000,
+      "app": "chrome.exe",
+      "title": "暗影精灵仅关屏不睡眠 - DeepSeek - Google Chrome",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795707983619
+    }
+  ],
+  "navs": [
+    {
+      "ts": 1795707923441,
+      "phase": "activate",
+      "url": "https://chat.deepseek.com/a/chat/s/0743df19-a8db-4708-98a6-06281e46dd61",
+      "title": "游泳上半身前倾下沉纠正 - DeepSeek",
+      "host": "chat.deepseek.com"
+    },
+    {
+      "ts": 1795707927445,
+      "phase": "nav",
+      "url": "https://chat.deepseek.com/",
+      "title": "游泳上半身前倾下沉纠正 - DeepSeek",
+      "host": "chat.deepseek.com"
+    },
+    {
+      "ts": 1795707966045,
+      "phase": "nav",
+      "url": "https://chat.deepseek.com/a/chat/s/87845dcc-32bb-4de8-8e6d-902395bfc79b",
+      "title": "DeepSeek - 探索未至之境",
+      "host": "chat.deepseek.com"
+    },
+    {
+      "ts": 1795707979544,
+      "phase": "nav",
+      "url": "https://chat.deepseek.com/a/chat/s/87845dcc-32bb-4de8-8e6d-902395bfc79b",
+      "title": "暗影精灵仅关屏不睡眠 - DeepSeek",
+      "host": "chat.deepseek.com"
+    }
+  ]
+}

@@ -16,14 +16,18 @@ namespace BehaviorCollector.Collectors;
 
 /// <summary>
 /// 前台窗口采集：SetWinEventHook（独立消息循环线程）+ 1s 轮询兜底。
+/// 窗口没有变化时每 60 秒补一条 window.foreground 心跳，让下游能区分「一直在这个窗口」和「采集断了」。
 /// </summary>
 public sealed class WindowCollector : BackgroundService
 {
+    private const long HeartbeatMs = 60_000;
+
     private readonly EventBus _bus;
     private readonly ConfigService _config;
     private readonly ForegroundState _foreground;
     private readonly PrivacyPolicy _privacy;
     private readonly PauseState _pause;
+    private readonly IdleDetector _idle;
     private readonly ILogger<WindowCollector> _logger;
 
     private readonly object _gate = new();
@@ -34,6 +38,7 @@ public sealed class WindowCollector : BackgroundService
 
     private IntPtr _lastHwnd;
     private string? _lastTitle;
+    private long _lastHeartbeat;
 
     public WindowCollector(
         EventBus bus,
@@ -41,6 +46,7 @@ public sealed class WindowCollector : BackgroundService
         ForegroundState foreground,
         PrivacyPolicy privacy,
         PauseState pause,
+        IdleDetector idle,
         ILogger<WindowCollector> logger)
     {
         _bus = bus;
@@ -48,6 +54,7 @@ public sealed class WindowCollector : BackgroundService
         _foreground = foreground;
         _privacy = privacy;
         _pause = pause;
+        _idle = idle;
         _logger = logger;
         _pause.Changed += OnPauseChanged;
     }
@@ -210,9 +217,12 @@ public sealed class WindowCollector : BackgroundService
 
         lock (_gate)
         {
+            var now = Environment.TickCount64;
             var hwndChanged = info.Hwnd != _lastHwnd;
             var titleChanged = !string.Equals(info.Title, _lastTitle, StringComparison.Ordinal);
-            if (!hwndChanged && !titleChanged && !force)
+            // 空闲时不算活跃：没有心跳，分析器只能把最后一段截到「最后一次确认 + 10 分钟」
+            var heartbeatDue = !_idle.IsIdle && now - _lastHeartbeat >= HeartbeatMs;
+            if (!hwndChanged && !titleChanged && !force && !heartbeatDue)
             {
                 return;
             }
@@ -225,9 +235,10 @@ public sealed class WindowCollector : BackgroundService
                 return;
             }
 
-            if (hwndChanged || force)
+            if (hwndChanged || force || heartbeatDue)
             {
                 Emit("window.foreground", info);
+                _lastHeartbeat = now;
             }
             else if (titleChanged && !excluded)
             {

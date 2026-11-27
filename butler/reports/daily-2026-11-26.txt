@@ -1,0 +1,61 @@
+2026-11-26 日报
+活跃 1小时40分 · 空闲 18分 · 未记录 22小时2分 · 切换 92 次 · 点击 28 次
+首次活动 15:12 · 最后活动 23:50
+
+应用时长
+  英雄联盟               44分       45%
+  Windows Terminal       12分       12%
+  资源管理器             9分        9%
+  Trae                   9分        9%
+  DeepSeek Harness       7分        7%
+  PowerShell             7分        7%
+  Chrome                 7分        7%
+  VMware Player          2分        2%
+  任务管理器             1分        1%
+  Pallas                 23秒       0%
+  Edge                   16秒       0%
+  Clash Verge            6秒        0%
+  …… 另有 1 个应用
+
+用途分布
+  游戏         44分       45%
+  开发         29分       29%
+  系统         9分        9%
+  AI 工具      7分        7%
+  浏览器       7分        7%
+  系统工具     3分        3%
+
+站点分布（按访问次数）
+  chat.deepseek.com                    12 次  AI
+  bing.com                              9 次  搜索
+  techdocs.broadcom.com                 5 次  开发文档
+  deepseek.com                          5 次  AI
+  cn.bing.com                           5 次  搜索
+  github.com                            3 次  开发文档
+  dshmarket.com                         3 次  开发文档
+  packages-prod.broadcom.com            3 次  开发文档
+  vmware.com                            2 次  开发文档
+  win11.ithome.com                      2 次  资讯
+  example.com                           1 次  其他
+  tokeness.ai                           1 次  其他
+
+搜索与提问
+  vmware tools（Bing，15:42）
+  dsh插件市场（Bing，15:45）
+  win11专业版镜像（Bing，20:38）
+  百度翻译（Bing，20:38）
+  豆包（Bing，20:38）
+
+专注与碎片
+  最长连续 Windows Terminal 10分
+  平均每段 42秒，共切换 92 次
+  每小时切换：15点 34 次，16点 44 次，20点 20 次，21点 13 次，22点 2 次，23点 13 次
+
+数据空档
+  15:25-15:40  16分
+  15:46-16:07  21分
+  16:36-20:19  3小时43分
+  20:43-20:57  14分
+  20:58-21:29  31分
+  22:02-23:11  1小时9分
+  23:11-23:37  26分
