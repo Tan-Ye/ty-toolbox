@@ -1,0 +1,57 @@
+{
+  "name": "@ty-toolbox/persistent-memory",
+  "version": "0.1.0",
+  "description": "模型无关的持久化记忆与检索：领域模型、文件存储、主题词/嵌入排序与 SiliconFlow 适配器",
+  "keywords": [
+    "memory",
+    "persistent-memory",
+    "retrieval",
+    "typescript"
+  ],
+  "homepage": "https://github.com/Tan-Ye/ty-toolbox/tree/main/persistent-memory#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Tan-Ye/ty-toolbox.git",
+    "directory": "persistent-memory"
+  },
+  "bugs": {
+    "url": "https://github.com/Tan-Ye/ty-toolbox/issues"
+  },
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE",
+    "NOTICE.md"
+  ],
+  "sideEffects": false,
+  "engines": {
+    "node": ">=22"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "clean": "node --input-type=module -e \"import { rmSync } from 'node:fs'; rmSync('dist', { recursive: true, force: true });\"",
+    "prepare": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "typescript": "^5.7.2",
+    "vitest": "^3.0.5"
+  }
+}
