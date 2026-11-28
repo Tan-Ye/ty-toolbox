@@ -1,0 +1,5526 @@
+{
+  "from": 1795708800000,
+  "to": 1795795200000,
+  "spanMs": 86400000,
+  "activeMs": 24200984,
+  "idleMs": 14188720,
+  "unrecordedMs": 48010296,
+  "appList": [
+    {
+      "name": "Kotana",
+      "apps": [
+        "kotana.exe"
+      ],
+      "category": "其他",
+      "ms": 10975009
+    },
+    {
+      "name": "DeepSeek Harness",
+      "apps": [
+        "deepseek harness.exe"
+      ],
+      "category": "AI 工具",
+      "ms": 5324457
+    },
+    {
+      "name": "Chrome",
+      "apps": [
+        "chrome.exe"
+      ],
+      "category": "浏览器",
+      "ms": 3696989
+    },
+    {
+      "name": "英雄联盟",
+      "apps": [
+        "leagueclient.exe",
+        "leagueclientux.exe",
+        "league of legends.exe"
+      ],
+      "category": "游戏",
+      "ms": 954606
+    },
+    {
+      "name": "Dnf",
+      "apps": [
+        "dnf.exe"
+      ],
+      "category": "其他",
+      "ms": 925050
+    },
+    {
+      "name": "Clash Verge",
+      "apps": [
+        "clash-verge.exe"
+      ],
+      "category": "系统工具",
+      "ms": 652055
+    },
+    {
+      "name": "Trae",
+      "apps": [
+        "trae cn.exe"
+      ],
+      "category": "开发",
+      "ms": 470919
+    },
+    {
+      "name": "资源管理器",
+      "apps": [
+        "explorer.exe"
+      ],
+      "category": "系统",
+      "ms": 217058
+    },
+    {
+      "name": "QQ",
+      "apps": [
+        "qq.exe"
+      ],
+      "category": "聊天",
+      "ms": 188742
+    },
+    {
+      "name": "任务管理器",
+      "apps": [
+        "taskmgr.exe"
+      ],
+      "category": "系统工具",
+      "ms": 166049
+    },
+    {
+      "name": "Gemini",
+      "apps": [
+        "gemini.exe"
+      ],
+      "category": "其他",
+      "ms": 133548
+    },
+    {
+      "name": "Code - insiders",
+      "apps": [
+        "code - insiders.exe"
+      ],
+      "category": "其他",
+      "ms": 104336
+    },
+    {
+      "name": "Windows Terminal",
+      "apps": [
+        "windowsterminal.exe"
+      ],
+      "category": "开发",
+      "ms": 81484
+    },
+    {
+      "name": "Chatgpt",
+      "apps": [
+        "chatgpt.exe"
+      ],
+      "category": "其他",
+      "ms": 65537
+    },
+    {
+      "name": "微信",
+      "apps": [
+        "weixin.exe"
+      ],
+      "category": "聊天",
+      "ms": 54882
+    },
+    {
+      "name": "VMware Player",
+      "apps": [
+        "vmplayer.exe"
+      ],
+      "category": "系统工具",
+      "ms": 46389
+    },
+    {
+      "name": "Pallas",
+      "apps": [
+        "pallas.exe"
+      ],
+      "category": "开发",
+      "ms": 41439
+    },
+    {
+      "name": "Credentialuibroker",
+      "apps": [
+        "credentialuibroker.exe"
+      ],
+      "category": "其他",
+      "ms": 38484
+    },
+    {
+      "name": "Vc_redist.x64",
+      "apps": [
+        "vc_redist.x64.exe"
+      ],
+      "category": "其他",
+      "ms": 23321
+    },
+    {
+      "name": "Updater",
+      "apps": [
+        "updater.exe"
+      ],
+      "category": "其他",
+      "ms": 21487
+    },
+    {
+      "name": "Wegame",
+      "apps": [
+        "wegame.exe"
+      ],
+      "category": "其他",
+      "ms": 15001
+    },
+    {
+      "name": "Msedgewebview2",
+      "apps": [
+        "msedgewebview2.exe"
+      ],
+      "category": "其他",
+      "ms": 4142
+    }
+  ],
+  "switches": 219,
+  "clickCount": 260,
+  "searches": [
+    {
+      "ts": 1795766601415,
+      "engine": "Bing",
+      "query": "Gemini"
+    },
+    {
+      "ts": 1795768892816,
+      "engine": "Bing",
+      "query": "codex订阅"
+    },
+    {
+      "ts": 1795770275583,
+      "engine": "Bing",
+      "query": "vmware tools"
+    },
+    {
+      "ts": 1795770368876,
+      "engine": "Bing",
+      "query": "dsh插件市场"
+    },
+    {
+      "ts": 1795773873377,
+      "engine": "Bing",
+      "query": "qqbot"
+    },
+    {
+      "ts": 1795776002474,
+      "engine": "Bing",
+      "query": "dsh-pet"
+    },
+    {
+      "ts": 1795790530833,
+      "engine": "Bing",
+      "query": "kimi3.1pro"
+    },
+    {
+      "ts": 1795790658658,
+      "engine": "Bing",
+      "query": "codeplan"
+    },
+    {
+      "ts": 1795791916440,
+      "engine": "Bing",
+      "query": "gemni"
+    },
+    {
+      "ts": 1795791953740,
+      "engine": "Bing",
+      "query": "gemini订阅"
+    }
+  ],
+  "gaps": [
+    {
+      "from": 1795765238792,
+      "to": 1795766525042,
+      "ms": 1286250
+    },
+    {
+      "from": 1795770663830,
+      "to": 1795772436768,
+      "ms": 1772938
+    },
+    {
+      "from": 1795780558900,
+      "to": 1795789671749,
+      "ms": 9112849
+    }
+  ],
+  "segments": [
+    {
+      "from": 1795764882714,
+      "to": 1795764931135,
+      "app": "windowsterminal.exe",
+      "title": "C:\\Program Files\\dotnet\\dotnet.exe",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795764882714
+    },
+    {
+      "from": 1795764931135,
+      "to": 1795764960151,
+      "app": "trae cn.exe",
+      "title": "继续完成 BehaviorCollector 开发",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795764958599
+    },
+    {
+      "from": 1795764960151,
+      "to": 1795764963940,
+      "app": "dnf.exe",
+      "title": "地下城与勇士：创新世纪",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795764963855
+    },
+    {
+      "from": 1795764963940,
+      "to": 1795764967380,
+      "app": "chrome.exe",
+      "title": "获取访问凭证 | QQ 机器人官方文档 - Google Chrome",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795764967262
+    },
+    {
+      "from": 1795764967380,
+      "to": 1795765027534,
+      "app": "dnf.exe",
+      "title": "地下城与勇士：创新世纪",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795765027519
+    },
+    {
+      "from": 1795765027534,
+      "to": 1795765034136,
+      "app": "chrome.exe",
+      "title": "获取访问凭证 | QQ 机器人官方文档 - Google Chrome",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795765031489
+    },
+    {
+      "from": 1795765034136,
+      "to": 1795765039229,
+      "app": "trae cn.exe",
+      "title": "继续完成 BehaviorCollector 开发",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795765039081
+    },
+    {
+      "from": 1795765039229,
+      "to": 1795765046382,
+      "app": "explorer.exe",
+      "title": "系统托盘溢出窗口。",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795765043527
+    },
+    {
+      "from": 1795765046382,
+      "to": 1795765056810,
+      "app": "chatgpt.exe",
+      "title": "ChatGPT",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795765051526
+    },
+    {
+      "from": 1795765056810,
+      "to": 1795765071094,
+      "app": "weixin.exe",
+      "title": "微信",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795765070842
+    },
+    {
+      "from": 1795765071094,
+      "to": 1795765080094,
+      "app": "weixin.exe",
+      "title": "图片和视频",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795765079877
+    },
+    {
+      "from": 1795765080094,
+      "to": 1795765089947,
+      "app": "weixin.exe",
+      "title": "微信",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795765088409
+    },
+    {
+      "from": 1795765089947,
+      "to": 1795765111692,
+      "app": "weixin.exe",
+      "title": "微信",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795765103681
+    },
+    {
+      "from": 1795765111692,
+      "to": 1795765115422,
+      "app": "chrome.exe",
+      "title": "获取访问凭证 | QQ 机器人官方文档 - Google Chrome",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795765115292
+    },
+    {
+      "from": 1795765115422,
+      "to": 1795765127435,
+      "app": "chrome.exe",
+      "title": "Error 403 (Forbidden)!!1",
+      "url": "https://gemini.google.com/",
+      "fullscreen": false,
+      "lastConfirm": 1795765116624
+    },
+    {
+      "from": 1795765127435,
+      "to": 1795765144692,
+      "app": "chrome.exe",
+      "title": "DeepSeek - 探索未至之境 - Google Chrome",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795765127962
+    },
+    {
+      "from": 1795765144692,
+      "to": 1795765157149,
+      "app": "chrome.exe",
+      "title": "DeepSeek - 探索未至之境",
+      "url": "https://chat.deepseek.com/a/chat/s/54cd2da3-5784-414d-a6c9-f49755ca287a",
+      "fullscreen": false,
+      "lastConfirm": 1795765156942
+    },
+    {
+      "from": 1795765157149,
+      "to": 1795765163727,
+      "app": "chrome.exe",
+      "title": "Gemini 403错误排查 - DeepSeek - Google Chrome",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795765157149
+    },
+    {
+      "from": 1795765163727,
+      "to": 1795765838792,
+      "app": "chrome.exe",
+      "title": "Gemini 403错误排查 - DeepSeek",
+      "url": "https://chat.deepseek.com/a/chat/s/54cd2da3-5784-414d-a6c9-f49755ca287a",
+      "fullscreen": false,
+      "lastConfirm": 1795765238792
+    },
+    {
+      "from": 1795766525042,
+      "to": 1795766544804,
+      "app": "chrome.exe",
+      "title": "Gemini 403错误排查 - DeepSeek",
+      "url": "https://chat.deepseek.com/",
+      "fullscreen": false,
+      "lastConfirm": 1795766525042
+    },
+    {
+      "from": 1795766544804,
+      "to": 1795766601415,
+      "app": "chrome.exe",
+      "title": "DeepSeek - 探索未至之境",
+      "url": "https://chat.deepseek.com/a/chat/s/a6d75862-8fa5-46c1-8d69-153cf3a7156d",
+      "fullscreen": false,
+      "lastConfirm": 1795766544804
+    },
+    {
+      "from": 1795766601415,
+      "to": 1795766605369,
+      "app": "chrome.exe",
+      "title": "bing.com/search?q=Gemini&PC=U316&FORM=CHROMN",
+      "url": "https://www.bing.com/search?q=Gemini&PC=U316&FORM=CHROMN",
+      "fullscreen": false,
+      "lastConfirm": 1795766601415
+    },
+    {
+      "from": 1795766605369,
+      "to": 1795766632739,
+      "app": "chrome.exe",
+      "title": "gemini.google.com",
+      "url": "https://gemini.google.com/",
+      "fullscreen": false,
+      "lastConfirm": 1795766629717
+    },
+    {
+      "from": 1795766632739,
+      "to": 1795766664128,
+      "app": "chrome.exe",
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/app",
+      "fullscreen": false,
+      "lastConfirm": 1795766658603
+    },
+    {
+      "from": 1795766664128,
+      "to": 1795766891431,
+      "app": "chrome.exe",
+      "title": "Gemini 403错误排查 - DeepSeek",
+      "url": "https://chat.deepseek.com/a/chat/s/54cd2da3-5784-414d-a6c9-f49755ca287a",
+      "fullscreen": false,
+      "lastConfirm": 1795766664128
+    },
+    {
+      "from": 1795766891431,
+      "to": 1795766898751,
+      "app": "explorer.exe",
+      "title": "data-v2 - 文件资源管理器",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795766895738
+    },
+    {
+      "from": 1795766898751,
+      "to": 1795766906755,
+      "app": "explorer.exe",
+      "title": "data-v2 - 文件资源管理器",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795766904808
+    },
+    {
+      "from": 1795766906755,
+      "to": 1795766916051,
+      "app": "explorer.exe",
+      "title": "data-v2 - 文件资源管理器",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795766909387
+    },
+    {
+      "from": 1795766916051,
+      "to": 1795766937120,
+      "app": "code - insiders.exe",
+      "title": "events.db - Visual Studio Code - Insiders",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795766934495
+    },
+    {
+      "from": 1795766937120,
+      "to": 1795766959884,
+      "app": "code - insiders.exe",
+      "title": "扩展: SQLite Viewer - Visual Studio Code - Insiders",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795766958111
+    },
+    {
+      "from": 1795766959884,
+      "to": 1795766965208,
+      "app": "code - insiders.exe",
+      "title": "扩展: SQLite Viewer - Visual Studio Code - Insiders",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795766962968
+    },
+    {
+      "from": 1795766965208,
+      "to": 1795766995444,
+      "app": "code - insiders.exe",
+      "title": "扩展: SQLite Viewer - Visual Studio Code - Insiders",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795766995395
+    },
+    {
+      "from": 1795766995444,
+      "to": 1795767014670,
+      "app": "code - insiders.exe",
+      "title": "events.db - Visual Studio Code - Insiders",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795767012953
+    },
+    {
+      "from": 1795767014670,
+      "to": 1795767047733,
+      "app": "windowsterminal.exe",
+      "title": "C:\\Program Files\\dotnet\\dotnet.exe",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795767017134
+    },
+    {
+      "from": 1795767047788,
+      "to": 1795767058996,
+      "app": "explorer.exe",
+      "title": "net10.0-windows - 文件资源管理器",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795767047788
+    },
+    {
+      "from": 1795767058996,
+      "to": 1795767066928,
+      "app": "explorer.exe",
+      "title": "电池指示器",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795767058996
+    },
+    {
+      "from": 1795767066928,
+      "to": 1795767099813,
+      "app": "dnf.exe",
+      "title": "地下城与勇士：创新世纪",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795767066928
+    },
+    {
+      "from": 1795767099813,
+      "to": 1795767105530,
+      "app": "code - insiders.exe",
+      "title": "events.db - Visual Studio Code - Insiders",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795767099813
+    },
+    {
+      "from": 1795767105530,
+      "to": 1795767109268,
+      "app": "explorer.exe",
+      "title": "net10.0-windows - 文件资源管理器",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795767105530
+    },
+    {
+      "from": 1795767109268,
+      "to": 1795767114387,
+      "app": "explorer.exe",
+      "title": "net10.0-windows - 文件资源管理器",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795767109268
+    },
+    {
+      "from": 1795767114387,
+      "to": 1795767117526,
+      "app": "explorer.exe",
+      "title": "net10.0-windows - 文件资源管理器",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795767114387
+    },
+    {
+      "from": 1795767117526,
+      "to": 1795767139086,
+      "app": "explorer.exe",
+      "title": "系统托盘溢出窗口。",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795767120357
+    },
+    {
+      "from": 1795767139086,
+      "to": 1795767154459,
+      "app": "chatgpt.exe",
+      "title": "ChatGPT",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795767139086
+    },
+    {
+      "from": 1795767154459,
+      "to": 1795767177780,
+      "app": "vc_redist.x64.exe",
+      "title": "",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795767154459
+    },
+    {
+      "from": 1795767177780,
+      "to": 1795767192781,
+      "app": "wegame.exe",
+      "title": "Wegame",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795767178195
+    },
+    {
+      "from": 1795767192781,
+      "to": 1795767205902,
+      "app": "leagueclient.exe",
+      "title": "",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795767192781
+    },
+    {
+      "from": 1795767205902,
+      "to": 1795767210061,
+      "app": "pallas.exe",
+      "title": "",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795767205902
+    },
+    {
+      "from": 1795767210061,
+      "to": 1795767247341,
+      "app": "pallas.exe",
+      "title": "",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795767210061
+    },
+    {
+      "from": 1795767247341,
+      "to": 1795767254689,
+      "app": "qq.exe",
+      "title": "QQ",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795767247341
+    },
+    {
+      "from": 1795767254689,
+      "to": 1795767262434,
+      "app": "chrome.exe",
+      "title": "搜索 - Microsoft 必应 - Google Chrome",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795767254689
+    },
+    {
+      "from": 1795767262434,
+      "to": 1795767344031,
+      "app": "chrome.exe",
+      "title": "关于我们 — 候选人阅读指南 - 飞书云文档 - Google Chrome",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795767321131
+    },
+    {
+      "from": 1795767344031,
+      "to": 1795767351823,
+      "app": "qq.exe",
+      "title": "QQ",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795767344031
+    },
+    {
+      "from": 1795767351823,
+      "to": 1795767438426,
+      "app": "chrome.exe",
+      "title": "技术专家岗位筛选问卷 - Google Chrome",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795767407976
+    },
+    {
+      "from": 1795767564306,
+      "to": 1795767641318,
+      "app": "chrome.exe",
+      "title": "技术专家岗位筛选问卷 - Google Chrome",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795767624820
+    },
+    {
+      "from": 1795767641318,
+      "to": 1795767671669,
+      "app": "chrome.exe",
+      "title": "gemini.google.com/app?pli=1",
+      "url": "https://gemini.google.com/app?pli=1",
+      "fullscreen": false,
+      "lastConfirm": 1795767643771
+    },
+    {
+      "from": 1795767671669,
+      "to": 1795767721323,
+      "app": "chrome.exe",
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/?pli=1",
+      "fullscreen": false,
+      "lastConfirm": 1795767671669
+    },
+    {
+      "from": 1795767721323,
+      "to": 1795767780725,
+      "app": "chrome.exe",
+      "title": "四进制时间编码解百瓶毒酒 - DeepSeek - Google Chrome",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795767729719
+    },
+    {
+      "from": 1795767780725,
+      "to": 1795767790254,
+      "app": "chrome.exe",
+      "title": "技术专家岗位筛选问卷",
+      "url": "https://mcnsnzafsrya.feishu.cn/share/base/form/shrcnYmky4qrUnHZWmfMpmzHZmh",
+      "fullscreen": false,
+      "lastConfirm": 1795767780725
+    },
+    {
+      "from": 1795767790254,
+      "to": 1795767897646,
+      "app": "chrome.exe",
+      "title": "技术专家岗位筛选问卷 - Google Chrome",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795767850716
+    },
+    {
+      "from": 1795767897646,
+      "to": 1795767911251,
+      "app": "chrome.exe",
+      "title": "四进制时间编码解百瓶毒酒 - DeepSeek",
+      "url": "https://chat.deepseek.com/a/chat/s/7458ecc0-900a-4159-997c-a6188f9fcc1f",
+      "fullscreen": false,
+      "lastConfirm": 1795767897646
+    },
+    {
+      "from": 1795767911251,
+      "to": 1795768059476,
+      "app": "chrome.exe",
+      "title": "四进制时间编码解百瓶毒酒 - DeepSeek - Google Chrome",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795768032430
+    },
+    {
+      "from": 1795768093018,
+      "to": 1795768134615,
+      "app": "chrome.exe",
+      "title": "四进制时间编码解百瓶毒酒 - DeepSeek - Google Chrome",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795768093018
+    },
+    {
+      "from": 1795768165578,
+      "to": 1795768229780,
+      "app": "chrome.exe",
+      "title": "四进制时间编码解百瓶毒酒 - DeepSeek - Google Chrome",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795768226121
+    },
+    {
+      "from": 1795768269628,
+      "to": 1795768269663,
+      "app": "chrome.exe",
+      "title": "技术专家岗位筛选问卷 - Google Chrome",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795768269628
+    },
+    {
+      "from": 1795768269663,
+      "to": 1795768286622,
+      "app": "chrome.exe",
+      "title": "技术专家岗位筛选问卷",
+      "url": "https://mcnsnzafsrya.feishu.cn/share/base/form/shrcnYmky4qrUnHZWmfMpmzHZmh",
+      "fullscreen": false,
+      "lastConfirm": 1795768269663
+    },
+    {
+      "from": 1795768286622,
+      "to": 1795768295922,
+      "app": "chrome.exe",
+      "title": "技术专家岗位筛选问卷 - Google Chrome",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795768286622
+    },
+    {
+      "from": 1795768295922,
+      "to": 1795768354226,
+      "app": "chrome.exe",
+      "title": "四进制时间编码解百瓶毒酒 - DeepSeek",
+      "url": "https://chat.deepseek.com/a/chat/s/7458ecc0-900a-4159-997c-a6188f9fcc1f",
+      "fullscreen": false,
+      "lastConfirm": 1795768295922
+    },
+    {
+      "from": 1795768354226,
+      "to": 1795768536727,
+      "app": "chrome.exe",
+      "title": "四进制时间编码解百瓶毒酒 - DeepSeek - Google Chrome",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795768475269
+    },
+    {
+      "from": 1795768536727,
+      "to": 1795768597370,
+      "app": "chrome.exe",
+      "title": "四进制时间编码解百瓶毒酒 - DeepSeek",
+      "url": "https://chat.deepseek.com/a/chat/s/7458ecc0-900a-4159-997c-a6188f9fcc1f",
+      "fullscreen": false,
+      "lastConfirm": 1795768536727
+    },
+    {
+      "from": 1795768597370,
+      "to": 1795768600406,
+      "app": "chrome.exe",
+      "title": "四进制时间编码解百瓶毒酒 - DeepSeek - Google Chrome",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795768597370
+    },
+    {
+      "from": 1795768749106,
+      "to": 1795768751685,
+      "app": "chrome.exe",
+      "title": "技术专家岗位筛选问卷 - Google Chrome",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795768749106
+    },
+    {
+      "from": 1795768751685,
+      "to": 1795768783622,
+      "app": "chrome.exe",
+      "title": "技术专家岗位筛选问卷 - Google Chrome",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795768751685
+    },
+    {
+      "from": 1795768783622,
+      "to": 1795768845805,
+      "app": "chrome.exe",
+      "title": "关于我们 — 候选人阅读指南 - 飞书云文档 - Google Chrome",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795768812255
+    },
+    {
+      "from": 1795768872768,
+      "to": 1795768898982,
+      "app": "chrome.exe",
+      "title": "关于我们 — 候选人阅读指南 - 飞书云文档 - Google Chrome",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795768872768
+    },
+    {
+      "from": 1795768898982,
+      "to": 1795768906390,
+      "app": "leagueclientux.exe",
+      "title": "League of Legends",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795768898982
+    },
+    {
+      "from": 1795768906390,
+      "to": 1795768914104,
+      "app": "explorer.exe",
+      "title": "系统托盘溢出窗口。",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795768906390
+    },
+    {
+      "from": 1795768914104,
+      "to": 1795768922590,
+      "app": "leagueclientux.exe",
+      "title": "League of Legends",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795768914104
+    },
+    {
+      "from": 1795768922590,
+      "to": 1795768926550,
+      "app": "explorer.exe",
+      "title": "",
+      "url": null,
+      "fullscreen": true,
+      "lastConfirm": 1795768922590
+    },
+    {
+      "from": 1795768926550,
+      "to": 1795768972939,
+      "app": "vmplayer.exe",
+      "title": "Windows 11 x64- VMware Workstation 17 Player",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795768926550
+    },
+    {
+      "from": 1795768972939,
+      "to": 1795768978476,
+      "app": "leagueclientux.exe",
+      "title": "League of Legends",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795768972939
+    },
+    {
+      "from": 1795768978476,
+      "to": 1795768982215,
+      "app": "explorer.exe",
+      "title": "",
+      "url": null,
+      "fullscreen": true,
+      "lastConfirm": 1795768979461
+    },
+    {
+      "from": 1795768982215,
+      "to": 1795768998777,
+      "app": "taskmgr.exe",
+      "title": "任务管理器",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795768982215
+    },
+    {
+      "from": 1795768998777,
+      "to": 1795769007975,
+      "app": "explorer.exe",
+      "title": "Program Manager",
+      "url": null,
+      "fullscreen": true,
+      "lastConfirm": 1795768998777
+    },
+    {
+      "from": 1795769007975,
+      "to": 1795769013706,
+      "app": "explorer.exe",
+      "title": "系统托盘溢出窗口。",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795769007975
+    },
+    {
+      "from": 1795769013706,
+      "to": 1795769019520,
+      "app": "explorer.exe",
+      "title": "系统托盘溢出窗口。",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795769013706
+    },
+    {
+      "from": 1795769019520,
+      "to": 1795769026911,
+      "app": "leagueclientux.exe",
+      "title": "League of Legends",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795769019520
+    },
+    {
+      "from": 1795769026911,
+      "to": 1795769055080,
+      "app": "explorer.exe",
+      "title": "系统托盘溢出窗口。",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795769029130
+    },
+    {
+      "from": 1795769055080,
+      "to": 1795769068206,
+      "app": "chrome.exe",
+      "title": "获取访问凭证 | QQ 机器人官方文档",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/dev-prepare/access-token.html#%E8%8E%B7%E5%8F%96-access-token",
+      "fullscreen": false,
+      "lastConfirm": 1795769055080
+    },
+    {
+      "from": 1795769068206,
+      "to": 1795769077571,
+      "app": "chrome.exe",
+      "title": "QQ机器人接入AI可行 - DeepSeek - Google Chrome",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795769068206
+    },
+    {
+      "from": 1795769077571,
+      "to": 1795769088682,
+      "app": "chrome.exe",
+      "title": "QQ机器人接入AI可行 - DeepSeek - Google Chrome",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795769077571
+    },
+    {
+      "from": 1795769088682,
+      "to": 1795769096757,
+      "app": "chrome.exe",
+      "title": "QQ机器人接入AI可行 - DeepSeek - Google Chrome",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795769088682
+    },
+    {
+      "from": 1795769096757,
+      "to": 1795769110896,
+      "app": "leagueclientux.exe",
+      "title": "League of Legends",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795769096757
+    },
+    {
+      "from": 1795769110896,
+      "to": 1795769153308,
+      "app": "leagueclientux.exe",
+      "title": "League of Legends",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795769110896
+    },
+    {
+      "from": 1795769153308,
+      "to": 1795769157784,
+      "app": "chrome.exe",
+      "title": "QQ机器人接入AI可行 - DeepSeek - Google Chrome",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795769153308
+    },
+    {
+      "from": 1795769157784,
+      "to": 1795770003294,
+      "app": "league of legends.exe",
+      "title": "League of Legends (TM) Client",
+      "url": null,
+      "fullscreen": true,
+      "lastConfirm": 1795769944775
+    },
+    {
+      "from": 1795770003294,
+      "to": 1795770006319,
+      "app": "chrome.exe",
+      "title": "QQ机器人接入AI可行 - DeepSeek - Google Chrome",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795770003294
+    },
+    {
+      "from": 1795770006319,
+      "to": 1795770016921,
+      "app": "leagueclientux.exe",
+      "title": "League of Legends",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795770006319
+    },
+    {
+      "from": 1795770016921,
+      "to": 1795770024193,
+      "app": "chrome.exe",
+      "title": "QQ机器人接入AI可行 - DeepSeek - Google Chrome",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795770016921
+    },
+    {
+      "from": 1795770024193,
+      "to": 1795770031071,
+      "app": "chrome.exe",
+      "title": "QQ机器人接入AI可行 - DeepSeek - Google Chrome",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795770029536
+    },
+    {
+      "from": 1795770031071,
+      "to": 1795770037638,
+      "app": "chatgpt.exe",
+      "title": "ChatGPT",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795770031071
+    },
+    {
+      "from": 1795770037638,
+      "to": 1795770085986,
+      "app": "chrome.exe",
+      "title": "QQ机器人接入AI可行 - DeepSeek - Google Chrome",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795770037638
+    },
+    {
+      "from": 1795770085986,
+      "to": 1795770092350,
+      "app": "qq.exe",
+      "title": "QQ",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795770085986
+    },
+    {
+      "from": 1795770092350,
+      "to": 1795770096364,
+      "app": "chrome.exe",
+      "title": "QQ机器人接入AI可行 - DeepSeek - Google Chrome",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795770092350
+    },
+    {
+      "from": 1795770096364,
+      "to": 1795770122624,
+      "app": "chrome.exe",
+      "title": "DeepSeek - 探索未至之境 - Google Chrome",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795770096364
+    },
+    {
+      "from": 1795770122624,
+      "to": 1795770152516,
+      "app": "chrome.exe",
+      "title": "DeepSeek - 探索未至之境",
+      "url": "https://chat.deepseek.com/a/chat/s/493d9df8-4662-4bc8-9048-48d6fc095525",
+      "fullscreen": false,
+      "lastConfirm": 1795770122624
+    },
+    {
+      "from": 1795770152516,
+      "to": 1795770183074,
+      "app": "chrome.exe",
+      "title": "DeepSeek - 探索未至之境 - Google Chrome",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795770152516
+    },
+    {
+      "from": 1795770217214,
+      "to": 1795770219249,
+      "app": "explorer.exe",
+      "title": "",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795770217214
+    },
+    {
+      "from": 1795770219249,
+      "to": 1795770222509,
+      "app": "clash-verge.exe",
+      "title": "Clash Verge",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795770219249
+    },
+    {
+      "from": 1795770222509,
+      "to": 1795770283039,
+      "app": "chrome.exe",
+      "title": "DeepSeek - 探索未至之境 - Google Chrome",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795770222509
+    },
+    {
+      "from": 1795770283039,
+      "to": 1795770302879,
+      "app": "chrome.exe",
+      "title": "无标题 - Google Chrome",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795770283039
+    },
+    {
+      "from": 1795770302879,
+      "to": 1795770368876,
+      "app": "chrome.exe",
+      "title": "无标题 - Google Chrome",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795770363050
+    },
+    {
+      "from": 1795770368876,
+      "to": 1795770384221,
+      "app": "chrome.exe",
+      "title": "dsh插件市场 - 搜索",
+      "url": "https://www.bing.com/search?q=dsh%E6%8F%92%E4%BB%B6%E5%B8%82%E5%9C%BA&PC=U316&FORM=CHROMN",
+      "fullscreen": false,
+      "lastConfirm": 1795770368876
+    },
+    {
+      "from": 1795770384221,
+      "to": 1795770404489,
+      "app": "taskmgr.exe",
+      "title": "任务管理器",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795770384221
+    },
+    {
+      "from": 1795770404489,
+      "to": 1795770413281,
+      "app": "deepseek harness.exe",
+      "title": "没有真正意义上的AI助理 — DeepSeek Harness",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795770404489
+    },
+    {
+      "from": 1795770413281,
+      "to": 1795770485052,
+      "app": "taskmgr.exe",
+      "title": "任务管理器",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795770473948
+    },
+    {
+      "from": 1795770485052,
+      "to": 1795770492484,
+      "app": "taskmgr.exe",
+      "title": "BehaviorCollector.exe 属性",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795770485052
+    },
+    {
+      "from": 1795770492484,
+      "to": 1795770533807,
+      "app": "trae cn.exe",
+      "title": "继续完成 BehaviorCollector 开发",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795770492484
+    },
+    {
+      "from": 1795770533807,
+      "to": 1795770548072,
+      "app": "explorer.exe",
+      "title": "系统托盘溢出窗口。",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795770533807
+    },
+    {
+      "from": 1795770548072,
+      "to": 1795770598088,
+      "app": "taskmgr.exe",
+      "title": "任务管理器",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795770548072
+    },
+    {
+      "from": 1795770598088,
+      "to": 1795770663830,
+      "app": "trae cn.exe",
+      "title": "继续完成 BehaviorCollector 开发",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795770608962
+    },
+    {
+      "from": 1795772437674,
+      "to": 1795772450180,
+      "app": "trae cn.exe",
+      "title": "继续完成 BehaviorCollector 开发",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795772445608
+    },
+    {
+      "from": 1795772450180,
+      "to": 1795772466539,
+      "app": "chatgpt.exe",
+      "title": "ChatGPT",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795772450180
+    },
+    {
+      "from": 1795772466539,
+      "to": 1795772526961,
+      "app": "trae cn.exe",
+      "title": "继续完成 BehaviorCollector 开发",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795772466539
+    },
+    {
+      "from": 1795772555086,
+      "to": 1795772555221,
+      "app": "explorer.exe",
+      "title": "",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795772555086
+    },
+    {
+      "from": 1795772555221,
+      "to": 1795772568218,
+      "app": "explorer.exe",
+      "title": "系统托盘溢出窗口。",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795772555221
+    },
+    {
+      "from": 1795772568218,
+      "to": 1795772577653,
+      "app": "chatgpt.exe",
+      "title": "ChatGPT",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795772568218
+    },
+    {
+      "from": 1795772577653,
+      "to": 1795772582048,
+      "app": "chrome.exe",
+      "title": "关于我们 — 候选人阅读指南 - 飞书云文档",
+      "url": "https://pirategang.feishu.cn/docx/LPwudGAKso6Y6vxpVvWcBGownIe",
+      "fullscreen": false,
+      "lastConfirm": 1795772577653
+    },
+    {
+      "from": 1795772582048,
+      "to": 1795772587947,
+      "app": "chrome.exe",
+      "title": "新标签页 - Google Chrome",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795772582048
+    },
+    {
+      "from": 1795772587947,
+      "to": 1795772595989,
+      "app": "chrome.exe",
+      "title": "无标题 - Google Chrome",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795772587947
+    },
+    {
+      "from": 1795772595989,
+      "to": 1795772607076,
+      "app": "chrome.exe",
+      "title": "无标题 - Google Chrome",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795772595989
+    },
+    {
+      "from": 1795772607076,
+      "to": 1795773378321,
+      "app": "dnf.exe",
+      "title": "地下城与勇士：创新世纪",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795773332890
+    },
+    {
+      "from": 1795773378321,
+      "to": 1795773385696,
+      "app": "chatgpt.exe",
+      "title": "ChatGPT",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795773381200
+    },
+    {
+      "from": 1795773385696,
+      "to": 1795773400060,
+      "app": "explorer.exe",
+      "title": "系统托盘溢出窗口。",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795773385696
+    },
+    {
+      "from": 1795773400060,
+      "to": 1795773403423,
+      "app": "trae cn.exe",
+      "title": "继续完成 BehaviorCollector 开发",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795773400060
+    },
+    {
+      "from": 1795773403423,
+      "to": 1795773422726,
+      "app": "deepseek harness.exe",
+      "title": "没有真正意义上的AI助理 — DeepSeek Harness",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795773403423
+    },
+    {
+      "from": 1795773422726,
+      "to": 1795773430980,
+      "app": "chrome.exe",
+      "title": "dsh插件市场 - 搜索",
+      "url": "https://www.bing.com/search?q=dsh%E6%8F%92%E4%BB%B6%E5%B8%82%E5%9C%BA&PC=U316&FORM=CHROMN",
+      "fullscreen": false,
+      "lastConfirm": 1795773422726
+    },
+    {
+      "from": 1795773430980,
+      "to": 1795773440069,
+      "app": "clash-verge.exe",
+      "title": "Clash Verge",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795773430980
+    },
+    {
+      "from": 1795773440069,
+      "to": 1795773454147,
+      "app": "clash-verge.exe",
+      "title": "Clash Verge",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795773440069
+    },
+    {
+      "from": 1795773454147,
+      "to": 1795773460501,
+      "app": "chrome.exe",
+      "title": "dsh插件市场 - 搜索 - Google Chrome",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795773454147
+    },
+    {
+      "from": 1795773460501,
+      "to": 1795773493186,
+      "app": "deepseek harness.exe",
+      "title": "没有真正意义上的AI助理 — DeepSeek Harness",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795773460501
+    },
+    {
+      "from": 1795773493186,
+      "to": 1795773510797,
+      "app": "qq.exe",
+      "title": "QQ",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795773493186
+    },
+    {
+      "from": 1795773510797,
+      "to": 1795773521478,
+      "app": "chrome.exe",
+      "title": "Agent 接入 | QQ 机器人官方文档",
+      "url": "https://bot.q.qq.com/wiki/agent-qqbot/#%E5%BF%AB%E9%80%9F%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AA-qq-%E6%9C%BA%E5%99%A8%E4%BA%BA",
+      "fullscreen": false,
+      "lastConfirm": 1795773510802
+    },
+    {
+      "from": 1795773521478,
+      "to": 1795773533594,
+      "app": "chrome.exe",
+      "title": "搜索 - Microsoft 必应 - Google Chrome",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795773521478
+    },
+    {
+      "from": 1795773533594,
+      "to": 1795773588248,
+      "app": "chrome.exe",
+      "title": "QQ机器人接入AI可行 - DeepSeek - Google Chrome",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795773579826
+    },
+    {
+      "from": 1795773588248,
+      "to": 1795773634107,
+      "app": "chrome.exe",
+      "title": "QQ机器人接入AI可行 - DeepSeek",
+      "url": "https://chat.deepseek.com/a/chat/s/a6d75862-8fa5-46c1-8d69-153cf3a7156d",
+      "fullscreen": false,
+      "lastConfirm": 1795773588248
+    },
+    {
+      "from": 1795773634107,
+      "to": 1795773714001,
+      "app": "deepseek harness.exe",
+      "title": "没有真正意义上的AI助理 — DeepSeek Harness",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795773694811
+    },
+    {
+      "from": 1795773759299,
+      "to": 1795773869885,
+      "app": "deepseek harness.exe",
+      "title": "没有真正意义上的AI助理 — DeepSeek Harness",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795773819786
+    },
+    {
+      "from": 1795773869885,
+      "to": 1795773873590,
+      "app": "chrome.exe",
+      "title": "搜索 - Microsoft 必应 - Google Chrome",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795773869885
+    },
+    {
+      "from": 1795773873590,
+      "to": 1795773878709,
+      "app": "chrome.exe",
+      "title": "qqbot - 搜索 - Google Chrome",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795773873590
+    },
+    {
+      "from": 1795773878709,
+      "to": 1795773884184,
+      "app": "chrome.exe",
+      "title": "QQ开放平台 - Google Chrome",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795773878709
+    },
+    {
+      "from": 1795773884184,
+      "to": 1795773904693,
+      "app": "chrome.exe",
+      "title": "QQ机器人",
+      "url": "https://q.qq.com/qqbot/dashboard/manage/1904583186",
+      "fullscreen": false,
+      "lastConfirm": 1795773884184
+    },
+    {
+      "from": 1795773904693,
+      "to": 1795774029598,
+      "app": "deepseek harness.exe",
+      "title": "没有真正意义上的AI助理 — DeepSeek Harness",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795774025136
+    },
+    {
+      "from": 1795774170097,
+      "to": 1795774217068,
+      "app": "deepseek harness.exe",
+      "title": "没有真正意义上的AI助理 — DeepSeek Harness",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795774170097
+    },
+    {
+      "from": 1795774217068,
+      "to": 1795774310092,
+      "app": "trae cn.exe",
+      "title": "package.json - kotana-runtime - TRAE CN",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795774277856
+    },
+    {
+      "from": 1795774331302,
+      "to": 1795774331398,
+      "app": "explorer.exe",
+      "title": "",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795774331302
+    },
+    {
+      "from": 1795774331398,
+      "to": 1795774429851,
+      "app": "qq.exe",
+      "title": "QQ",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795774391686
+    },
+    {
+      "from": 1795774429851,
+      "to": 1795774442854,
+      "app": "trae cn.exe",
+      "title": "package.json - kotana-runtime - TRAE CN",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795774429851
+    },
+    {
+      "from": 1795774442854,
+      "to": 1795774555526,
+      "app": "deepseek harness.exe",
+      "title": "没有真正意义上的AI助理 — DeepSeek Harness",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795774503452
+    },
+    {
+      "from": 1795774596110,
+      "to": 1795774690725,
+      "app": "deepseek harness.exe",
+      "title": "没有真正意义上的AI助理 — DeepSeek Harness",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795774656590
+    },
+    {
+      "from": 1795774851939,
+      "to": 1795775189625,
+      "app": "deepseek harness.exe",
+      "title": "没有真正意义上的AI助理 — DeepSeek Harness",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795774972901
+    },
+    {
+      "from": 1795775189625,
+      "to": 1795775195425,
+      "app": "qq.exe",
+      "title": "QQ",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795775189625
+    },
+    {
+      "from": 1795775195425,
+      "to": 1795775230239,
+      "app": "qq.exe",
+      "title": "设置",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795775195425
+    },
+    {
+      "from": 1795775230239,
+      "to": 1795775234466,
+      "app": "qq.exe",
+      "title": "QQ",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795775230239
+    },
+    {
+      "from": 1795775234466,
+      "to": 1795775401530,
+      "app": "deepseek harness.exe",
+      "title": "没有真正意义上的AI助理 — DeepSeek Harness",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795775355337
+    },
+    {
+      "from": 1795775512422,
+      "to": 1795775995026,
+      "app": "deepseek harness.exe",
+      "title": "没有真正意义上的AI助理 — DeepSeek Harness",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795775935481
+    },
+    {
+      "from": 1795775995026,
+      "to": 1795776003074,
+      "app": "chrome.exe",
+      "title": "搜索 - Microsoft 必应 - Google Chrome",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795775995026
+    },
+    {
+      "from": 1795776003074,
+      "to": 1795776009929,
+      "app": "chrome.exe",
+      "title": "dsh-pet - 搜索 - Google Chrome",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795776003074
+    },
+    {
+      "from": 1795776009929,
+      "to": 1795776015302,
+      "app": "chrome.exe",
+      "title": "dsh-pet/dsh-pet at main · PC2005-cloud/dsh-pet",
+      "url": "https://github.com/PC2005-cloud/dsh-pet/tree/main/dsh-pet",
+      "fullscreen": false,
+      "lastConfirm": 1795776009929
+    },
+    {
+      "from": 1795776015302,
+      "to": 1795776070467,
+      "app": "chrome.exe",
+      "title": "PC2005-cloud/dsh-pet: DSH 桌面宠物：一行命令装好即用的透明动画小桌宠，支持多开、大小位置随心配置；还内置 DIY 素材链，能用 AI 视频自造专属宠物",
+      "url": "https://github.com/PC2005-cloud/dsh-pet",
+      "fullscreen": false,
+      "lastConfirm": 1795776015302
+    },
+    {
+      "from": 1795776070467,
+      "to": 1795776083771,
+      "app": "chrome.exe",
+      "title": "PC2005-cloud/dsh-pet: DSH 桌面宠物：一行命令装好即用的透明动画小桌宠，支持多开、大小位置随心配置；还内置 DIY 素材链，能用 AI 视频自造专属宠物 - Google Chrome",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795776070467
+    },
+    {
+      "from": 1795776083771,
+      "to": 1795776878725,
+      "app": "deepseek harness.exe",
+      "title": "没有真正意义上的AI助理 — DeepSeek Harness",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795776869102
+    },
+    {
+      "from": 1795776918199,
+      "to": 1795776936349,
+      "app": "deepseek harness.exe",
+      "title": "没有真正意义上的AI助理 — DeepSeek Harness",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795776932349
+    },
+    {
+      "from": 1795776993873,
+      "to": 1795777169015,
+      "app": "deepseek harness.exe",
+      "title": "没有真正意义上的AI助理 — DeepSeek Harness",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795777000009
+    },
+    {
+      "from": 1795777171099,
+      "to": 1795777256235,
+      "app": "deepseek harness.exe",
+      "title": "没有真正意义上的AI助理 — DeepSeek Harness",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795777236738
+    },
+    {
+      "from": 1795777297150,
+      "to": 1795777331337,
+      "app": "deepseek harness.exe",
+      "title": "没有真正意义上的AI助理 — DeepSeek Harness",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795777297150
+    },
+    {
+      "from": 1795777357534,
+      "to": 1795777436502,
+      "app": "deepseek harness.exe",
+      "title": "没有真正意义上的AI助理 — DeepSeek Harness",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795777417926
+    },
+    {
+      "from": 1795777669739,
+      "to": 1795777671137,
+      "app": "kotana.exe",
+      "title": "Kotana",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795777669739
+    },
+    {
+      "from": 1795777671137,
+      "to": 1795777731981,
+      "app": "kotana.exe",
+      "title": "Kotana Pet",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795777731625
+    },
+    {
+      "from": 1795777737903,
+      "to": 1795777742586,
+      "app": "deepseek harness.exe",
+      "title": "没有真正意义上的AI助理 — DeepSeek Harness",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795777737903
+    },
+    {
+      "from": 1795777742586,
+      "to": 1795777755426,
+      "app": "deepseek harness.exe",
+      "title": "没有真正意义上的AI助理 — DeepSeek Harness",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795777742586
+    },
+    {
+      "from": 1795777755426,
+      "to": 1795777769376,
+      "app": "kotana.exe",
+      "title": "Kotana Pet",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795777761453
+    },
+    {
+      "from": 1795777769376,
+      "to": 1795777794805,
+      "app": "kotana.exe",
+      "title": "Kotana Pet",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795777793296
+    },
+    {
+      "from": 1795777794805,
+      "to": 1795777997408,
+      "app": "deepseek harness.exe",
+      "title": "没有真正意义上的AI助理 — DeepSeek Harness",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795777976448
+    },
+    {
+      "from": 1795778067230,
+      "to": 1795778068367,
+      "app": "kotana.exe",
+      "title": "Kotana",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795778067230
+    },
+    {
+      "from": 1795778068367,
+      "to": 1795778076307,
+      "app": "kotana.exe",
+      "title": "Kotana Pet",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795778068367
+    },
+    {
+      "from": 1795778076307,
+      "to": 1795778080942,
+      "app": "kotana.exe",
+      "title": "Kotana",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795778076307
+    },
+    {
+      "from": 1795778080942,
+      "to": 1795778085084,
+      "app": "msedgewebview2.exe",
+      "title": "DevTools - localhost:1420/",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795778080942
+    },
+    {
+      "from": 1795778085084,
+      "to": 1795778093083,
+      "app": "deepseek harness.exe",
+      "title": "没有真正意义上的AI助理 — DeepSeek Harness",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795778093080
+    },
+    {
+      "from": 1795778093083,
+      "to": 1795778110132,
+      "app": "kotana.exe",
+      "title": "Kotana Pet",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795778108640
+    },
+    {
+      "from": 1795778110132,
+      "to": 1795778172692,
+      "app": "deepseek harness.exe",
+      "title": "没有真正意义上的AI助理 — DeepSeek Harness",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795778170850
+    },
+    {
+      "from": 1795778234421,
+      "to": 1795778235609,
+      "app": "kotana.exe",
+      "title": "Kotana",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795778234421
+    },
+    {
+      "from": 1795778235609,
+      "to": 1795778551343,
+      "app": "kotana.exe",
+      "title": "Kotana Pet",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795778235609
+    },
+    {
+      "from": 1795778551343,
+      "to": 1795778572025,
+      "app": "deepseek harness.exe",
+      "title": "没有真正意义上的AI助理 — DeepSeek Harness",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795778572018
+    },
+    {
+      "from": 1795778572025,
+      "to": 1795778590182,
+      "app": "kotana.exe",
+      "title": "Kotana Pet",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795778587089
+    },
+    {
+      "from": 1795778590182,
+      "to": 1795778688540,
+      "app": "deepseek harness.exe",
+      "title": "没有真正意义上的AI助理 — DeepSeek Harness",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795778650455
+    },
+    {
+      "from": 1795778741095,
+      "to": 1795778742234,
+      "app": "kotana.exe",
+      "title": "Kotana",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795778741095
+    },
+    {
+      "from": 1795778742234,
+      "to": 1795778772676,
+      "app": "kotana.exe",
+      "title": "Kotana Pet",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795778771265
+    },
+    {
+      "from": 1795778772676,
+      "to": 1795778781700,
+      "app": "deepseek harness.exe",
+      "title": "没有真正意义上的AI助理 — DeepSeek Harness",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795778781693
+    },
+    {
+      "from": 1795778781700,
+      "to": 1795778812883,
+      "app": "kotana.exe",
+      "title": "Kotana Pet",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795778785243
+    },
+    {
+      "from": 1795778812883,
+      "to": 1795778836447,
+      "app": "deepseek harness.exe",
+      "title": "没有真正意义上的AI助理 — DeepSeek Harness",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795778812883
+    },
+    {
+      "from": 1795778836447,
+      "to": 1795778856597,
+      "app": "kotana.exe",
+      "title": "Kotana Pet",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795778856595
+    },
+    {
+      "from": 1795778856597,
+      "to": 1795778864351,
+      "app": "kotana.exe",
+      "title": "Kotana",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795778864348
+    },
+    {
+      "from": 1795778864351,
+      "to": 1795778871924,
+      "app": "kotana.exe",
+      "title": "Kotana Pet",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795778871921
+    },
+    {
+      "from": 1795778871924,
+      "to": 1795778877857,
+      "app": "kotana.exe",
+      "title": "Kotana",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795778877849
+    },
+    {
+      "from": 1795778877857,
+      "to": 1795778969037,
+      "app": "kotana.exe",
+      "title": "Kotana Pet",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795778938516
+    },
+    {
+      "from": 1795779044284,
+      "to": 1795779046992,
+      "app": "kotana.exe",
+      "title": "Kotana Pet",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795779046842
+    },
+    {
+      "from": 1795779046992,
+      "to": 1795779070322,
+      "app": "kotana.exe",
+      "title": "Kotana Pet",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795779069092
+    },
+    {
+      "from": 1795779070322,
+      "to": 1795779169637,
+      "app": "deepseek harness.exe",
+      "title": "没有真正意义上的AI助理 — DeepSeek Harness",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795779130932
+    },
+    {
+      "from": 1795779169637,
+      "to": 1795779174337,
+      "app": "kotana.exe",
+      "title": "Kotana Pet",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795779169637
+    },
+    {
+      "from": 1795779189490,
+      "to": 1795779211074,
+      "app": "deepseek harness.exe",
+      "title": "没有真正意义上的AI助理 — DeepSeek Harness",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795779189490
+    },
+    {
+      "from": 1795779211074,
+      "to": 1795779233053,
+      "app": "kotana.exe",
+      "title": "Kotana Pet",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795779211074
+    },
+    {
+      "from": 1795779233053,
+      "to": 1795779247605,
+      "app": "deepseek harness.exe",
+      "title": "没有真正意义上的AI助理 — DeepSeek Harness",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795779233053
+    },
+    {
+      "from": 1795779247605,
+      "to": 1795779260477,
+      "app": "trae cn.exe",
+      "title": "package.json - kotana-runtime - TRAE CN",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795779247605
+    },
+    {
+      "from": 1795779260477,
+      "to": 1795779307991,
+      "app": "kotana.exe",
+      "title": "Kotana Pet",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795779296157
+    },
+    {
+      "from": 1795779307991,
+      "to": 1795779325040,
+      "app": "trae cn.exe",
+      "title": "package.json - kotana-runtime - TRAE CN",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795779307991
+    },
+    {
+      "from": 1795779325040,
+      "to": 1795779333987,
+      "app": "kotana.exe",
+      "title": "Kotana Pet",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795779330683
+    },
+    {
+      "from": 1795779333987,
+      "to": 1795779361188,
+      "app": "trae cn.exe",
+      "title": "butler-insight.ts - kotana-runtime - TRAE CN",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795779333987
+    },
+    {
+      "from": 1795779361188,
+      "to": 1795779382169,
+      "app": "trae cn.exe",
+      "title": "butler-insight.ts - kotana-runtime - TRAE CN",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795779377747
+    },
+    {
+      "from": 1795779382169,
+      "to": 1795779399562,
+      "app": "kotana.exe",
+      "title": "Kotana Pet",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795779398276
+    },
+    {
+      "from": 1795779399562,
+      "to": 1795779405895,
+      "app": "qq.exe",
+      "title": "QQ",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795779399562
+    },
+    {
+      "from": 1795779405895,
+      "to": 1795779413379,
+      "app": "trae cn.exe",
+      "title": "butler-insight.ts - kotana-runtime - TRAE CN",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795779405895
+    },
+    {
+      "from": 1795779413379,
+      "to": 1795779597402,
+      "app": "deepseek harness.exe",
+      "title": "没有真正意义上的AI助理 — DeepSeek Harness",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795779594555
+    },
+    {
+      "from": 1795779597402,
+      "to": 1795779617936,
+      "app": "kotana.exe",
+      "title": "Kotana Pet",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795779617216
+    },
+    {
+      "from": 1795779617936,
+      "to": 1795779640255,
+      "app": "deepseek harness.exe",
+      "title": "没有真正意义上的AI助理 — DeepSeek Harness",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795779640248
+    },
+    {
+      "from": 1795779640255,
+      "to": 1795779727103,
+      "app": "kotana.exe",
+      "title": "Kotana Pet",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795779700466
+    },
+    {
+      "from": 1795779727103,
+      "to": 1795779815435,
+      "app": "deepseek harness.exe",
+      "title": "没有真正意义上的AI助理 — DeepSeek Harness",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795779787167
+    },
+    {
+      "from": 1795779828045,
+      "to": 1795779828607,
+      "app": "kotana.exe",
+      "title": "Kotana",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795779828045
+    },
+    {
+      "from": 1795779828607,
+      "to": 1795779877939,
+      "app": "kotana.exe",
+      "title": "Kotana Pet",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795779862171
+    },
+    {
+      "from": 1795779877939,
+      "to": 1795779901454,
+      "app": "deepseek harness.exe",
+      "title": "没有真正意义上的AI助理 — DeepSeek Harness",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795779877939
+    },
+    {
+      "from": 1795779901454,
+      "to": 1795779945662,
+      "app": "kotana.exe",
+      "title": "Kotana Pet",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795779901454
+    },
+    {
+      "from": 1795779974476,
+      "to": 1795779978006,
+      "app": "deepseek harness.exe",
+      "title": "没有真正意义上的AI助理 — DeepSeek Harness",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795779974476
+    },
+    {
+      "from": 1795779978006,
+      "to": 1795779996846,
+      "app": "kotana.exe",
+      "title": "Kotana Pet",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795779978006
+    },
+    {
+      "from": 1795779996846,
+      "to": 1795780032963,
+      "app": "deepseek harness.exe",
+      "title": "没有真正意义上的AI助理 — DeepSeek Harness",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795779996846
+    },
+    {
+      "from": 1795780032963,
+      "to": 1795780115784,
+      "app": "kotana.exe",
+      "title": "Kotana Pet",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795780032963
+    },
+    {
+      "from": 1795780115784,
+      "to": 1795780130934,
+      "app": "deepseek harness.exe",
+      "title": "没有真正意义上的AI助理 — DeepSeek Harness",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795780130929
+    },
+    {
+      "from": 1795780130934,
+      "to": 1795780144846,
+      "app": "kotana.exe",
+      "title": "Kotana Pet",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795780142769
+    },
+    {
+      "from": 1795780144846,
+      "to": 1795780209997,
+      "app": "deepseek harness.exe",
+      "title": "没有真正意义上的AI助理 — DeepSeek Harness",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795780209989
+    },
+    {
+      "from": 1795780209997,
+      "to": 1795780237422,
+      "app": "kotana.exe",
+      "title": "Kotana Pet",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795780227392
+    },
+    {
+      "from": 1795780237422,
+      "to": 1795780301170,
+      "app": "deepseek harness.exe",
+      "title": "没有真正意义上的AI助理 — DeepSeek Harness",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795780298294
+    },
+    {
+      "from": 1795780332843,
+      "to": 1795780333278,
+      "app": "kotana.exe",
+      "title": "Kotana",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795780332843
+    },
+    {
+      "from": 1795780333278,
+      "to": 1795780370793,
+      "app": "kotana.exe",
+      "title": "Kotana Pet",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795780359502
+    },
+    {
+      "from": 1795780370793,
+      "to": 1795780374281,
+      "app": "deepseek harness.exe",
+      "title": "没有真正意义上的AI助理 — DeepSeek Harness",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795780370793
+    },
+    {
+      "from": 1795780374281,
+      "to": 1795780415145,
+      "app": "kotana.exe",
+      "title": "Kotana Pet",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795780374281
+    },
+    {
+      "from": 1795780415145,
+      "to": 1795780421353,
+      "app": "deepseek harness.exe",
+      "title": "没有真正意义上的AI助理 — DeepSeek Harness",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795780415145
+    },
+    {
+      "from": 1795780457217,
+      "to": 1795780457632,
+      "app": "kotana.exe",
+      "title": "Kotana",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795780457217
+    },
+    {
+      "from": 1795780457632,
+      "to": 1795780523046,
+      "app": "kotana.exe",
+      "title": "Kotana Pet",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795780457632
+    },
+    {
+      "from": 1795780523046,
+      "to": 1795780558900,
+      "app": "deepseek harness.exe",
+      "title": "没有真正意义上的AI助理 — DeepSeek Harness",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795780523046
+    },
+    {
+      "from": 1795780558900,
+      "to": 1795789683600,
+      "app": "kotana.exe",
+      "title": "Kotana Pet",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795789672037
+    },
+    {
+      "from": 1795789683600,
+      "to": 1795789867044,
+      "app": "deepseek harness.exe",
+      "title": "没有真正意义上的AI助理 — DeepSeek Harness",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795789865363
+    },
+    {
+      "from": 1795789996653,
+      "to": 1795789997173,
+      "app": "kotana.exe",
+      "title": "Kotana",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795789996653
+    },
+    {
+      "from": 1795789997173,
+      "to": 1795790106450,
+      "app": "kotana.exe",
+      "title": "Kotana Pet",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795789997173
+    },
+    {
+      "from": 1795790106450,
+      "to": 1795790115124,
+      "app": "deepseek harness.exe",
+      "title": "没有真正意义上的AI助理 — DeepSeek Harness",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795790106450
+    },
+    {
+      "from": 1795790115124,
+      "to": 1795790364631,
+      "app": "deepseek harness.exe",
+      "title": "没有真正意义上的AI助理 — DeepSeek Harness",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795790115124
+    },
+    {
+      "from": 1795790364631,
+      "to": 1795790367872,
+      "app": "kotana.exe",
+      "title": "Kotana Pet",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795790364631
+    },
+    {
+      "from": 1795790367872,
+      "to": 1795790432071,
+      "app": "kotana.exe",
+      "title": "桌宠设置",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795790367872
+    },
+    {
+      "from": 1795790432071,
+      "to": 1795790457058,
+      "app": "deepseek harness.exe",
+      "title": "没有真正意义上的AI助理 — DeepSeek Harness",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795790432071
+    },
+    {
+      "from": 1795790457058,
+      "to": 1795790496814,
+      "app": "kotana.exe",
+      "title": "桌宠设置",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795790457058
+    },
+    {
+      "from": 1795790496814,
+      "to": 1795790525482,
+      "app": "deepseek harness.exe",
+      "title": "没有真正意义上的AI助理 — DeepSeek Harness",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795790496814
+    },
+    {
+      "from": 1795790525482,
+      "to": 1795790531546,
+      "app": "chrome.exe",
+      "title": "搜索 - Microsoft 必应 - Google Chrome",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795790525482
+    },
+    {
+      "from": 1795790531546,
+      "to": 1795790537407,
+      "app": "chrome.exe",
+      "title": "kimi3.1pro - 搜索 - Google Chrome",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795790531546
+    },
+    {
+      "from": 1795790537407,
+      "to": 1795790544879,
+      "app": "chrome.exe",
+      "title": "Kimi K3.1 Pro - Kimi API 开放平台 - Google Chrome",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795790537407
+    },
+    {
+      "from": 1795790544879,
+      "to": 1795790554560,
+      "app": "chrome.exe",
+      "title": "Kimi K3.1 Pro - Kimi API 开放平台",
+      "url": "https://platform.kimi.com/docs/guide/kimi-k3-1-pro-quickstart",
+      "fullscreen": false,
+      "lastConfirm": 1795790544879
+    },
+    {
+      "from": 1795790554560,
+      "to": 1795790564980,
+      "app": "chrome.exe",
+      "title": "模型推理价格说明 - Kimi API 开放平台 - Google Chrome",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795790554560
+    },
+    {
+      "from": 1795790564980,
+      "to": 1795790580552,
+      "app": "chrome.exe",
+      "title": "充值与限速 - Kimi API 开放平台 - Google Chrome",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795790564980
+    },
+    {
+      "from": 1795790580552,
+      "to": 1795790591703,
+      "app": "kotana.exe",
+      "title": "桌宠设置",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795790587580
+    },
+    {
+      "from": 1795790591703,
+      "to": 1795790641070,
+      "app": "chrome.exe",
+      "title": "Kimi 价格 | 会员套餐与订阅方案 - Google Chrome",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795790591703
+    },
+    {
+      "from": 1795790641070,
+      "to": 1795790651163,
+      "app": "kotana.exe",
+      "title": "桌宠设置",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795790648880
+    },
+    {
+      "from": 1795790651163,
+      "to": 1795790658862,
+      "app": "chrome.exe",
+      "title": "搜索 - Microsoft 必应 - Google Chrome",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795790651163
+    },
+    {
+      "from": 1795790658862,
+      "to": 1795790670691,
+      "app": "chrome.exe",
+      "title": "codeplan - 搜索 - Google Chrome",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795790658862
+    },
+    {
+      "from": 1795790670691,
+      "to": 1795790705605,
+      "app": "chrome.exe",
+      "title": "coderplan.ai",
+      "url": "https://coderplan.ai/",
+      "fullscreen": false,
+      "lastConfirm": 1795790678161
+    },
+    {
+      "from": 1795790705605,
+      "to": 1795790720354,
+      "app": "chrome.exe",
+      "title": "账号登录-火山引擎 - Google Chrome",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795790705605
+    },
+    {
+      "from": 1795790720354,
+      "to": 1795790758770,
+      "app": "chrome.exe",
+      "title": "登录豆包飞书账号 - Google Chrome",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795790720354
+    },
+    {
+      "from": 1795790758770,
+      "to": 1795790781524,
+      "app": "chrome.exe",
+      "title": "账号登录-火山引擎",
+      "url": "https://signin.volcengine.com/auth/login/oauth/Doubao/?redirectURI=https%3A%2F%2Fsignin.volcengine.com%2Fauthorize%2Foauth%2Fauthorize%3Fauto_confirm%3D1%26client_id%3Dwww.volcengine.com%26redirect_uri%3Dhttps%253A%252F%252Fwww.volcengine.com%252Fsignin%252Foauth%252Fcallback%26response_type%3Dcode%26scope%3Dopenapi%26state%3DeyJSZWRpcmVjdFVSSSI6Ii8vd3d3LnZvbGNlbmdpbmUuY29tL2FjdGl2aXR5L2NvZGluZ3BsYW4ifQ&referrer_url=https%3A%2F%2Fwww.volcengine.com%2F&code=90f22f8ac666cfcfUhIaZ5Psuo6tfuAhozpb_lf",
+      "fullscreen": false,
+      "lastConfirm": 1795790758770
+    },
+    {
+      "from": 1795790781524,
+      "to": 1795790820766,
+      "app": "chrome.exe",
+      "title": "方舟Coding-Plan - Google Chrome",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795790819591
+    },
+    {
+      "from": 1795790820766,
+      "to": 1795790840717,
+      "app": "deepseek harness.exe",
+      "title": "没有真正意义上的AI助理 — DeepSeek Harness",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795790820766
+    },
+    {
+      "from": 1795790840717,
+      "to": 1795790872405,
+      "app": "chrome.exe",
+      "title": "火山引擎控制台 - Google Chrome",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795790840717
+    },
+    {
+      "from": 1795790872405,
+      "to": 1795790882800,
+      "app": "chrome.exe",
+      "title": "DeepSeek - 探索未至之境 - Google Chrome",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795790872405
+    },
+    {
+      "from": 1795790882800,
+      "to": 1795790893629,
+      "app": "chrome.exe",
+      "title": "DeepSeek - 探索未至之境",
+      "url": "https://chat.deepseek.com/a/chat/s/32eef183-009c-4d93-b028-74daed2bdc93",
+      "fullscreen": false,
+      "lastConfirm": 1795790893424
+    },
+    {
+      "from": 1795790893629,
+      "to": 1795790919775,
+      "app": "chrome.exe",
+      "title": "多模态含义解析 - DeepSeek - Google Chrome",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795790900282
+    },
+    {
+      "from": 1795790919775,
+      "to": 1795790927453,
+      "app": "kotana.exe",
+      "title": "桌宠设置 v2",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795790919775
+    },
+    {
+      "from": 1795790927453,
+      "to": 1795790934256,
+      "app": "deepseek harness.exe",
+      "title": "没有真正意义上的AI助理 — DeepSeek Harness",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795790927453
+    },
+    {
+      "from": 1795790934256,
+      "to": 1795790942037,
+      "app": "kotana.exe",
+      "title": "桌宠设置 v2",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795790938063
+    },
+    {
+      "from": 1795790942037,
+      "to": 1795790985136,
+      "app": "deepseek harness.exe",
+      "title": "没有真正意义上的AI助理 — DeepSeek Harness",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795790942037
+    },
+    {
+      "from": 1795790985136,
+      "to": 1795791008696,
+      "app": "deepseek harness.exe",
+      "title": "没有真正意义上的AI助理 — DeepSeek Harness",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795790985136
+    },
+    {
+      "from": 1795791008696,
+      "to": 1795791013920,
+      "app": "kotana.exe",
+      "title": "桌宠设置",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795791008696
+    },
+    {
+      "from": 1795791044959,
+      "to": 1795791070113,
+      "app": "deepseek harness.exe",
+      "title": "没有真正意义上的AI助理 — DeepSeek Harness",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795791044959
+    },
+    {
+      "from": 1795791070113,
+      "to": 1795791095144,
+      "app": "kotana.exe",
+      "title": "桌宠设置",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795791092104
+    },
+    {
+      "from": 1795791095144,
+      "to": 1795791117286,
+      "app": "deepseek harness.exe",
+      "title": "没有真正意义上的AI助理 — DeepSeek Harness",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795791095144
+    },
+    {
+      "from": 1795791117286,
+      "to": 1795791204462,
+      "app": "deepseek harness.exe",
+      "title": "没有真正意义上的AI助理 — DeepSeek Harness",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795791177377
+    },
+    {
+      "from": 1795791204462,
+      "to": 1795791217783,
+      "app": "chrome.exe",
+      "title": "桌宠设置 - Google Chrome",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795791204462
+    },
+    {
+      "from": 1795791217783,
+      "to": 1795791222873,
+      "app": "kotana.exe",
+      "title": "桌宠设置",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795791218445
+    },
+    {
+      "from": 1795791222873,
+      "to": 1795791241293,
+      "app": "chrome.exe",
+      "title": "桌宠设置",
+      "url": "http://localhost:1420/pet/settings.html",
+      "fullscreen": false,
+      "lastConfirm": 1795791227987
+    },
+    {
+      "from": 1795791241293,
+      "to": 1795791245938,
+      "app": "trae cn.exe",
+      "title": "butler-insight.ts - kotana-runtime - TRAE CN",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795791241293
+    },
+    {
+      "from": 1795791245938,
+      "to": 1795791252000,
+      "app": "kotana.exe",
+      "title": "桌宠设置",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795791246963
+    },
+    {
+      "from": 1795791252000,
+      "to": 1795791262571,
+      "app": "deepseek harness.exe",
+      "title": "没有真正意义上的AI助理 — DeepSeek Harness",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795791262565
+    },
+    {
+      "from": 1795791262571,
+      "to": 1795791268234,
+      "app": "kotana.exe",
+      "title": "Kotana Pet",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795791264912
+    },
+    {
+      "from": 1795791268234,
+      "to": 1795791307478,
+      "app": "deepseek harness.exe",
+      "title": "没有真正意义上的AI助理 — DeepSeek Harness",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795791268234
+    },
+    {
+      "from": 1795791307478,
+      "to": 1795791327455,
+      "app": "deepseek harness.exe",
+      "title": "没有真正意义上的AI助理 — DeepSeek Harness",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795791307478
+    },
+    {
+      "from": 1795791327455,
+      "to": 1795791338135,
+      "app": "kotana.exe",
+      "title": "桌宠设置",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795791333772
+    },
+    {
+      "from": 1795791338135,
+      "to": 1795791362602,
+      "app": "chrome.exe",
+      "title": "桌宠设置",
+      "url": "http://localhost:1420/pet/settings.html",
+      "fullscreen": false,
+      "lastConfirm": 1795791338135
+    },
+    {
+      "from": 1795791362602,
+      "to": 1795791370221,
+      "app": "trae cn.exe",
+      "title": "butler-insight.ts - kotana-runtime - TRAE CN",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795791362602
+    },
+    {
+      "from": 1795791370221,
+      "to": 1795791373432,
+      "app": "trae cn.exe",
+      "title": "_setpage.png - kotana-runtime - TRAE CN",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795791370221
+    },
+    {
+      "from": 1795791373432,
+      "to": 1795791390060,
+      "app": "trae cn.exe",
+      "title": "package.json - kotana-runtime - TRAE CN",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795791373432
+    },
+    {
+      "from": 1795791390060,
+      "to": 1795791408206,
+      "app": "trae cn.exe",
+      "title": "package.json - kotana-runtime - TRAE CN",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795791390060
+    },
+    {
+      "from": 1795791408206,
+      "to": 1795791414867,
+      "app": "kotana.exe",
+      "title": "桌宠设置",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795791408391
+    },
+    {
+      "from": 1795791414867,
+      "to": 1795791423233,
+      "app": "chrome.exe",
+      "title": "桌宠设置",
+      "url": "http://localhost:1420/pet/settings.html",
+      "fullscreen": false,
+      "lastConfirm": 1795791414867
+    },
+    {
+      "from": 1795791423233,
+      "to": 1795791450434,
+      "app": "deepseek harness.exe",
+      "title": "没有真正意义上的AI助理 — DeepSeek Harness",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795791423233
+    },
+    {
+      "from": 1795791450434,
+      "to": 1795791457634,
+      "app": "trae cn.exe",
+      "title": "package.json - kotana-runtime - TRAE CN",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795791450434
+    },
+    {
+      "from": 1795791457634,
+      "to": 1795791462025,
+      "app": "trae cn.exe",
+      "title": "package.json - kotana-runtime - TRAE CN",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795791457634
+    },
+    {
+      "from": 1795791462025,
+      "to": 1795791490892,
+      "app": "deepseek harness.exe",
+      "title": "没有真正意义上的AI助理 — DeepSeek Harness",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795791462025
+    },
+    {
+      "from": 1795791490892,
+      "to": 1795791564888,
+      "app": "deepseek harness.exe",
+      "title": "没有真正意义上的AI助理 — DeepSeek Harness",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795791551268
+    },
+    {
+      "from": 1795791605156,
+      "to": 1795791628982,
+      "app": "deepseek harness.exe",
+      "title": "没有真正意义上的AI助理 — DeepSeek Harness",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795791605156
+    },
+    {
+      "from": 1795791628982,
+      "to": 1795791667702,
+      "app": "kotana.exe",
+      "title": "Kotana Pet",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795791628982
+    },
+    {
+      "from": 1795791667702,
+      "to": 1795791676286,
+      "app": "deepseek harness.exe",
+      "title": "没有真正意义上的AI助理 — DeepSeek Harness",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795791667702
+    },
+    {
+      "from": 1795791676286,
+      "to": 1795791691732,
+      "app": "kotana.exe",
+      "title": "Kotana Pet",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795791676286
+    },
+    {
+      "from": 1795791691732,
+      "to": 1795791727783,
+      "app": "deepseek harness.exe",
+      "title": "没有真正意义上的AI助理 — DeepSeek Harness",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795791691732
+    },
+    {
+      "from": 1795791727783,
+      "to": 1795791895418,
+      "app": "deepseek harness.exe",
+      "title": "没有真正意义上的AI助理 — DeepSeek Harness",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795791848407
+    },
+    {
+      "from": 1795791899588,
+      "to": 1795791902908,
+      "app": "explorer.exe",
+      "title": "",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795791899588
+    },
+    {
+      "from": 1795791902908,
+      "to": 1795791916641,
+      "app": "chrome.exe",
+      "title": "搜索 - Microsoft 必应 - Google Chrome",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795791902908
+    },
+    {
+      "from": 1795791916641,
+      "to": 1795791922960,
+      "app": "chrome.exe",
+      "title": "gemni - 搜索 - Google Chrome",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795791916641
+    },
+    {
+      "from": 1795791922960,
+      "to": 1795791931527,
+      "app": "chrome.exe",
+      "title": "cloud.google.com/gemini-enterprise?utm_source=Bing&utm_medium=CPC&utm_campaign=1713762-Gemini_Enterprise-DR-NA-US-en-Bing-BKWS-PHR-na&utm_content=c-Hybrid+%7C+BKWS+-+PHR+%7C+Txt_Gemini+Enterprise-195935542221&utm_term=google ai for work&uj=na&gclid=f172b3088cba18c84572d8011092fada&gclsrc=3p.ds&msclkid=f172b3088cba18c84572d8011092fada",
+      "url": "https://cloud.google.com/gemini-enterprise?utm_source=Bing&utm_medium=CPC&utm_campaign=1713762-Gemini_Enterprise-DR-NA-US-en-Bing-BKWS-PHR-na&utm_content=c-Hybrid+%7C+BKWS+-+PHR+%7C+Txt_Gemini+Enterprise-195935542221&utm_term=google%20ai%20for%20work&uj=na&gclid=f172b3088cba18c84572d8011092fada&gclsrc=3p.ds&msclkid=f172b3088cba18c84572d8011092fada",
+      "fullscreen": false,
+      "lastConfirm": 1795791922960
+    },
+    {
+      "from": 1795791931527,
+      "to": 1795791939668,
+      "app": "chrome.exe",
+      "title": "Gemini Enterprise 各版本适用的连接器 | Google Cloud - Google Chrome",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795791931527
+    },
+    {
+      "from": 1795791939668,
+      "to": 1795791945415,
+      "app": "chrome.exe",
+      "title": "面向企业的 Gemini 学习中心 | Google Cloud - Google Chrome",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795791939668
+    },
+    {
+      "from": 1795791945415,
+      "to": 1795791953740,
+      "app": "chrome.exe",
+      "title": "gemni - 搜索",
+      "url": "https://www.bing.com/search?q=gemni&PC=U316&FORM=CHROMN",
+      "fullscreen": false,
+      "lastConfirm": 1795791945415
+    },
+    {
+      "from": 1795791953740,
+      "to": 1795791959410,
+      "app": "chrome.exe",
+      "title": "gemini订阅 - 搜索",
+      "url": "https://www.bing.com/search?q=gemini%E8%AE%A2%E9%98%85&qs=n&form=QBRE&sp=-1&lq=0&pq=geminidingyue&sc=9-13&sk=&cvid=AB700589EEC7470993F19237E5029853",
+      "fullscreen": false,
+      "lastConfirm": 1795791953740
+    },
+    {
+      "from": 1795791959410,
+      "to": 1795791966391,
+      "app": "chrome.exe",
+      "title": "Google AI Pro & Ultra — get access to Gemini 4 Neon & more - Google Chrome",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795791959410
+    },
+    {
+      "from": 1795791966391,
+      "to": 1795791974872,
+      "app": "chrome.exe",
+      "title": "Google AI Pro & Ultra — get access to Gemini 4 Neon & more - Google Chrome",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795791966391
+    },
+    {
+      "from": 1795791974872,
+      "to": 1795791984583,
+      "app": "chrome.exe",
+      "title": "Google AI Pro & Ultra — get access to Gemini 4 Neon & more",
+      "url": "https://gemini.google/subscriptions/?plans=developer",
+      "fullscreen": false,
+      "lastConfirm": 1795791974872
+    },
+    {
+      "from": 1795791984583,
+      "to": 1795791993466,
+      "app": "chrome.exe",
+      "title": "Google Cloud console - Google Chrome",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795791984583
+    },
+    {
+      "from": 1795791993466,
+      "to": 1795791997866,
+      "app": "chrome.exe",
+      "title": "免费试用 – Google Cloud 控制台 - Google Chrome",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795791993466
+    },
+    {
+      "from": 1795791997866,
+      "to": 1795792017228,
+      "app": "chrome.exe",
+      "title": "第 1 步（共 2 步） – 免费试用 – Google Cloud 控制台 - Google Chrome",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795791997866
+    },
+    {
+      "from": 1795792017228,
+      "to": 1795792029743,
+      "app": "chrome.exe",
+      "title": "Google AI Pro & Ultra — get access to Gemini 4 Neon & more",
+      "url": "https://gemini.google/subscriptions/?plans=developer",
+      "fullscreen": false,
+      "lastConfirm": 1795792017228
+    },
+    {
+      "from": 1795792029743,
+      "to": 1795792034884,
+      "app": "chrome.exe",
+      "title": "Google One 方案 - Google Chrome",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795792029743
+    },
+    {
+      "from": 1795792034884,
+      "to": 1795792040621,
+      "app": "chrome.exe",
+      "title": "Google One 方案",
+      "url": "https://one.google.com/ai?utm_source=gemini&utm_medium=web&utm_campaign=geminiplanspage&_gl=1*198b8os*&sc=EgIIAQ&icid=geminiplanspage",
+      "fullscreen": false,
+      "lastConfirm": 1795792034884
+    },
+    {
+      "from": 1795792040621,
+      "to": 1795792061953,
+      "app": "chrome.exe",
+      "title": "Google One 方案 - Google Chrome",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795792040621
+    },
+    {
+      "from": 1795792061953,
+      "to": 1795792068263,
+      "app": "chrome.exe",
+      "title": "Google AI Pro & Ultra — get access to Gemini 4 Neon & more - Google Chrome",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795792061953
+    },
+    {
+      "from": 1795792068263,
+      "to": 1795792084366,
+      "app": "chrome.exe",
+      "title": "Google Gemini - Google Chrome",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795792068263
+    },
+    {
+      "from": 1795792084366,
+      "to": 1795792100296,
+      "app": "deepseek harness.exe",
+      "title": "没有真正意义上的AI助理 — DeepSeek Harness",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795792084366
+    },
+    {
+      "from": 1795792100296,
+      "to": 1795792105327,
+      "app": "deepseek harness.exe",
+      "title": "没有真正意义上的AI助理 — DeepSeek Harness",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795792100296
+    },
+    {
+      "from": 1795792105327,
+      "to": 1795792135326,
+      "app": "kotana.exe",
+      "title": "桌宠设置",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795792132836
+    },
+    {
+      "from": 1795792135326,
+      "to": 1795792139172,
+      "app": "deepseek harness.exe",
+      "title": "没有真正意义上的AI助理 — DeepSeek Harness",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795792135326
+    },
+    {
+      "from": 1795792139172,
+      "to": 1795792179606,
+      "app": "chrome.exe",
+      "title": "Google Gemini",
+      "url": "https://gemini.google.com/app/download",
+      "fullscreen": false,
+      "lastConfirm": 1795792139172
+    },
+    {
+      "from": 1795792179606,
+      "to": 1795792185188,
+      "app": "chrome.exe",
+      "title": "Google Gemini",
+      "url": "https://gemini.google.com/app/download",
+      "fullscreen": false,
+      "lastConfirm": 1795792179606
+    },
+    {
+      "from": 1795792185188,
+      "to": 1795792194891,
+      "app": "clash-verge.exe",
+      "title": "Clash Verge",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795792185188
+    },
+    {
+      "from": 1795792194891,
+      "to": 1795792243105,
+      "app": "kotana.exe",
+      "title": "Kotana Pet",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795792237454
+    },
+    {
+      "from": 1795792243105,
+      "to": 1795792263334,
+      "app": "deepseek harness.exe",
+      "title": "没有真正意义上的AI助理 — DeepSeek Harness",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795792263327
+    },
+    {
+      "from": 1795792263334,
+      "to": 1795792267563,
+      "app": "kotana.exe",
+      "title": "Kotana Pet",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795792267412
+    },
+    {
+      "from": 1795792267563,
+      "to": 1795792281643,
+      "app": "kotana.exe",
+      "title": "桌宠设置",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795792281640
+    },
+    {
+      "from": 1795792281643,
+      "to": 1795792287090,
+      "app": "kotana.exe",
+      "title": "Kotana Pet",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795792287087
+    },
+    {
+      "from": 1795792287090,
+      "to": 1795792297427,
+      "app": "kotana.exe",
+      "title": "桌宠设置",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795792297423
+    },
+    {
+      "from": 1795792297427,
+      "to": 1795792307553,
+      "app": "kotana.exe",
+      "title": "Kotana Pet",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795792307550
+    },
+    {
+      "from": 1795792307553,
+      "to": 1795792354051,
+      "app": "kotana.exe",
+      "title": "桌宠设置",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795792352345
+    },
+    {
+      "from": 1795792354051,
+      "to": 1795792361371,
+      "app": "deepseek harness.exe",
+      "title": "没有真正意义上的AI助理 — DeepSeek Harness",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795792361361
+    },
+    {
+      "from": 1795792361371,
+      "to": 1795792387772,
+      "app": "kotana.exe",
+      "title": "Kotana Pet",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795792372545
+    },
+    {
+      "from": 1795792387772,
+      "to": 1795792405316,
+      "app": "updater.exe",
+      "title": "Gemini 安装程序",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795792387772
+    },
+    {
+      "from": 1795792405316,
+      "to": 1795792455050,
+      "app": "chrome.exe",
+      "title": "Google Gemini - Google Chrome",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795792405316
+    },
+    {
+      "from": 1795792455050,
+      "to": 1795792468017,
+      "app": "chrome.exe",
+      "title": "Google Gemini - Google Chrome",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795792455050
+    },
+    {
+      "from": 1795792468017,
+      "to": 1795792531456,
+      "app": "deepseek harness.exe",
+      "title": "没有真正意义上的AI助理 — DeepSeek Harness",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795792528620
+    },
+    {
+      "from": 1795792543882,
+      "to": 1795792545300,
+      "app": "explorer.exe",
+      "title": "",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795792543882
+    },
+    {
+      "from": 1795792545300,
+      "to": 1795792553567,
+      "app": "deepseek harness.exe",
+      "title": "没有真正意义上的AI助理 — DeepSeek Harness",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795792545300
+    },
+    {
+      "from": 1795792553567,
+      "to": 1795792558963,
+      "app": "deepseek harness.exe",
+      "title": "没有真正意义上的AI助理 — DeepSeek Harness",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795792553567
+    },
+    {
+      "from": 1795792558963,
+      "to": 1795792562906,
+      "app": "updater.exe",
+      "title": "Gemini 安装程序",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795792558963
+    },
+    {
+      "from": 1795792562906,
+      "to": 1795792578975,
+      "app": "deepseek harness.exe",
+      "title": "没有真正意义上的AI助理 — DeepSeek Harness",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795792562906
+    },
+    {
+      "from": 1795792578975,
+      "to": 1795792590051,
+      "app": "deepseek harness.exe",
+      "title": "没有真正意义上的AI助理 — DeepSeek Harness",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795792578975
+    },
+    {
+      "from": 1795792590051,
+      "to": 1795792609167,
+      "app": "gemini.exe",
+      "title": "Gemini",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795792590051
+    },
+    {
+      "from": 1795792609167,
+      "to": 1795792617022,
+      "app": "credentialuibroker.exe",
+      "title": "Windows 安全中心",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795792609167
+    },
+    {
+      "from": 1795792617022,
+      "to": 1795792622816,
+      "app": "credentialuibroker.exe",
+      "title": "Windows 安全中心",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795792617022
+    },
+    {
+      "from": 1795792622816,
+      "to": 1795792631757,
+      "app": "credentialuibroker.exe",
+      "title": "Windows 安全中心",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795792622816
+    },
+    {
+      "from": 1795792631757,
+      "to": 1795792676108,
+      "app": "gemini.exe",
+      "title": "Gemini",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795792631757
+    },
+    {
+      "from": 1795792676108,
+      "to": 1795792682506,
+      "app": "credentialuibroker.exe",
+      "title": "Windows 安全中心",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795792676108
+    },
+    {
+      "from": 1795792682506,
+      "to": 1795792692002,
+      "app": "credentialuibroker.exe",
+      "title": "Windows 安全中心",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795792682506
+    },
+    {
+      "from": 1795792692002,
+      "to": 1795792705638,
+      "app": "gemini.exe",
+      "title": "Gemini",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795792692002
+    },
+    {
+      "from": 1795792705638,
+      "to": 1795792729139,
+      "app": "deepseek harness.exe",
+      "title": "没有真正意义上的AI助理 — DeepSeek Harness",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795792729109
+    },
+    {
+      "from": 1795792729139,
+      "to": 1795792733333,
+      "app": "kotana.exe",
+      "title": "Kotana Pet",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795792729139
+    },
+    {
+      "from": 1795792733333,
+      "to": 1795792750274,
+      "app": "deepseek harness.exe",
+      "title": "没有真正意义上的AI助理 — DeepSeek Harness",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795792733333
+    },
+    {
+      "from": 1795792750274,
+      "to": 1795792764388,
+      "app": "gemini.exe",
+      "title": "Gemini",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795792750274
+    },
+    {
+      "from": 1795792764388,
+      "to": 1795792797978,
+      "app": "dnf.exe",
+      "title": "地下城与勇士：创新世纪",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795792764388
+    },
+    {
+      "from": 1795792797978,
+      "to": 1795792806496,
+      "app": "deepseek harness.exe",
+      "title": "没有真正意义上的AI助理 — DeepSeek Harness",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795792797978
+    },
+    {
+      "from": 1795792806496,
+      "to": 1795792836760,
+      "app": "deepseek harness.exe",
+      "title": "DeepSeek Harness",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795792806496
+    },
+    {
+      "from": 1795792836760,
+      "to": 1795792860147,
+      "app": "dnf.exe",
+      "title": "地下城与勇士：创新世纪",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795792836760
+    },
+    {
+      "from": 1795792860147,
+      "to": 1795792902478,
+      "app": "gemini.exe",
+      "title": "Gemini",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795792860147
+    },
+    {
+      "from": 1795792902478,
+      "to": 1795792906430,
+      "app": "explorer.exe",
+      "title": "系统托盘溢出窗口。",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795792902478
+    },
+    {
+      "from": 1795792906430,
+      "to": 1795792922355,
+      "app": "clash-verge.exe",
+      "title": "Clash Verge",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795792906430
+    },
+    {
+      "from": 1795792922355,
+      "to": 1795792938037,
+      "app": "explorer.exe",
+      "title": "系统托盘溢出窗口。",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795792922355
+    },
+    {
+      "from": 1795792938037,
+      "to": 1795793538037,
+      "app": "clash-verge.exe",
+      "title": "Clash Verge",
+      "url": null,
+      "fullscreen": false,
+      "lastConfirm": 1795792938037
+    }
+  ],
+  "navs": [
+    {
+      "ts": 1795765115422,
+      "phase": "activate",
+      "url": "https://gemini.google.com/",
+      "title": "Error 403 (Forbidden)!!1",
+      "host": "gemini.google.com"
+    },
+    {
+      "ts": 1795765116654,
+      "phase": "activate",
+      "url": "https://gemini.google.com/?hl=zh-cn",
+      "title": "Error 403 (Forbidden)!!1",
+      "host": "gemini.google.com"
+    },
+    {
+      "ts": 1795765117168,
+      "phase": "activate",
+      "url": "https://gemini.google/about/",
+      "title": "Error 403 (Forbidden)!!1",
+      "host": "gemini.google"
+    },
+    {
+      "ts": 1795765117257,
+      "phase": "nav",
+      "url": "https://gemini.google/about/",
+      "title": "Error 403 (Forbidden)!!1",
+      "host": "gemini.google"
+    },
+    {
+      "ts": 1795765117828,
+      "phase": "nav",
+      "url": "https://gemini.google.com/?hl=zh-cn",
+      "title": "Error 403 (Forbidden)!!1",
+      "host": "gemini.google.com"
+    },
+    {
+      "ts": 1795765117834,
+      "phase": "nav",
+      "url": "https://gemini.google.com/",
+      "title": "Error 403 (Forbidden)!!1",
+      "host": "gemini.google.com"
+    },
+    {
+      "ts": 1795765119285,
+      "phase": "activate",
+      "url": "https://gemini.google.com/?hl=zh-cn",
+      "title": "Error 403 (Forbidden)!!1",
+      "host": "gemini.google.com"
+    },
+    {
+      "ts": 1795765119847,
+      "phase": "activate",
+      "url": "https://gemini.google.com/",
+      "title": "Error 403 (Forbidden)!!1",
+      "host": "gemini.google.com"
+    },
+    {
+      "ts": 1795765122239,
+      "phase": "activate",
+      "url": "https://fanyi.baidu.com/mtpe-individual/transText?query=Your%20client%20does%20not%20have%20permission%20to%20get%20URL%20%2Fabout%2F%20from%20this%20server.%20That%E2%80%99s%20all%20we%20know&lang=en2zh&ext_channel=BingSearch#/",
+      "title": "百度翻译_领先的AI大模型翻译_支持文本/文档/图片翻译",
+      "host": "fanyi.baidu.com"
+    },
+    {
+      "ts": 1795765122256,
+      "phase": "nav",
+      "url": "https://fanyi.baidu.com/mtpe-individual/transText?query=Your%20client%20does%20not%20have%20permission%20to%20get%20URL%20%2Fabout%2F%20from%20this%20server.%20That%E2%80%99s%20all%20we%20know&lang=en2zh&ext_channel=BingSearch#/",
+      "title": "百度翻译_领先的AI大模型翻译_支持文本/文档/图片翻译",
+      "host": "fanyi.baidu.com"
+    },
+    {
+      "ts": 1795765124828,
+      "phase": "activate",
+      "url": "https://chat.deepseek.com/a/chat/s/8f2280bb-0bc5-44d4-9947-e9d799fc6f83",
+      "title": "其他AI接入dsh方法 - DeepSeek",
+      "host": "chat.deepseek.com"
+    },
+    {
+      "ts": 1795765127235,
+      "phase": "nav",
+      "url": "https://chat.deepseek.com/",
+      "title": "其他AI接入dsh方法 - DeepSeek",
+      "host": "chat.deepseek.com"
+    },
+    {
+      "ts": 1795765144692,
+      "phase": "nav",
+      "url": "https://chat.deepseek.com/a/chat/s/54cd2da3-5784-414d-a6c9-f49755ca287a",
+      "title": "DeepSeek - 探索未至之境",
+      "host": "chat.deepseek.com"
+    },
+    {
+      "ts": 1795765156942,
+      "phase": "nav",
+      "url": "https://chat.deepseek.com/a/chat/s/54cd2da3-5784-414d-a6c9-f49755ca287a",
+      "title": "Gemini 403错误排查 - DeepSeek",
+      "host": "chat.deepseek.com"
+    },
+    {
+      "ts": 1795765163727,
+      "phase": "activate",
+      "url": "https://chat.deepseek.com/a/chat/s/54cd2da3-5784-414d-a6c9-f49755ca287a",
+      "title": "Gemini 403错误排查 - DeepSeek",
+      "host": "chat.deepseek.com"
+    },
+    {
+      "ts": 1795765238792,
+      "phase": "activate",
+      "url": "https://chat.deepseek.com/a/chat/s/54cd2da3-5784-414d-a6c9-f49755ca287a",
+      "title": "Gemini 403错误排查 - DeepSeek",
+      "host": "chat.deepseek.com"
+    },
+    {
+      "ts": 1795766525042,
+      "phase": "nav",
+      "url": "https://chat.deepseek.com/",
+      "title": "Gemini 403错误排查 - DeepSeek",
+      "host": "chat.deepseek.com"
+    },
+    {
+      "ts": 1795766544804,
+      "phase": "nav",
+      "url": "https://chat.deepseek.com/a/chat/s/a6d75862-8fa5-46c1-8d69-153cf3a7156d",
+      "title": "DeepSeek - 探索未至之境",
+      "host": "chat.deepseek.com"
+    },
+    {
+      "ts": 1795766546819,
+      "phase": "nav",
+      "url": "https://chat.deepseek.com/a/chat/s/54cd2da3-5784-414d-a6c9-f49755ca287a",
+      "title": "DeepSeek - 探索未至之境",
+      "host": "chat.deepseek.com"
+    },
+    {
+      "ts": 1795766567293,
+      "phase": "activate",
+      "url": "https://chat.deepseek.com/a/chat/s/54cd2da3-5784-414d-a6c9-f49755ca287a",
+      "title": "Gemini 403错误排查 - DeepSeek",
+      "host": "chat.deepseek.com"
+    },
+    {
+      "ts": 1795766601415,
+      "phase": "nav",
+      "url": "https://www.bing.com/search?q=Gemini&PC=U316&FORM=CHROMN",
+      "title": "bing.com/search?q=Gemini&PC=U316&FORM=CHROMN",
+      "host": "bing.com"
+    },
+    {
+      "ts": 1795766605369,
+      "phase": "nav",
+      "url": "https://gemini.google.com/",
+      "title": "gemini.google.com",
+      "host": "gemini.google.com"
+    },
+    {
+      "ts": 1795766607221,
+      "phase": "nav",
+      "url": "https://gemini.google.com/",
+      "title": "‎Google Gemini",
+      "host": "gemini.google.com"
+    },
+    {
+      "ts": 1795766629717,
+      "phase": "activate",
+      "url": "https://gemini.google.com/",
+      "title": "‎Google Gemini",
+      "host": "gemini.google.com"
+    },
+    {
+      "ts": 1795766631271,
+      "phase": "activate",
+      "url": "https://www.bing.com/search?q=Gemini&PC=U316&FORM=CHROMN",
+      "title": "Gemini - 搜索",
+      "host": "bing.com"
+    },
+    {
+      "ts": 1795766632739,
+      "phase": "nav",
+      "url": "https://gemini.google.com/app",
+      "title": "‎Google Gemini",
+      "host": "gemini.google.com"
+    },
+    {
+      "ts": 1795766658603,
+      "phase": "activate",
+      "url": "https://gemini.google.com/app",
+      "title": "Google Gemini",
+      "host": "gemini.google.com"
+    },
+    {
+      "ts": 1795766661766,
+      "phase": "activate",
+      "url": "https://q.qq.com/#/register?email=2639951906@qq.com",
+      "title": "QQ开放平台",
+      "host": "q.qq.com"
+    },
+    {
+      "ts": 1795766664128,
+      "phase": "activate",
+      "url": "https://chat.deepseek.com/a/chat/s/54cd2da3-5784-414d-a6c9-f49755ca287a",
+      "title": "Gemini 403错误排查 - DeepSeek",
+      "host": "chat.deepseek.com"
+    },
+    {
+      "ts": 1795766666351,
+      "phase": "nav",
+      "url": "https://chat.deepseek.com/a/chat/s/a6d75862-8fa5-46c1-8d69-153cf3a7156d",
+      "title": "Gemini 403错误排查 - DeepSeek",
+      "host": "chat.deepseek.com"
+    },
+    {
+      "ts": 1795766860405,
+      "phase": "activate",
+      "url": "https://chat.deepseek.com/a/chat/s/a6d75862-8fa5-46c1-8d69-153cf3a7156d",
+      "title": "QQ机器人接入AI可行 - DeepSeek",
+      "host": "chat.deepseek.com"
+    },
+    {
+      "ts": 1795767252164,
+      "phase": "activate",
+      "url": "https://chat.deepseek.com/a/chat/s/a6d75862-8fa5-46c1-8d69-153cf3a7156d",
+      "title": "QQ机器人接入AI可行 - DeepSeek",
+      "host": "chat.deepseek.com"
+    },
+    {
+      "ts": 1795767258982,
+      "phase": "nav",
+      "url": "https://pirategang.feishu.cn/docx/LPwudGAKso6Y6vxpVvWcBGownIe?from=from_copylink",
+      "title": "pirategang.feishu.cn/docx/LPwudGAKso6Y6vxpVvWcBGownIe?from=from_copylink",
+      "host": "pirategang.feishu.cn"
+    },
+    {
+      "ts": 1795767260384,
+      "phase": "nav",
+      "url": "https://pirategang.feishu.cn/docx/LPwudGAKso6Y6vxpVvWcBGownIe",
+      "title": "Docs",
+      "host": "pirategang.feishu.cn"
+    },
+    {
+      "ts": 1795767262232,
+      "phase": "nav",
+      "url": "https://pirategang.feishu.cn/docx/LPwudGAKso6Y6vxpVvWcBGownIe",
+      "title": "关于我们 — 候选人阅读指南 - 飞书云文档",
+      "host": "pirategang.feishu.cn"
+    },
+    {
+      "ts": 1795767341153,
+      "phase": "nav",
+      "url": "https://pirategang.feishu.cn/docx/LPwudGAKso6Y6vxpVvWcBGownIe",
+      "title": "关于我们 — 候选人阅读指南 - 飞书云文档",
+      "host": "pirategang.feishu.cn"
+    },
+    {
+      "ts": 1795767350789,
+      "phase": "nav",
+      "url": "https://mcnsnzafsrya.feishu.cn/share/base/form/shrcnYmky4qrUnHZWmfMpmzHZmh",
+      "title": "mcnsnzafsrya.feishu.cn/share/base/form/shrcnYmky4qrUnHZWmfMpmzHZmh",
+      "host": "mcnsnzafsrya.feishu.cn"
+    },
+    {
+      "ts": 1795767633598,
+      "phase": "activate",
+      "url": "https://gemini.google.com/app",
+      "title": "Google Gemini",
+      "host": "gemini.google.com"
+    },
+    {
+      "ts": 1795767636158,
+      "phase": "activate",
+      "url": "https://chat.deepseek.com/a/chat/s/a6d75862-8fa5-46c1-8d69-153cf3a7156d",
+      "title": "QQ机器人接入AI可行 - DeepSeek",
+      "host": "chat.deepseek.com"
+    },
+    {
+      "ts": 1795767637174,
+      "phase": "nav",
+      "url": "https://chat.deepseek.com/",
+      "title": "QQ机器人接入AI可行 - DeepSeek",
+      "host": "chat.deepseek.com"
+    },
+    {
+      "ts": 1795767638878,
+      "phase": "nav",
+      "url": "https://chat.deepseek.com/a/chat/s/7458ecc0-900a-4159-997c-a6188f9fcc1f",
+      "title": "DeepSeek - 探索未至之境",
+      "host": "chat.deepseek.com"
+    },
+    {
+      "ts": 1795767641318,
+      "phase": "nav",
+      "url": "https://gemini.google.com/app?pli=1",
+      "title": "gemini.google.com/app?pli=1",
+      "host": "gemini.google.com"
+    },
+    {
+      "ts": 1795767643771,
+      "phase": "nav",
+      "url": "https://gemini.google.com/app?pli=1",
+      "title": "‎Google Gemini",
+      "host": "gemini.google.com"
+    },
+    {
+      "ts": 1795767669710,
+      "phase": "activate",
+      "url": "https://chat.deepseek.com/a/chat/s/7458ecc0-900a-4159-997c-a6188f9fcc1f",
+      "title": "DeepSeek - 探索未至之境",
+      "host": "chat.deepseek.com"
+    },
+    {
+      "ts": 1795767671669,
+      "phase": "nav",
+      "url": "https://gemini.google.com/?pli=1",
+      "title": "‎Google Gemini",
+      "host": "gemini.google.com"
+    },
+    {
+      "ts": 1795767721110,
+      "phase": "nav",
+      "url": "https://chat.deepseek.com/a/chat/s/7458ecc0-900a-4159-997c-a6188f9fcc1f",
+      "title": "四进制时间编码解百瓶毒酒 - DeepSeek",
+      "host": "chat.deepseek.com"
+    },
+    {
+      "ts": 1795767780725,
+      "phase": "activate",
+      "url": "https://mcnsnzafsrya.feishu.cn/share/base/form/shrcnYmky4qrUnHZWmfMpmzHZmh",
+      "title": "技术专家岗位筛选问卷",
+      "host": "mcnsnzafsrya.feishu.cn"
+    },
+    {
+      "ts": 1795767897120,
+      "phase": "activate",
+      "url": "https://www.deepseek.com/",
+      "title": "DeepSeek | 深度求索",
+      "host": "deepseek.com"
+    },
+    {
+      "ts": 1795767897646,
+      "phase": "activate",
+      "url": "https://chat.deepseek.com/a/chat/s/7458ecc0-900a-4159-997c-a6188f9fcc1f",
+      "title": "四进制时间编码解百瓶毒酒 - DeepSeek",
+      "host": "chat.deepseek.com"
+    },
+    {
+      "ts": 1795768269663,
+      "phase": "activate",
+      "url": "https://mcnsnzafsrya.feishu.cn/share/base/form/shrcnYmky4qrUnHZWmfMpmzHZmh",
+      "title": "技术专家岗位筛选问卷",
+      "host": "mcnsnzafsrya.feishu.cn"
+    },
+    {
+      "ts": 1795768293626,
+      "phase": "activate",
+      "url": "https://mcnsnzafsrya.feishu.cn/share/base/form/shrcnYmky4qrUnHZWmfMpmzHZmh",
+      "title": "技术专家岗位筛选问卷",
+      "host": "mcnsnzafsrya.feishu.cn"
+    },
+    {
+      "ts": 1795768295922,
+      "phase": "activate",
+      "url": "https://chat.deepseek.com/a/chat/s/7458ecc0-900a-4159-997c-a6188f9fcc1f",
+      "title": "四进制时间编码解百瓶毒酒 - DeepSeek",
+      "host": "chat.deepseek.com"
+    },
+    {
+      "ts": 1795768536727,
+      "phase": "activate",
+      "url": "https://chat.deepseek.com/a/chat/s/7458ecc0-900a-4159-997c-a6188f9fcc1f",
+      "title": "四进制时间编码解百瓶毒酒 - DeepSeek",
+      "host": "chat.deepseek.com"
+    },
+    {
+      "ts": 1795768749143,
+      "phase": "activate",
+      "url": "https://mcnsnzafsrya.feishu.cn/share/base/form/shrcnYmky4qrUnHZWmfMpmzHZmh",
+      "title": "技术专家岗位筛选问卷",
+      "host": "mcnsnzafsrya.feishu.cn"
+    },
+    {
+      "ts": 1795768779775,
+      "phase": "activate",
+      "url": "https://pirategang.feishu.cn/docx/LPwudGAKso6Y6vxpVvWcBGownIe",
+      "title": "关于我们 — 候选人阅读指南 - 飞书云文档",
+      "host": "pirategang.feishu.cn"
+    },
+    {
+      "ts": 1795768780257,
+      "phase": "nav",
+      "url": "https://pirategang.feishu.cn/docx/LPwudGAKso6Y6vxpVvWcBGownIe",
+      "title": "关于我们 — 候选人阅读指南 - 飞书云文档",
+      "host": "pirategang.feishu.cn"
+    },
+    {
+      "ts": 1795768783419,
+      "phase": "nav",
+      "url": "https://pirategang.feishu.cn/docx/LPwudGAKso6Y6vxpVvWcBGownIe",
+      "title": "关于我们 — 候选人阅读指南 - 飞书云文档",
+      "host": "pirategang.feishu.cn"
+    },
+    {
+      "ts": 1795768882726,
+      "phase": "activate",
+      "url": "https://gemini.google.com/?pli=1",
+      "title": "‎Google Gemini",
+      "host": "gemini.google.com"
+    },
+    {
+      "ts": 1795768883752,
+      "phase": "nav",
+      "url": "https://gemini.google.com/?pli=1",
+      "title": "gemini.google.com/?pli=1",
+      "host": "gemini.google.com"
+    },
+    {
+      "ts": 1795768884378,
+      "phase": "activate",
+      "url": "https://www.bing.com/search?q=Gemini&PC=U316&FORM=CHROMN",
+      "title": "Gemini - 搜索",
+      "host": "bing.com"
+    },
+    {
+      "ts": 1795768884392,
+      "phase": "nav",
+      "url": "https://www.bing.com/search?q=Gemini&PC=U316&FORM=CHROMN",
+      "title": "Gemini - 搜索",
+      "host": "bing.com"
+    },
+    {
+      "ts": 1795768886499,
+      "phase": "nav",
+      "url": "https://gemini.google.com/?pli=1",
+      "title": "‎Google Gemini",
+      "host": "gemini.google.com"
+    },
+    {
+      "ts": 1795768887189,
+      "phase": "activate",
+      "url": "https://gamesafe.qq.com/safety-remove.shtml?game_id=5&zone_code=ZSAEW",
+      "title": "腾讯游戏安全中心 - 腾讯游戏",
+      "host": "gamesafe.qq.com"
+    },
+    {
+      "ts": 1795768887331,
+      "phase": "nav",
+      "url": "https://gamesafe.qq.com/safety-remove.shtml?game_id=5&zone_code=ZSAEW",
+      "title": "腾讯游戏安全中心 - 腾讯游戏",
+      "host": "gamesafe.qq.com"
+    },
+    {
+      "ts": 1795768888646,
+      "phase": "activate",
+      "url": "https://fanyi.baidu.com/mtpe-individual/transText?query=Your%20client%20does%20not%20have%20permission%20to%20get%20URL%20%2Fabout%2F%20from%20this%20server.%20That%E2%80%99s%20all%20we%20know&lang=en2zh&ext_channel=BingSearch#/",
+      "title": "百度翻译_领先的AI大模型翻译_支持文本/文档/图片翻译",
+      "host": "fanyi.baidu.com"
+    },
+    {
+      "ts": 1795768888657,
+      "phase": "nav",
+      "url": "https://fanyi.baidu.com/mtpe-individual/transText?query=Your%20client%20does%20not%20have%20permission%20to%20get%20URL%20%2Fabout%2F%20from%20this%20server.%20That%E2%80%99s%20all%20we%20know&lang=en2zh&ext_channel=BingSearch#/",
+      "title": "百度翻译_领先的AI大模型翻译_支持文本/文档/图片翻译",
+      "host": "fanyi.baidu.com"
+    },
+    {
+      "ts": 1795768888842,
+      "phase": "nav",
+      "url": "https://gemini.google.com/?pli=1",
+      "title": "‎Google Gemini",
+      "host": "gemini.google.com"
+    },
+    {
+      "ts": 1795768889284,
+      "phase": "activate",
+      "url": "https://www.bing.com/search?q=Gemini&PC=U316&FORM=CHROMN",
+      "title": "Gemini - 搜索",
+      "host": "bing.com"
+    },
+    {
+      "ts": 1795768889298,
+      "phase": "nav",
+      "url": "https://www.bing.com/search?q=Gemini&PC=U316&FORM=CHROMN",
+      "title": "Gemini - 搜索",
+      "host": "bing.com"
+    },
+    {
+      "ts": 1795768889779,
+      "phase": "activate",
+      "url": "https://chatgpt.com/checkout/openai_llc/oaics_7b368a65fb194ba99fbd0ede70ef4703?source=chatgpt_web_merged",
+      "title": "ChatGPT",
+      "host": "chatgpt.com"
+    },
+    {
+      "ts": 1795768890594,
+      "phase": "activate",
+      "url": "https://codingplan.fyi/",
+      "title": "Coding Plan 对比：AI 编程套餐、模型价格与额度",
+      "host": "codingplan.fyi"
+    },
+    {
+      "ts": 1795768890606,
+      "phase": "nav",
+      "url": "https://codingplan.fyi/",
+      "title": "Coding Plan 对比：AI 编程套餐、模型价格与额度",
+      "host": "codingplan.fyi"
+    },
+    {
+      "ts": 1795768891278,
+      "phase": "nav",
+      "url": "https://chatgpt.com/checkout/openai_llc/oaics_7b368a65fb194ba99fbd0ede70ef4703?source=chatgpt_web_merged",
+      "title": "chatgpt.com/checkout/openai_llc/oaics_7b368a65fb194ba99fbd0ede70ef4703?source=chatgpt_web_merged",
+      "host": "chatgpt.com"
+    },
+    {
+      "ts": 1795768892149,
+      "phase": "activate",
+      "url": "https://chatgpt.com/checkout/openai_llc/oaics_7b368a65fb194ba99fbd0ede70ef4703?source=chatgpt_web_merged",
+      "title": "ChatGPT",
+      "host": "chatgpt.com"
+    },
+    {
+      "ts": 1795768892424,
+      "phase": "nav",
+      "url": "https://chatgpt.com/checkout/openai_llc/oaics_7b368a65fb194ba99fbd0ede70ef4703?source=chatgpt_web_merged",
+      "title": "ChatGPT",
+      "host": "chatgpt.com"
+    },
+    {
+      "ts": 1795768892816,
+      "phase": "activate",
+      "url": "https://www.bing.com/search?q=codex%E8%AE%A2%E9%98%85&PC=U316&FORM=CHROMN",
+      "title": "codex订阅 - 搜索",
+      "host": "bing.com"
+    },
+    {
+      "ts": 1795768892829,
+      "phase": "nav",
+      "url": "https://www.bing.com/search?q=codex%E8%AE%A2%E9%98%85&PC=U316&FORM=CHROMN",
+      "title": "codex订阅 - 搜索",
+      "host": "bing.com"
+    },
+    {
+      "ts": 1795768893505,
+      "phase": "activate",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/dev-prepare/access-token.html#%E8%8E%B7%E5%8F%96-access-token",
+      "title": "获取访问凭证 | QQ 机器人官方文档",
+      "host": "bot.q.qq.com"
+    },
+    {
+      "ts": 1795768894237,
+      "phase": "nav",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/dev-prepare/access-token.html#%E8%8E%B7%E5%8F%96-access-token",
+      "title": "获取访问凭证 | QQ 机器人官方文档",
+      "host": "bot.q.qq.com"
+    },
+    {
+      "ts": 1795769055080,
+      "phase": "activate",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/dev-prepare/access-token.html#%E8%8E%B7%E5%8F%96-access-token",
+      "title": "获取访问凭证 | QQ 机器人官方文档",
+      "host": "bot.q.qq.com"
+    },
+    {
+      "ts": 1795769063394,
+      "phase": "activate",
+      "url": "https://chat.deepseek.com/a/chat/s/7458ecc0-900a-4159-997c-a6188f9fcc1f",
+      "title": "四进制时间编码解百瓶毒酒 - DeepSeek",
+      "host": "chat.deepseek.com"
+    },
+    {
+      "ts": 1795769065754,
+      "phase": "activate",
+      "url": "https://www.deepseek.com/",
+      "title": "DeepSeek | 深度求索",
+      "host": "deepseek.com"
+    },
+    {
+      "ts": 1795769066659,
+      "phase": "activate",
+      "url": "https://chat.deepseek.com/a/chat/s/7458ecc0-900a-4159-997c-a6188f9fcc1f",
+      "title": "四进制时间编码解百瓶毒酒 - DeepSeek",
+      "host": "chat.deepseek.com"
+    },
+    {
+      "ts": 1795769067762,
+      "phase": "nav",
+      "url": "https://chat.deepseek.com/a/chat/s/a6d75862-8fa5-46c1-8d69-153cf3a7156d",
+      "title": "四进制时间编码解百瓶毒酒 - DeepSeek",
+      "host": "chat.deepseek.com"
+    },
+    {
+      "ts": 1795769152986,
+      "phase": "activate",
+      "url": "https://chat.deepseek.com/a/chat/s/a6d75862-8fa5-46c1-8d69-153cf3a7156d",
+      "title": "QQ机器人接入AI可行 - DeepSeek",
+      "host": "chat.deepseek.com"
+    },
+    {
+      "ts": 1795770096194,
+      "phase": "nav",
+      "url": "https://chat.deepseek.com/",
+      "title": "QQ机器人接入AI可行 - DeepSeek",
+      "host": "chat.deepseek.com"
+    },
+    {
+      "ts": 1795770122624,
+      "phase": "nav",
+      "url": "https://chat.deepseek.com/a/chat/s/493d9df8-4662-4bc8-9048-48d6fc095525",
+      "title": "DeepSeek - 探索未至之境",
+      "host": "chat.deepseek.com"
+    },
+    {
+      "ts": 1795770275583,
+      "phase": "activate",
+      "url": "https://www.bing.com/search?q=vmware%20tools&qs=n&form=QBRE&sp=-1&lq=0&pq=vmware%20tools%E4%B8%8B%E8%BD%BD&sc=15-14&sk=&cvid=2958CC76DCDD407E8326262DEEAB90A6&ntref=1",
+      "title": "vmware tools - 搜索",
+      "host": "bing.com"
+    },
+    {
+      "ts": 1795770277100,
+      "phase": "activate",
+      "url": "https://www.deepseek.com/",
+      "title": "DeepSeek | 深度求索",
+      "host": "deepseek.com"
+    },
+    {
+      "ts": 1795770280888,
+      "phase": "activate",
+      "url": "https://www.deepseek.com/",
+      "title": "DeepSeek | 深度求索",
+      "host": "deepseek.com"
+    },
+    {
+      "ts": 1795770367337,
+      "phase": "activate",
+      "url": "https://www.bing.com/search?q=vmware%20tools&qs=n&form=QBRE&sp=-1&lq=0&pq=vmware%20tools%E4%B8%8B%E8%BD%BD&sc=15-14&sk=&cvid=2958CC76DCDD407E8326262DEEAB90A6&ntref=1",
+      "title": "vmware tools - 搜索",
+      "host": "bing.com"
+    },
+    {
+      "ts": 1795770368876,
+      "phase": "activate",
+      "url": "https://www.bing.com/search?q=dsh%E6%8F%92%E4%BB%B6%E5%B8%82%E5%9C%BA&PC=U316&FORM=CHROMN",
+      "title": "dsh插件市场 - 搜索",
+      "host": "bing.com"
+    },
+    {
+      "ts": 1795770372802,
+      "phase": "activate",
+      "url": "https://pirategang.feishu.cn/docx/LPwudGAKso6Y6vxpVvWcBGownIe",
+      "title": "关于我们 — 候选人阅读指南 - 飞书云文档",
+      "host": "pirategang.feishu.cn"
+    },
+    {
+      "ts": 1795772577653,
+      "phase": "activate",
+      "url": "https://pirategang.feishu.cn/docx/LPwudGAKso6Y6vxpVvWcBGownIe",
+      "title": "关于我们 — 候选人阅读指南 - 飞书云文档",
+      "host": "pirategang.feishu.cn"
+    },
+    {
+      "ts": 1795773419337,
+      "phase": "activate",
+      "url": "https://www.deepseek.com/",
+      "title": "DeepSeek | 深度求索",
+      "host": "deepseek.com"
+    },
+    {
+      "ts": 1795773422726,
+      "phase": "activate",
+      "url": "https://www.bing.com/search?q=dsh%E6%8F%92%E4%BB%B6%E5%B8%82%E5%9C%BA&PC=U316&FORM=CHROMN",
+      "title": "dsh插件市场 - 搜索",
+      "host": "bing.com"
+    },
+    {
+      "ts": 1795773438471,
+      "phase": "activate",
+      "url": "https://www.bing.com/search?q=dsh%E6%8F%92%E4%BB%B6%E5%B8%82%E5%9C%BA&PC=U316&FORM=CHROMN",
+      "title": "dsh插件市场 - 搜索",
+      "host": "bing.com"
+    },
+    {
+      "ts": 1795773504869,
+      "phase": "activate",
+      "url": "https://wx.mail.qq.com/home/index?sid=zSI2TYx4aHAuWlJNAJ01SwAA#/list/1",
+      "title": "QQ邮箱",
+      "host": "wx.mail.qq.com"
+    },
+    {
+      "ts": 1795773506711,
+      "phase": "activate",
+      "url": "https://q.qq.com/#/register?email=2639951906@qq.com",
+      "title": "QQ开放平台",
+      "host": "q.qq.com"
+    },
+    {
+      "ts": 1795773508562,
+      "phase": "activate",
+      "url": "https://bot.q.qq.com/wiki/#_1-%E6%B3%A8%E5%86%8C%E8%B4%A6%E5%8F%B7",
+      "title": "QQ Bot介绍与接入指南 | QQ 机器人官方文档",
+      "host": "bot.q.qq.com"
+    },
+    {
+      "ts": 1795773508614,
+      "phase": "nav",
+      "url": "https://bot.q.qq.com/wiki/#_1-%E6%B3%A8%E5%86%8C%E8%B4%A6%E5%8F%B7",
+      "title": "QQ Bot介绍与接入指南 | QQ 机器人官方文档",
+      "host": "bot.q.qq.com"
+    },
+    {
+      "ts": 1795773510797,
+      "phase": "activate",
+      "url": "https://bot.q.qq.com/wiki/agent-qqbot/#%E5%BF%AB%E9%80%9F%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AA-qq-%E6%9C%BA%E5%99%A8%E4%BA%BA",
+      "title": "Agent 接入 | QQ 机器人官方文档",
+      "host": "bot.q.qq.com"
+    },
+    {
+      "ts": 1795773510802,
+      "phase": "nav",
+      "url": "https://bot.q.qq.com/wiki/agent-qqbot/#%E5%BF%AB%E9%80%9F%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AA-qq-%E6%9C%BA%E5%99%A8%E4%BA%BA",
+      "title": "Agent 接入 | QQ 机器人官方文档",
+      "host": "bot.q.qq.com"
+    },
+    {
+      "ts": 1795773515822,
+      "phase": "nav",
+      "url": "https://q.qq.com/#/register?email=2639951906@qq.com",
+      "title": "QQ开放平台",
+      "host": "q.qq.com"
+    },
+    {
+      "ts": 1795773515886,
+      "phase": "nav",
+      "url": "https://q.qq.com/#/apps",
+      "title": "QQ开放平台",
+      "host": "q.qq.com"
+    },
+    {
+      "ts": 1795773516136,
+      "phase": "nav",
+      "url": "https://q.qq.com/qqbot/dashboard/manage/1904583186",
+      "title": "QQ机器人",
+      "host": "q.qq.com"
+    },
+    {
+      "ts": 1795773528153,
+      "phase": "nav",
+      "url": "https://www.deepseek.com/",
+      "title": "deepseek.com",
+      "host": "deepseek.com"
+    },
+    {
+      "ts": 1795773530512,
+      "phase": "nav",
+      "url": "https://chat.deepseek.com/",
+      "title": "chat.deepseek.com",
+      "host": "chat.deepseek.com"
+    },
+    {
+      "ts": 1795773533393,
+      "phase": "nav",
+      "url": "https://chat.deepseek.com/a/chat/s/a6d75862-8fa5-46c1-8d69-153cf3a7156d",
+      "title": "DeepSeek - 探索未至之境",
+      "host": "chat.deepseek.com"
+    },
+    {
+      "ts": 1795773588248,
+      "phase": "activate",
+      "url": "https://chat.deepseek.com/a/chat/s/a6d75862-8fa5-46c1-8d69-153cf3a7156d",
+      "title": "QQ机器人接入AI可行 - DeepSeek",
+      "host": "chat.deepseek.com"
+    },
+    {
+      "ts": 1795773873377,
+      "phase": "nav",
+      "url": "https://www.bing.com/search?q=qqbot&PC=U316&FORM=CHROMN",
+      "title": "bing.com/search?q=qqbot&PC=U316&FORM=CHROMN",
+      "host": "bing.com"
+    },
+    {
+      "ts": 1795773878247,
+      "phase": "nav",
+      "url": "https://www.bing.com/ck/a?!&&p=e2f41df95ca80a8eb3808908609d02b4699c1c0f48c14051949f7923bb354c8eJmltdHM9MTc5NTczNzYwMA&ptn=3&ver=2&hsh=4&fclid=1ed8c369-d91c-6d85-3484-db6ed8ce6c07&u=a1aHR0cHM6Ly9ib3QucS5xcS5jb20v&ntb=1",
+      "title": "bing.com/ck/a?!&&p=e2f41df95ca80a8eb3808908609d02b4699c1c0f48c14051949f7923bb354c8eJmltdHM9MTc5NTczNzYwMA&ptn=3&ver=2&hsh=4&fclid=1ed8c369-d91c-6d85-3484-db6ed8ce6c07&u=a1aHR0cHM6Ly9ib3QucS5xcS5jb20v&ntb=1",
+      "host": "bing.com"
+    },
+    {
+      "ts": 1795773878296,
+      "phase": "nav",
+      "url": "https://www.bing.com/search?q=qqbot&PC=U316&FORM=CHROMN",
+      "title": "bing.com/ck/a?!&&p=e2f41df95ca80a8eb3808908609d02b4699c1c0f48c14051949f7923bb354c8eJmltdHM9MTc5NTczNzYwMA&ptn=3&ver=2&hsh=4&fclid=1ed8c369-d91c-6d85-3484-db6ed8ce6c07&u=a1aHR0cHM6Ly9ib3QucS5xcS5jb20v&ntb=1",
+      "host": "bing.com"
+    },
+    {
+      "ts": 1795773878508,
+      "phase": "nav",
+      "url": "https://q.qq.com/",
+      "title": "q.qq.com",
+      "host": "q.qq.com"
+    },
+    {
+      "ts": 1795773878624,
+      "phase": "nav",
+      "url": "https://q.qq.com/#/",
+      "title": "QQ开放平台",
+      "host": "q.qq.com"
+    },
+    {
+      "ts": 1795773878680,
+      "phase": "nav",
+      "url": "https://q.qq.com/#/apps",
+      "title": "QQ开放平台",
+      "host": "q.qq.com"
+    },
+    {
+      "ts": 1795773882262,
+      "phase": "nav",
+      "url": "https://q.qq.com/qqbot/dashboard/",
+      "title": "q.qq.com/qqbot/dashboard/",
+      "host": "q.qq.com"
+    },
+    {
+      "ts": 1795773884184,
+      "phase": "nav",
+      "url": "https://q.qq.com/qqbot/dashboard/manage/1904583186",
+      "title": "QQ机器人",
+      "host": "q.qq.com"
+    },
+    {
+      "ts": 1795773897215,
+      "phase": "nav",
+      "url": "https://q.qq.com/qqbot/dashboard/",
+      "title": "QQ机器人",
+      "host": "q.qq.com"
+    },
+    {
+      "ts": 1795773902994,
+      "phase": "activate",
+      "url": "https://q.qq.com/qqbot/dashboard/",
+      "title": "QQ机器人",
+      "host": "q.qq.com"
+    },
+    {
+      "ts": 1795773904737,
+      "phase": "nav",
+      "url": "https://q.qq.com/qqbot/dashboard/",
+      "title": "QQ机器人",
+      "host": "q.qq.com"
+    },
+    {
+      "ts": 1795775994279,
+      "phase": "nav",
+      "url": "https://q.qq.com/qqbot/dashboard/",
+      "title": "QQ机器人",
+      "host": "q.qq.com"
+    },
+    {
+      "ts": 1795776002474,
+      "phase": "nav",
+      "url": "https://www.bing.com/search?q=dsh-pet&PC=U316&FORM=CHROMN",
+      "title": "bing.com/search?q=dsh-pet&PC=U316&FORM=CHROMN",
+      "host": "bing.com"
+    },
+    {
+      "ts": 1795776006715,
+      "phase": "nav",
+      "url": "https://www.bing.com/ck/a?!&&p=1b82891aa40203256537bcd0caddc664089b17b67959959accaa1ac48d8f9da4JmltdHM9MTc5NTczNzYwMA&ptn=3&ver=2&hsh=4&fclid=1ed8c369-d91c-6d85-3484-db6ed8ce6c07&u=a1aHR0cHM6Ly9naXRodWIuY29tL1BDMjAwNS1jbG91ZC9kc2gtcGV0L3RyZWUvbWFpbi9kc2gtcGV0&ntb=1",
+      "title": "bing.com/ck/a?!&&p=1b82891aa40203256537bcd0caddc664089b17b67959959accaa1ac48d8f9da4JmltdHM9MTc5NTczNzYwMA&ptn=3&ver=2&hsh=4&fclid=1ed8c369-d91c-6d85-3484-db6ed8ce6c07&u=a1aHR0cHM6Ly9naXRodWIuY29tL1BDMjAwNS1jbG91ZC9kc2gtcGV0L3RyZWUvbWFpbi9kc2gtcGV0&ntb=1",
+      "host": "bing.com"
+    },
+    {
+      "ts": 1795776006787,
+      "phase": "nav",
+      "url": "https://www.bing.com/search?q=dsh-pet&PC=U316&FORM=CHROMN",
+      "title": "bing.com/ck/a?!&&p=1b82891aa40203256537bcd0caddc664089b17b67959959accaa1ac48d8f9da4JmltdHM9MTc5NTczNzYwMA&ptn=3&ver=2&hsh=4&fclid=1ed8c369-d91c-6d85-3484-db6ed8ce6c07&u=a1aHR0cHM6Ly9naXRodWIuY29tL1BDMjAwNS1jbG91ZC9kc2gtcGV0L3RyZWUvbWFpbi9kc2gtcGV0&ntb=1",
+      "host": "bing.com"
+    },
+    {
+      "ts": 1795776008017,
+      "phase": "nav",
+      "url": "https://github.com/PC2005-cloud/dsh-pet/tree/main/dsh-pet",
+      "title": "github.com/PC2005-cloud/dsh-pet/tree/main/dsh-pet",
+      "host": "github.com"
+    },
+    {
+      "ts": 1795776009929,
+      "phase": "activate",
+      "url": "https://github.com/PC2005-cloud/dsh-pet/tree/main/dsh-pet",
+      "title": "dsh-pet/dsh-pet at main · PC2005-cloud/dsh-pet",
+      "host": "github.com"
+    },
+    {
+      "ts": 1795776013945,
+      "phase": "nav",
+      "url": "https://github.com/PC2005-cloud/dsh-pet",
+      "title": "github.com/PC2005-cloud/dsh-pet",
+      "host": "github.com"
+    },
+    {
+      "ts": 1795776015302,
+      "phase": "nav",
+      "url": "https://github.com/PC2005-cloud/dsh-pet",
+      "title": "PC2005-cloud/dsh-pet: DSH 桌面宠物：一行命令装好即用的透明动画小桌宠，支持多开、大小位置随心配置；还内置 DIY 素材链，能用 AI 视频自造专属宠物",
+      "host": "github.com"
+    },
+    {
+      "ts": 1795790518959,
+      "phase": "activate",
+      "url": "https://github.com/PC2005-cloud/dsh-pet",
+      "title": "PC2005-cloud/dsh-pet: DSH 桌面宠物：一行命令装好即用的透明动画小桌宠，支持多开、大小位置随心配置；还内置 DIY 素材链，能用 AI 视频自造专属宠物",
+      "host": "github.com"
+    },
+    {
+      "ts": 1795790521586,
+      "phase": "activate",
+      "url": "https://github.com/PC2005-cloud/dsh-pet",
+      "title": "PC2005-cloud/dsh-pet: DSH 桌面宠物：一行命令装好即用的透明动画小桌宠，支持多开、大小位置随心配置；还内置 DIY 素材链，能用 AI 视频自造专属宠物",
+      "host": "github.com"
+    },
+    {
+      "ts": 1795790530833,
+      "phase": "nav",
+      "url": "https://www.bing.com/search?q=kimi3.1pro&PC=U316&FORM=CHROMN",
+      "title": "bing.com/search?q=kimi3.1pro&PC=U316&FORM=CHROMN",
+      "host": "bing.com"
+    },
+    {
+      "ts": 1795790536701,
+      "phase": "nav",
+      "url": "https://www.bing.com/ck/a?!&&p=10647ffd5a548af18511b0e461c13742fdef37ee60935d1d9402d97841720ad6JmltdHM9MTc5NTczNzYwMA&ptn=3&ver=2&hsh=4&fclid=1ed8c369-d91c-6d85-3484-db6ed8ce6c07&u=a1aHR0cHM6Ly9wbGF0Zm9ybS5raW1pLmNvbS9kb2NzL2d1aWRlL2tpbWktazMtMS1wcm8tcXVpY2tzdGFydA&ntb=1",
+      "title": "bing.com/ck/a?!&&p=10647ffd5a548af18511b0e461c13742fdef37ee60935d1d9402d97841720ad6JmltdHM9MTc5NTczNzYwMA&ptn=3&ver=2&hsh=4&fclid=1ed8c369-d91c-6d85-3484-db6ed8ce6c07&u=a1aHR0cHM6Ly9wbGF0Zm9ybS5raW1pLmNvbS9kb2NzL2d1aWRlL2tpbWktazMtMS1wcm8tcXVpY2tzdGFydA&ntb=1",
+      "host": "bing.com"
+    },
+    {
+      "ts": 1795790536737,
+      "phase": "nav",
+      "url": "https://www.bing.com/search?q=kimi3.1pro&PC=U316&FORM=CHROMN",
+      "title": "bing.com/ck/a?!&&p=10647ffd5a548af18511b0e461c13742fdef37ee60935d1d9402d97841720ad6JmltdHM9MTc5NTczNzYwMA&ptn=3&ver=2&hsh=4&fclid=1ed8c369-d91c-6d85-3484-db6ed8ce6c07&u=a1aHR0cHM6Ly9wbGF0Zm9ybS5raW1pLmNvbS9kb2NzL2d1aWRlL2tpbWktazMtMS1wcm8tcXVpY2tzdGFydA&ntb=1",
+      "host": "bing.com"
+    },
+    {
+      "ts": 1795790537205,
+      "phase": "nav",
+      "url": "https://platform.kimi.com/docs/guide/kimi-k3-1-pro-quickstart",
+      "title": "platform.kimi.com/docs/guide/kimi-k3-1-pro-quickstart",
+      "host": "platform.kimi.com"
+    },
+    {
+      "ts": 1795790544879,
+      "phase": "nav",
+      "url": "https://platform.kimi.com/docs/guide/kimi-k3-1-pro-quickstart",
+      "title": "Kimi K3.1 Pro - Kimi API 开放平台",
+      "host": "platform.kimi.com"
+    },
+    {
+      "ts": 1795790551861,
+      "phase": "nav",
+      "url": "https://platform.kimi.com/docs/api/overview",
+      "title": "Kimi K3.1 Pro - Kimi API 开放平台",
+      "host": "platform.kimi.com"
+    },
+    {
+      "ts": 1795790554369,
+      "phase": "nav",
+      "url": "https://platform.kimi.com/docs/pricing/chat",
+      "title": "API 概述 - Kimi API 开放平台",
+      "host": "platform.kimi.com"
+    },
+    {
+      "ts": 1795790564777,
+      "phase": "nav",
+      "url": "https://platform.kimi.com/docs/pricing/limits",
+      "title": "模型推理价格说明 - Kimi API 开放平台",
+      "host": "platform.kimi.com"
+    },
+    {
+      "ts": 1795790590149,
+      "phase": "activate",
+      "url": "https://platform.kimi.com/docs/pricing/limits",
+      "title": "充值与限速 - Kimi API 开放平台",
+      "host": "platform.kimi.com"
+    },
+    {
+      "ts": 1795790590511,
+      "phase": "nav",
+      "url": "https://www.kimi.com/membership/pricing?from=platform_page&open=business",
+      "title": "kimi.com/membership/pricing?from=platform_page&open=business",
+      "host": "kimi.com"
+    },
+    {
+      "ts": 1795790650222,
+      "phase": "activate",
+      "url": "https://www.kimi.com/membership/pricing?from=platform_page&open=business",
+      "title": "Kimi 价格 | 会员套餐与订阅方案",
+      "host": "kimi.com"
+    },
+    {
+      "ts": 1795790650443,
+      "phase": "nav",
+      "url": "https://www.kimi.com/membership/pricing?from=platform_page&open=business",
+      "title": "Kimi 价格 | 会员套餐与订阅方案",
+      "host": "kimi.com"
+    },
+    {
+      "ts": 1795790658658,
+      "phase": "nav",
+      "url": "https://www.bing.com/search?q=codeplan&PC=U316&FORM=CHROMN",
+      "title": "bing.com/search?q=codeplan&PC=U316&FORM=CHROMN",
+      "host": "bing.com"
+    },
+    {
+      "ts": 1795790665735,
+      "phase": "nav",
+      "url": "https://www.bing.com/ck/a?!&&p=31ab5bf03475a802ab4f38b72cd4b8c28c09bb1073ee3fd3eee7095721f2f0dcJmltdHM9MTc5NTczNzYwMA&ptn=3&ver=2&hsh=4&fclid=1ed8c369-d91c-6d85-3484-db6ed8ce6c07&u=a1aHR0cHM6Ly93d3cudm9sY2VuZ2luZS5jb20vYWN0aXZpdHkvY29kaW5ncGxhbg&ntb=1",
+      "title": "bing.com/ck/a?!&&p=31ab5bf03475a802ab4f38b72cd4b8c28c09bb1073ee3fd3eee7095721f2f0dcJmltdHM9MTc5NTczNzYwMA&ptn=3&ver=2&hsh=4&fclid=1ed8c369-d91c-6d85-3484-db6ed8ce6c07&u=a1aHR0cHM6Ly93d3cudm9sY2VuZ2luZS5jb20vYWN0aXZpdHkvY29kaW5ncGxhbg&ntb=1",
+      "host": "bing.com"
+    },
+    {
+      "ts": 1795790666034,
+      "phase": "nav",
+      "url": "https://www.bing.com/search?q=codeplan&PC=U316&FORM=CHROMN",
+      "title": "bing.com/ck/a?!&&p=31ab5bf03475a802ab4f38b72cd4b8c28c09bb1073ee3fd3eee7095721f2f0dcJmltdHM9MTc5NTczNzYwMA&ptn=3&ver=2&hsh=4&fclid=1ed8c369-d91c-6d85-3484-db6ed8ce6c07&u=a1aHR0cHM6Ly93d3cudm9sY2VuZ2luZS5jb20vYWN0aXZpdHkvY29kaW5ncGxhbg&ntb=1",
+      "host": "bing.com"
+    },
+    {
+      "ts": 1795790666322,
+      "phase": "nav",
+      "url": "https://www.volcengine.com/activity/codingplan",
+      "title": "volcengine.com/activity/codingplan",
+      "host": "volcengine.com"
+    },
+    {
+      "ts": 1795790666648,
+      "phase": "activate",
+      "url": "https://www.bing.com/search?q=codeplan&PC=U316&FORM=CHROMN",
+      "title": "codeplan - 搜索",
+      "host": "bing.com"
+    },
+    {
+      "ts": 1795790667915,
+      "phase": "nav",
+      "url": "https://www.volcengine.com/activity/codingplan",
+      "title": "方舟Coding-Plan",
+      "host": "volcengine.com"
+    },
+    {
+      "ts": 1795790668776,
+      "phase": "nav",
+      "url": "https://www.bing.com/ck/a?!&&p=51e0c3e765ea84c0ad48930253a8dd04b281e2ef087ba10cddb8c6dde2ceac21JmltdHM9MTc5NTczNzYwMA&ptn=3&ver=2&hsh=4&fclid=1ed8c369-d91c-6d85-3484-db6ed8ce6c07&u=a1aHR0cHM6Ly9jb2RlcnBsYW4uYWkv&ntb=1",
+      "title": "bing.com/ck/a?!&&p=51e0c3e765ea84c0ad48930253a8dd04b281e2ef087ba10cddb8c6dde2ceac21JmltdHM9MTc5NTczNzYwMA&ptn=3&ver=2&hsh=4&fclid=1ed8c369-d91c-6d85-3484-db6ed8ce6c07&u=a1aHR0cHM6Ly9jb2RlcnBsYW4uYWkv&ntb=1",
+      "host": "bing.com"
+    },
+    {
+      "ts": 1795790668785,
+      "phase": "nav",
+      "url": "https://www.bing.com/search?q=codeplan&PC=U316&FORM=CHROMN",
+      "title": "bing.com/ck/a?!&&p=51e0c3e765ea84c0ad48930253a8dd04b281e2ef087ba10cddb8c6dde2ceac21JmltdHM9MTc5NTczNzYwMA&ptn=3&ver=2&hsh=4&fclid=1ed8c369-d91c-6d85-3484-db6ed8ce6c07&u=a1aHR0cHM6Ly9jb2RlcnBsYW4uYWkv&ntb=1",
+      "host": "bing.com"
+    },
+    {
+      "ts": 1795790669572,
+      "phase": "activate",
+      "url": "https://www.volcengine.com/activity/codingplan",
+      "title": "方舟Coding-Plan",
+      "host": "volcengine.com"
+    },
+    {
+      "ts": 1795790669643,
+      "phase": "nav",
+      "url": "https://www.volcengine.com/activity/codingplan",
+      "title": "火山引擎-你的AI云",
+      "host": "volcengine.com"
+    },
+    {
+      "ts": 1795790670691,
+      "phase": "nav",
+      "url": "https://coderplan.ai/",
+      "title": "coderplan.ai",
+      "host": "coderplan.ai"
+    },
+    {
+      "ts": 1795790678161,
+      "phase": "nav",
+      "url": "https://coderplan.ai/",
+      "title": "CoderPlan - 开发者首选 Claude Code/Codex 中转、Gemini CLI 中转站",
+      "host": "coderplan.ai"
+    },
+    {
+      "ts": 1795790703527,
+      "phase": "nav",
+      "url": "https://signin.volcengine.com/auth/login?redirectURI=https%3A%2F%2Fsignin.volcengine.com%2Fauthorize%2Foauth%2Fauthorize%3Fauto_confirm%3D1%26client_id%3Dwww.volcengine.com%26redirect_uri%3Dhttps%253A%252F%252Fwww.volcengine.com%252Fsignin%252Foauth%252Fcallback%26response_type%3Dcode%26scope%3Dopenapi%26state%3DeyJSZWRpcmVjdFVSSSI6Ii8vd3d3LnZvbGNlbmdpbmUuY29tL2FjdGl2aXR5L2NvZGluZ3BsYW4ifQ",
+      "title": "signin.volcengine.com/auth/login?redirectURI=https%3A%2F%2Fsignin.volcengine.com%2Fauthorize%2Foauth%2Fauthorize%3Fauto_confirm%3D1%26client_id%3Dwww.volcengine.com%26redirect_uri%3Dhttps%253A%252F%252Fwww.volcengine.com%252Fsignin%252Foauth%252Fcallback%26response_type%3Dcode%26scope%3Dopenapi%26state%3DeyJSZWRpcmVjdFVSSSI6Ii8vd3d3LnZvbGNlbmdpbmUuY29tL2FjdGl2aXR5L2NvZGluZ3BsYW4ifQ",
+      "host": "signin.volcengine.com"
+    },
+    {
+      "ts": 1795790704692,
+      "phase": "nav",
+      "url": "https://signin.volcengine.com/auth/login?redirectURI=https%3A%2F%2Fsignin.volcengine.com%2Fauthorize%2Foauth%2Fauthorize%3Fauto_confirm%3D1%26client_id%3Dwww.volcengine.com%26redirect_uri%3Dhttps%253A%252F%252Fwww.volcengine.com%252Fsignin%252Foauth%252Fcallback%26response_type%3Dcode%26scope%3Dopenapi%26state%3DeyJSZWRpcmVjdFVSSSI6Ii8vd3d3LnZvbGNlbmdpbmUuY29tL2FjdGl2aXR5L2NvZGluZ3BsYW4ifQ",
+      "title": "账号登录-火山引擎",
+      "host": "signin.volcengine.com"
+    },
+    {
+      "ts": 1795790719498,
+      "phase": "nav",
+      "url": "https://accounts.doubao.com/authorize?client_key=ty5uozxauxvbclzy&app_id=238571&state=redirectURI%3Dhttps%253A%252F%252Fsignin.volcengine.com%252Fauthorize%252Foauth%252Fauthorize%253Fauto_confirm%253D1%2526client_id%253Dwww.volcengine.com%2526redirect_uri%253Dhttps%25253A%25252F%25252Fwww.volcengine.com%25252Fsignin%25252Foauth%25252Fcallback%2526response_type%253Dcode%2526scope%253Dopenapi%2526state%253DeyJSZWRpcmVjdFVSSSI6Ii8vd3d3LnZvbGNlbmdpbmUuY29tL2FjdGl2aXR5L2NvZGluZ3BsYW4ifQ%26referrer_url%3Dhttps%253A%252F%252Fwww.volcengine.com%252F%26oauth_csrf_token%3D198c669b&prompt=none&user_type=1&redirect_uri=https%3A%2F%2Fsignin.volcengine.com%2Fauth%2Flogin%2Foauth%2FDoubao%2F&track_params=%7B%22utm_source%22%3A%22OWO%22%2C%22utm_medium%22%3A%22CakeGrowth%22%2C%22utm_term%22%3A%22CG%22%2C%22utm_campaign%22%3A%22CG%22%2C%22utm_content%22%3A%22CG%22%2C%22spti%22%3A%2211_000J4GdJoUxPtPrMwlQ3ilQxfn2UtC%22%7D",
+      "title": "accounts.doubao.com/authorize?client_key=ty5uozxauxvbclzy&app_id=238571&state=redirectURI%3Dhttps%253A%252F%252Fsignin.volcengine.com%252Fauthorize%252Foauth%252Fauthorize%253Fauto_confirm%253D1%2526client_id%253Dwww.volcengine.com%2526redirect_uri%253Dhttps%25253A%25252F%25252Fwww.volcengine.com%25252Fsignin%25252Foauth%25252Fcallback%2526response_type%253Dcode%2526scope%253Dopenapi%2526state%253DeyJSZWRpcmVjdFVSSSI6Ii8vd3d3LnZvbGNlbmdpbmUuY29tL2FjdGl2aXR5L2NvZGluZ3BsYW4ifQ%26referrer_url%3Dhttps%253A%252F",
+      "host": "accounts.doubao.com"
+    },
+    {
+      "ts": 1795790754789,
+      "phase": "nav",
+      "url": "https://signin.volcengine.com/auth/login/oauth/Doubao/?code=90f22f8ac666cfcfUhIaZ5Psuo6tfuAhozpb_lf&state=redirectURI%3Dhttps%253A%252F%252Fsignin.volcengine.com%252Fauthorize%252Foauth%252Fauthorize%253Fauto_confirm%253D1%2526client_id%253Dwww.volcengine.com%2526redirect_uri%253Dhttps%25253A%25252F%25252Fwww.volcengine.com%25252Fsignin%25252Foauth%25252Fcallback%2526response_type%253Dcode%2526scope%253Dopenapi%2526state%253DeyJSZWRpcmVjdFVSSSI6Ii8vd3d3LnZvbGNlbmdpbmUuY29tL2FjdGl2aXR5L2NvZGluZ3BsYW4ifQ%26referrer_url%3Dhttps%253A%252F%252Fwww.volcengine.com%252F%26oauth_csrf_token%3D198c669b",
+      "title": "signin.volcengine.com/auth/login/oauth/Doubao/?code=90f22f8ac666cfcfUhIaZ5Psuo6tfuAhozpb_lf&state=redirectURI%3Dhttps%253A%252F%252Fsignin.volcengine.com%252Fauthorize%252Foauth%252Fauthorize%253Fauto_confirm%253D1%2526client_id%253Dwww.volcengine.com%2526redirect_uri%253Dhttps%25253A%25252F%25252Fwww.volcengine.com%25252Fsignin%25252Foauth%25252Fcallback%2526response_type%253Dcode%2526scope%253Dopenapi%2526state%253DeyJSZWRpcmVjdFVSSSI6Ii8vd3d3LnZvbGNlbmdpbmUuY29tL2FjdGl2aXR5L2NvZGluZ3BsYW4ifQ%26referrer_u",
+      "host": "signin.volcengine.com"
+    },
+    {
+      "ts": 1795790755301,
+      "phase": "nav",
+      "url": "https://signin.volcengine.com/auth/login/oauth/Doubao/?code=90f22f8ac666cfcfUhIaZ5Psuo6tfuAhozpb_lf&state=redirectURI%3Dhttps%253A%252F%252Fsignin.volcengine.com%252Fauthorize%252Foauth%252Fauthorize%253Fauto_confirm%253D1%2526client_id%253Dwww.volcengine.com%2526redirect_uri%253Dhttps%25253A%25252F%25252Fwww.volcengine.com%25252Fsignin%25252Foauth%25252Fcallback%2526response_type%253Dcode%2526scope%253Dopenapi%2526state%253DeyJSZWRpcmVjdFVSSSI6Ii8vd3d3LnZvbGNlbmdpbmUuY29tL2FjdGl2aXR5L2NvZGluZ3BsYW4ifQ%26referrer_url%3Dhttps%253A%252F%252Fwww.volcengine.com%252F",
+      "title": "账号登录-火山引擎",
+      "host": "signin.volcengine.com"
+    },
+    {
+      "ts": 1795790755308,
+      "phase": "nav",
+      "url": "https://signin.volcengine.com/auth/login/oauth/Doubao/?redirectURI=https%3A%2F%2Fsignin.volcengine.com%2Fauthorize%2Foauth%2Fauthorize%3Fauto_confirm%3D1%26client_id%3Dwww.volcengine.com%26redirect_uri%3Dhttps%253A%252F%252Fwww.volcengine.com%252Fsignin%252Foauth%252Fcallback%26response_type%3Dcode%26scope%3Dopenapi%26state%3DeyJSZWRpcmVjdFVSSSI6Ii8vd3d3LnZvbGNlbmdpbmUuY29tL2FjdGl2aXR5L2NvZGluZ3BsYW4ifQ&referrer_url=https%3A%2F%2Fwww.volcengine.com%2F&code=90f22f8ac666cfcfUhIaZ5Psuo6tfuAhozpb_lf",
+      "title": "账号登录-火山引擎",
+      "host": "signin.volcengine.com"
+    },
+    {
+      "ts": 1795790758770,
+      "phase": "activate",
+      "url": "https://signin.volcengine.com/auth/login/oauth/Doubao/?redirectURI=https%3A%2F%2Fsignin.volcengine.com%2Fauthorize%2Foauth%2Fauthorize%3Fauto_confirm%3D1%26client_id%3Dwww.volcengine.com%26redirect_uri%3Dhttps%253A%252F%252Fwww.volcengine.com%252Fsignin%252Foauth%252Fcallback%26response_type%3Dcode%26scope%3Dopenapi%26state%3DeyJSZWRpcmVjdFVSSSI6Ii8vd3d3LnZvbGNlbmdpbmUuY29tL2FjdGl2aXR5L2NvZGluZ3BsYW4ifQ&referrer_url=https%3A%2F%2Fwww.volcengine.com%2F&code=90f22f8ac666cfcfUhIaZ5Psuo6tfuAhozpb_lf",
+      "title": "账号登录-火山引擎",
+      "host": "signin.volcengine.com"
+    },
+    {
+      "ts": 1795790779398,
+      "phase": "nav",
+      "url": "https://www.volcengine.com/activity/codingplan",
+      "title": "volcengine.com/activity/codingplan",
+      "host": "volcengine.com"
+    },
+    {
+      "ts": 1795790781409,
+      "phase": "nav",
+      "url": "https://www.volcengine.com/activity/codingplan",
+      "title": "方舟Coding-Plan",
+      "host": "volcengine.com"
+    },
+    {
+      "ts": 1795790840514,
+      "phase": "nav",
+      "url": "https://console.volcengine.com/home",
+      "title": "console.volcengine.com/home",
+      "host": "console.volcengine.com"
+    },
+    {
+      "ts": 1795790870159,
+      "phase": "activate",
+      "url": "https://chat.deepseek.com/a/chat/s/a6d75862-8fa5-46c1-8d69-153cf3a7156d",
+      "title": "QQ机器人接入AI可行 - DeepSeek",
+      "host": "chat.deepseek.com"
+    },
+    {
+      "ts": 1795790870304,
+      "phase": "nav",
+      "url": "https://chat.deepseek.com/a/chat/s/a6d75862-8fa5-46c1-8d69-153cf3a7156d",
+      "title": "QQ机器人接入AI可行 - DeepSeek",
+      "host": "chat.deepseek.com"
+    },
+    {
+      "ts": 1795790872205,
+      "phase": "nav",
+      "url": "https://chat.deepseek.com/",
+      "title": "QQ机器人接入AI可行 - DeepSeek",
+      "host": "chat.deepseek.com"
+    },
+    {
+      "ts": 1795790882800,
+      "phase": "nav",
+      "url": "https://chat.deepseek.com/a/chat/s/32eef183-009c-4d93-b028-74daed2bdc93",
+      "title": "DeepSeek - 探索未至之境",
+      "host": "chat.deepseek.com"
+    },
+    {
+      "ts": 1795790893424,
+      "phase": "nav",
+      "url": "https://chat.deepseek.com/a/chat/s/32eef183-009c-4d93-b028-74daed2bdc93",
+      "title": "多模态含义解析 - DeepSeek",
+      "host": "chat.deepseek.com"
+    },
+    {
+      "ts": 1795790926435,
+      "phase": "activate",
+      "url": "https://chat.deepseek.com/a/chat/s/32eef183-009c-4d93-b028-74daed2bdc93",
+      "title": "多模态含义解析 - DeepSeek",
+      "host": "chat.deepseek.com"
+    },
+    {
+      "ts": 1795791204357,
+      "phase": "nav",
+      "url": "http://localhost:1420/pet/settings.html",
+      "title": "localhost:1420/pet/settings.html",
+      "host": "localhost"
+    },
+    {
+      "ts": 1795791222873,
+      "phase": "activate",
+      "url": "http://localhost:1420/pet/settings.html",
+      "title": "桌宠设置",
+      "host": "localhost"
+    },
+    {
+      "ts": 1795791227987,
+      "phase": "nav",
+      "url": "http://localhost:1420/pet/settings.html",
+      "title": "桌宠设置",
+      "host": "localhost"
+    },
+    {
+      "ts": 1795791338135,
+      "phase": "nav",
+      "url": "http://localhost:1420/pet/settings.html",
+      "title": "桌宠设置",
+      "host": "localhost"
+    },
+    {
+      "ts": 1795791414867,
+      "phase": "nav",
+      "url": "http://localhost:1420/pet/settings.html",
+      "title": "桌宠设置",
+      "host": "localhost"
+    },
+    {
+      "ts": 1795791900765,
+      "phase": "activate",
+      "url": "https://console.volcengine.com/home",
+      "title": "火山引擎控制台",
+      "host": "console.volcengine.com"
+    },
+    {
+      "ts": 1795791901318,
+      "phase": "nav",
+      "url": "https://console.volcengine.com/home",
+      "title": "火山引擎控制台",
+      "host": "console.volcengine.com"
+    },
+    {
+      "ts": 1795791916440,
+      "phase": "nav",
+      "url": "https://www.bing.com/search?q=gemni&PC=U316&FORM=CHROMN",
+      "title": "bing.com/search?q=gemni&PC=U316&FORM=CHROMN",
+      "host": "bing.com"
+    },
+    {
+      "ts": 1795791922274,
+      "phase": "nav",
+      "url": "https://www.bing.com/aclk?ld=e8g0FwV_aS8mn5E-FpStCmGTVUCUzbuUMqAwTC0cS0cYpbHSbSHQr__cZbxf1GsoG7zX0U50bcgB2CcGrYJF5P9YqgB3ysZzDhT1n7e7Ca4tuaBUV_xMgshxmpn3b1_H2tx2bgK6TebLSuKNnyta5tCJav7cNRUPx1le6u88MgTTHsVYizoEaV605Ln7vHTmm84dlCGCHBgxo_PPwxkqnXS6V40jw&u=aHR0cHMlM2ElMmYlMmZjbG91ZC5nb29nbGUuY29tJTJmZ2VtaW5pLWVudGVycHJpc2UlM2Z1dG1fc291cmNlJTNkQmluZyUyNnV0bV9tZWRpdW0lM2RDUEMlMjZ1dG1fY2FtcGFpZ24lM2QxNzEzNzYyLUdlbWluaV9FbnRlcnByaXNlLURSLU5BLVVTLWVuLUJpbmctQktXUy1QSFItbmElMjZ1dG1fY29udGVudCUzZGMtSHlicmlkJTJiJTI1N0MlMmJCS1dTJTJiLSUyYlBIUiUyYiUyNTdDJTJiVHh0X0dlbWluaSUyYkVudGVycHJpc2UtMTk1OTM1NTQyMjIxJTI2dXRtX3Rlcm0lM2Rnb29nbGUlMjUyMGFpJTI1MjBmb3IlMjUyMHdvcmslMjZ1aiUzZG5hJTI2Z2NsaWQlM2RmMTcyYjMwODhjYmExOGM4NDU3MmQ4MDExMDkyZmFkYSUyNmdjbHNyYyUzZDNwLmRzJTI2bXNjbGtpZCUzZGYxNzJiMzA4OGNiYTE4Yzg0NTcyZDgwMTEwOTJmYWRh&rlid=f172b3088cba18c84572d8011092fada&ntb=1",
+      "title": "bing.com/aclk?ld=e8g0FwV_aS8mn5E-FpStCmGTVUCUzbuUMqAwTC0cS0cYpbHSbSHQr__cZbxf1GsoG7zX0U50bcgB2CcGrYJF5P9YqgB3ysZzDhT1n7e7Ca4tuaBUV_xMgshxmpn3b1_H2tx2bgK6TebLSuKNnyta5tCJav7cNRUPx1le6u88MgTTHsVYizoEaV605Ln7vHTmm84dlCGCHBgxo_PPwxkqnXS6V40jw&u=aHR0cHMlM2ElMmYlMmZjbG91ZC5nb29nbGUuY29tJTJmZ2VtaW5pLWVudGVycHJpc2UlM2Z1dG1fc291cmNlJTNkQmluZyUyNnV0bV9tZWRpdW0lM2RDUEMlMjZ1dG1fY2FtcGFpZ24lM2QxNzEzNzYyLUdlbWluaV9FbnRlcnByaXNlLURSLU5BLVVTLWVuLUJpbmctQktXUy1QSFItbmElMjZ1dG1fY29udGVudCUzZGMtSHlicmlkJTJiJTI1N0MlMmJCS1dTJTJ",
+      "host": "bing.com"
+    },
+    {
+      "ts": 1795791922289,
+      "phase": "nav",
+      "url": "https://www.bing.com/search?q=gemni&PC=U316&FORM=CHROMN",
+      "title": "bing.com/aclk?ld=e8g0FwV_aS8mn5E-FpStCmGTVUCUzbuUMqAwTC0cS0cYpbHSbSHQr__cZbxf1GsoG7zX0U50bcgB2CcGrYJF5P9YqgB3ysZzDhT1n7e7Ca4tuaBUV_xMgshxmpn3b1_H2tx2bgK6TebLSuKNnyta5tCJav7cNRUPx1le6u88MgTTHsVYizoEaV605Ln7vHTmm84dlCGCHBgxo_PPwxkqnXS6V40jw&u=aHR0cHMlM2ElMmYlMmZjbG91ZC5nb29nbGUuY29tJTJmZ2VtaW5pLWVudGVycHJpc2UlM2Z1dG1fc291cmNlJTNkQmluZyUyNnV0bV9tZWRpdW0lM2RDUEMlMjZ1dG1fY2FtcGFpZ24lM2QxNzEzNzYyLUdlbWluaV9FbnRlcnByaXNlLURSLU5BLVVTLWVuLUJpbmctQktXUy1QSFItbmElMjZ1dG1fY29udGVudCUzZGMtSHlicmlkJTJiJTI1N0MlMmJCS1dTJTJ",
+      "host": "bing.com"
+    },
+    {
+      "ts": 1795791922960,
+      "phase": "nav",
+      "url": "https://cloud.google.com/gemini-enterprise?utm_source=Bing&utm_medium=CPC&utm_campaign=1713762-Gemini_Enterprise-DR-NA-US-en-Bing-BKWS-PHR-na&utm_content=c-Hybrid+%7C+BKWS+-+PHR+%7C+Txt_Gemini+Enterprise-195935542221&utm_term=google%20ai%20for%20work&uj=na&gclid=f172b3088cba18c84572d8011092fada&gclsrc=3p.ds&msclkid=f172b3088cba18c84572d8011092fada",
+      "title": "cloud.google.com/gemini-enterprise?utm_source=Bing&utm_medium=CPC&utm_campaign=1713762-Gemini_Enterprise-DR-NA-US-en-Bing-BKWS-PHR-na&utm_content=c-Hybrid+%7C+BKWS+-+PHR+%7C+Txt_Gemini+Enterprise-195935542221&utm_term=google ai for work&uj=na&gclid=f172b3088cba18c84572d8011092fada&gclsrc=3p.ds&msclkid=f172b3088cba18c84572d8011092fada",
+      "host": "cloud.google.com"
+    },
+    {
+      "ts": 1795791930645,
+      "phase": "activate",
+      "url": "https://cloud.google.com/gemini-enterprise?utm_source=Bing&utm_medium=CPC&utm_campaign=1713762-Gemini_Enterprise-DR-NA-US-en-Bing-BKWS-PHR-na&utm_content=c-Hybrid+%7C+BKWS+-+PHR+%7C+Txt_Gemini+Enterprise-195935542221&utm_term=google%20ai%20for%20work&uj=na&gclid=f172b3088cba18c84572d8011092fada&gclsrc=3p.ds&msclkid=f172b3088cba18c84572d8011092fada",
+      "title": "面向企业的 Gemini：通用工作智能体 | Google Cloud",
+      "host": "cloud.google.com"
+    },
+    {
+      "ts": 1795791931091,
+      "phase": "nav",
+      "url": "https://cloud.google.com/gemini-enterprise/connectors",
+      "title": "cloud.google.com/gemini-enterprise/connectors",
+      "host": "cloud.google.com"
+    },
+    {
+      "ts": 1795791936505,
+      "phase": "nav",
+      "url": "https://cloud.google.com/gemini-enterprise/connectors",
+      "title": "Gemini Enterprise 各版本适用的连接器 | Google Cloud",
+      "host": "cloud.google.com"
+    },
+    {
+      "ts": 1795791939010,
+      "phase": "nav",
+      "url": "https://cloud.google.com/gemini-enterprise/resources",
+      "title": "cloud.google.com/gemini-enterprise/resources",
+      "host": "cloud.google.com"
+    },
+    {
+      "ts": 1795791945415,
+      "phase": "activate",
+      "url": "https://www.bing.com/search?q=gemni&PC=U316&FORM=CHROMN",
+      "title": "gemni - 搜索",
+      "host": "bing.com"
+    },
+    {
+      "ts": 1795791950137,
+      "phase": "nav",
+      "url": "https://cloud.google.com/gemini-enterprise/resources",
+      "title": "面向企业的 Gemini 学习中心 | Google Cloud",
+      "host": "cloud.google.com"
+    },
+    {
+      "ts": 1795791952264,
+      "phase": "nav",
+      "url": "https://www.bing.com/search?q=gemni&PC=U316&FORM=CHROMN",
+      "title": "gemini订阅 - 搜索",
+      "host": "bing.com"
+    },
+    {
+      "ts": 1795791953740,
+      "phase": "nav",
+      "url": "https://www.bing.com/search?q=gemini%E8%AE%A2%E9%98%85&qs=n&form=QBRE&sp=-1&lq=0&pq=geminidingyue&sc=9-13&sk=&cvid=AB700589EEC7470993F19237E5029853",
+      "title": "gemini订阅 - 搜索",
+      "host": "bing.com"
+    },
+    {
+      "ts": 1795791957442,
+      "phase": "nav",
+      "url": "https://www.bing.com/ck/a?!&&p=5e20cde4530ddaee4ffee44cf1d86f833e61408b13366076d03db92892bc9aeeJmltdHM9MTc5NTczNzYwMA&ptn=3&ver=2&hsh=4&fclid=1ed8c369-d91c-6d85-3484-db6ed8ce6c07&u=a1aHR0cHM6Ly9nZW1pbmkuZ29vZ2xlL3N1YnNjcmlwdGlvbnMv&ntb=1",
+      "title": "bing.com/ck/a?!&&p=5e20cde4530ddaee4ffee44cf1d86f833e61408b13366076d03db92892bc9aeeJmltdHM9MTc5NTczNzYwMA&ptn=3&ver=2&hsh=4&fclid=1ed8c369-d91c-6d85-3484-db6ed8ce6c07&u=a1aHR0cHM6Ly9nZW1pbmkuZ29vZ2xlL3N1YnNjcmlwdGlvbnMv&ntb=1",
+      "host": "bing.com"
+    },
+    {
+      "ts": 1795791957466,
+      "phase": "nav",
+      "url": "https://www.bing.com/search?q=gemini%E8%AE%A2%E9%98%85&qs=n&form=QBRE&sp=-1&lq=0&pq=geminidingyue&sc=9-13&sk=&cvid=AB700589EEC7470993F19237E5029853",
+      "title": "bing.com/ck/a?!&&p=5e20cde4530ddaee4ffee44cf1d86f833e61408b13366076d03db92892bc9aeeJmltdHM9MTc5NTczNzYwMA&ptn=3&ver=2&hsh=4&fclid=1ed8c369-d91c-6d85-3484-db6ed8ce6c07&u=a1aHR0cHM6Ly9nZW1pbmkuZ29vZ2xlL3N1YnNjcmlwdGlvbnMv&ntb=1",
+      "host": "bing.com"
+    },
+    {
+      "ts": 1795791959206,
+      "phase": "nav",
+      "url": "https://gemini.google/subscriptions/",
+      "title": "gemini.google/subscriptions/",
+      "host": "gemini.google"
+    },
+    {
+      "ts": 1795791966045,
+      "phase": "activate",
+      "url": "https://gemini.google/subscriptions/",
+      "title": "Google AI Pro & Ultra — get access to Gemini 4 Neon & more",
+      "host": "gemini.google"
+    },
+    {
+      "ts": 1795791974872,
+      "phase": "nav",
+      "url": "https://gemini.google/subscriptions/?plans=developer",
+      "title": "Google AI Pro & Ultra — get access to Gemini 4 Neon & more",
+      "host": "gemini.google"
+    },
+    {
+      "ts": 1795791984380,
+      "phase": "nav",
+      "url": "https://console.cloud.google.com/freetrial/?redirectPath=/agent-platform&utm_source=gemini.google&utm_medium=et&utm_campaign=gemini-app-website-subscriptions&utm_content=geap&pli=1",
+      "title": "console.cloud.google.com/freetrial/?redirectPath=/agent-platform&utm_source=gemini.google&utm_medium=et&utm_campaign=gemini-app-website-subscriptions&utm_content=geap&pli=1",
+      "host": "console.cloud.google.com"
+    },
+    {
+      "ts": 1795791990354,
+      "phase": "activate",
+      "url": "https://gemini.google/subscriptions/?plans=developer",
+      "title": "Google AI Pro & Ultra — get access to Gemini 4 Neon & more",
+      "host": "gemini.google"
+    },
+    {
+      "ts": 1795791991199,
+      "phase": "activate",
+      "url": "https://console.cloud.google.com/freetrial/?redirectPath=/agent-platform&utm_source=gemini.google&utm_medium=et&utm_campaign=gemini-app-website-subscriptions&utm_content=geap&pli=1",
+      "title": "Google Cloud console",
+      "host": "console.cloud.google.com"
+    },
+    {
+      "ts": 1795791991228,
+      "phase": "nav",
+      "url": "https://console.cloud.google.com/freetrial/?redirectPath=/agent-platform&utm_source=gemini.google&utm_medium=et&utm_campaign=gemini-app-website-subscriptions&utm_content=geap&pli=1",
+      "title": "免费试用 – Google Cloud 控制台",
+      "host": "console.cloud.google.com"
+    },
+    {
+      "ts": 1795791991260,
+      "phase": "nav",
+      "url": "https://console.cloud.google.com/freetrial/signup/tos?redirectPath=%2Fagent-platform&utm_source=gemini.google&utm_medium=et&utm_campaign=gemini-app-website-subscriptions&utm_content=geap&pli=1",
+      "title": "免费试用 – Google Cloud 控制台",
+      "host": "console.cloud.google.com"
+    },
+    {
+      "ts": 1795791997665,
+      "phase": "nav",
+      "url": "https://console.cloud.google.com/freetrial/signup/tos?redirectPath=%2Fagent-platform&utm_source=gemini.google&utm_medium=et&utm_campaign=gemini-app-website-subscriptions&utm_content=geap&pli=1",
+      "title": "第 1 步（共 2 步） – 免费试用 – Google Cloud 控制台",
+      "host": "console.cloud.google.com"
+    },
+    {
+      "ts": 1795792017228,
+      "phase": "activate",
+      "url": "https://gemini.google/subscriptions/?plans=developer",
+      "title": "Google AI Pro & Ultra — get access to Gemini 4 Neon & more",
+      "host": "gemini.google"
+    },
+    {
+      "ts": 1795792021830,
+      "phase": "nav",
+      "url": "https://gemini.google/subscriptions/",
+      "title": "Google AI Pro & Ultra — get access to Gemini 4 Neon & more",
+      "host": "gemini.google"
+    },
+    {
+      "ts": 1795792029539,
+      "phase": "nav",
+      "url": "https://one.google.com/ai?utm_source=gemini&utm_medium=web&utm_campaign=geminiplanspage&_gl=1*198b8os*&sc=EgIIAQ&icid=geminiplanspage",
+      "title": "one.google.com/ai?utm_source=gemini&utm_medium=web&utm_campaign=geminiplanspage&_gl=1*198b8os*&sc=EgIIAQ&icid=geminiplanspage",
+      "host": "one.google.com"
+    },
+    {
+      "ts": 1795792034884,
+      "phase": "nav",
+      "url": "https://one.google.com/ai?utm_source=gemini&utm_medium=web&utm_campaign=geminiplanspage&_gl=1*198b8os*&sc=EgIIAQ&icid=geminiplanspage",
+      "title": "Google One 方案",
+      "host": "one.google.com"
+    },
+    {
+      "ts": 1795792034901,
+      "phase": "nav",
+      "url": "https://one.google.com/ai?utm_source=gemini&utm_medium=web&utm_campaign=geminiplanspage&_gl=1*198b8os*&sc=EgIIAQ&icid=geminiplanspage&g1_landing_page=75",
+      "title": "Google One 方案",
+      "host": "one.google.com"
+    },
+    {
+      "ts": 1795792040029,
+      "phase": "nav",
+      "url": "https://one.google.com/ai?utm_source=gemini&utm_medium=web&utm_campaign=geminiplanspage&_gl=1*198b8os*&sc=EgIIAQ&icid=geminiplanspage&g1_landing_page=75&otzr=1",
+      "title": "one.google.com/ai?utm_source=gemini&utm_medium=web&utm_campaign=geminiplanspage&_gl=1*198b8os*&sc=EgIIAQ&icid=geminiplanspage&g1_landing_page=75&otzr=1",
+      "host": "one.google.com"
+    },
+    {
+      "ts": 1795792051151,
+      "phase": "nav",
+      "url": "https://one.google.com/ai?utm_source=gemini&utm_medium=web&utm_campaign=geminiplanspage&_gl=1*198b8os*&sc=EgIIAQ&icid=geminiplanspage&g1_landing_page=75",
+      "title": "Google One 方案",
+      "host": "one.google.com"
+    },
+    {
+      "ts": 1795792056084,
+      "phase": "nav",
+      "url": "https://workspace.google.com/u/0/signup/upgrade/compare?uj=f2p&sku=businessstandard&utm_source=bard-in-product&uj=compareplanscollapsedview&uj=g1_ai_storefront&uj=bard&uj=g1_escape_hatch&ms=pt:3149;s:1511",
+      "title": "workspace.google.com/u/0/signup/upgrade/compare?uj=f2p&sku=businessstandard&utm_source=bard-in-product&uj=compareplanscollapsedview&uj=g1_ai_storefront&uj=bard&uj=g1_escape_hatch&ms=pt:3149;s:1511",
+      "host": "workspace.google.com"
+    },
+    {
+      "ts": 1795792059269,
+      "phase": "activate",
+      "url": "https://one.google.com/ai?utm_source=gemini&utm_medium=web&utm_campaign=geminiplanspage&_gl=1*198b8os*&sc=EgIIAQ&icid=geminiplanspage&g1_landing_page=75",
+      "title": "Google One 方案",
+      "host": "one.google.com"
+    },
+    {
+      "ts": 1795792060697,
+      "phase": "nav",
+      "url": "https://workspace.google.com/u/0/signup/upgrade/compare?uj=f2p&sku=businessstandard&utm_source=bard-in-product&uj=compareplanscollapsedview&uj=g1_ai_storefront&uj=bard&uj=g1_escape_hatch&ms=pt:3149;s:1511",
+      "title": "注册 Google Workspace",
+      "host": "workspace.google.com"
+    },
+    {
+      "ts": 1795792061748,
+      "phase": "nav",
+      "url": "https://gemini.google/subscriptions/",
+      "title": "Google AI Pro & Ultra — get access to Gemini 4 Neon & more",
+      "host": "gemini.google"
+    },
+    {
+      "ts": 1795792065909,
+      "phase": "nav",
+      "url": "https://gemini.google.com/?android-min-version=301356232&ios-min-version=322.0&is_sa=1&campaign_id=gemini_plans_page&utm_source=gemini&utm_medium=web&utm_campaign=microsite_gemini_subscriptions_page&pt=9008&mt=8&ct=gemini_plans_page&icid=microsite_gemini_subscriptions_page&_gl=1*paiaoh*_up*MQ..*_ga*MzYzNDIwMTgyLjE3OTU3OTIwNjM.*_ga_WC57KJ50ZZ*czE3OTU3OTIwNjIkbzEkZzAkdDE3OTU3OTIwNjIkajYwJGwwJGgw",
+      "title": "gemini.google.com/?android-min-version=301356232&ios-min-version=322.0&is_sa=1&campaign_id=gemini_plans_page&utm_source=gemini&utm_medium=web&utm_campaign=microsite_gemini_subscriptions_page&pt=9008&mt=8&ct=gemini_plans_page&icid=microsite_gemini_subscriptions_page&_gl=1*paiaoh*_up*MQ..*_ga*MzYzNDIwMTgyLjE3OTU3OTIwNjM.*_ga_WC57KJ50ZZ*czE3OTU3OTIwNjIkbzEkZzAkdDE3OTU3OTIwNjIkajYwJGwwJGgw",
+      "host": "gemini.google.com"
+    },
+    {
+      "ts": 1795792066975,
+      "phase": "nav",
+      "url": "https://gemini.google.com/?android-min-version=301356232&ios-min-version=322.0&is_sa=1&campaign_id=gemini_plans_page&utm_source=gemini&utm_medium=web&utm_campaign=microsite_gemini_subscriptions_page&pt=9008&mt=8&ct=gemini_plans_page&icid=microsite_gemini_subscriptions_page&_gl=1*paiaoh*_up*MQ..*_ga*MzYzNDIwMTgyLjE3OTU3OTIwNjM.*_ga_WC57KJ50ZZ*czE3OTU3OTIwNjIkbzEkZzAkdDE3OTU3OTIwNjIkajYwJGwwJGgw",
+      "title": "‎Google Gemini",
+      "host": "gemini.google.com"
+    },
+    {
+      "ts": 1795792068055,
+      "phase": "nav",
+      "url": "https://gemini.google.com/app?android-min-version=301356232&ios-min-version=322.0&is_sa=1&campaign_id=gemini_plans_page&utm_source=gemini&utm_medium=web&utm_campaign=microsite_gemini_subscriptions_page&pt=9008&mt=8&ct=gemini_plans_page&icid=microsite_gemini_subscriptions_page&_gl=1*paiaoh*_up*MQ..*_ga*MzYzNDIwMTgyLjE3OTU3OTIwNjM.*_ga_WC57KJ50ZZ*czE3OTU3OTIwNjIkbzEkZzAkdDE3OTU3OTIwNjIkajYwJGwwJGgw",
+      "title": "‎Google Gemini",
+      "host": "gemini.google.com"
+    },
+    {
+      "ts": 1795792088295,
+      "phase": "nav",
+      "url": "https://gemini.google.com/app/download",
+      "title": "Google Gemini",
+      "host": "gemini.google.com"
+    },
+    {
+      "ts": 1795792139172,
+      "phase": "activate",
+      "url": "https://gemini.google.com/app/download",
+      "title": "Google Gemini",
+      "host": "gemini.google.com"
+    },
+    {
+      "ts": 1795792177245,
+      "phase": "activate",
+      "url": "https://gemini.google.com/app/download",
+      "title": "Google Gemini",
+      "host": "gemini.google.com"
+    },
+    {
+      "ts": 1795792179606,
+      "phase": "activate",
+      "url": "https://gemini.google.com/app/download",
+      "title": "Google Gemini",
+      "host": "gemini.google.com"
+    },
+    {
+      "ts": 1795792381411,
+      "phase": "activate",
+      "url": "https://gemini.google.com/app/download",
+      "title": "Google Gemini",
+      "host": "gemini.google.com"
+    },
+    {
+      "ts": 1795792386972,
+      "phase": "activate",
+      "url": "https://gemini.google.com/app/download",
+      "title": "Google Gemini",
+      "host": "gemini.google.com"
+    },
+    {
+      "ts": 1795792704979,
+      "phase": "nav",
+      "url": "https://gemini.google.com/",
+      "title": "gemini.google.com",
+      "host": "gemini.google.com"
+    },
+    {
+      "ts": 1795792706539,
+      "phase": "nav",
+      "url": "https://gemini.google.com/",
+      "title": "‎Google Gemini",
+      "host": "gemini.google.com"
+    },
+    {
+      "ts": 1795792706888,
+      "phase": "nav",
+      "url": "https://gemini.google.com/app",
+      "title": "‎Google Gemini",
+      "host": "gemini.google.com"
+    },
+    {
+      "ts": 1795792896435,
+      "phase": "nav",
+      "url": "https://one.google.com/ai?utm_source=gemini&utm_medium=windows&utm_campaign=gemini_ail_upsell_mavatar&_gl=1*hthmbt*_gcl_au*MTUxNzU1MDk2NS4xNzk1NzkyNTg2*_ga*MTY4NzYwNjk5My4xNzk1NzkyNTk1*_ga_WC57KJ50ZZ*czE3OTU3OTI1OTQkbzEkZzEkdDE3OTU3OTI4ODMkajQ5JGwwJGgw",
+      "title": "one.google.com/ai?utm_source=gemini&utm_medium=windows&utm_campaign=gemini_ail_upsell_mavatar&_gl=1*hthmbt*_gcl_au*MTUxNzU1MDk2NS4xNzk1NzkyNTg2*_ga*MTY4NzYwNjk5My4xNzk1NzkyNTk1*_ga_WC57KJ50ZZ*czE3OTU3OTI1OTQkbzEkZzEkdDE3OTU3OTI4ODMkajQ5JGwwJGgw",
+      "host": "one.google.com"
+    },
+    {
+      "ts": 1795792897617,
+      "phase": "nav",
+      "url": "https://one.google.com/ai?utm_source=gemini&utm_medium=windows&utm_campaign=gemini_ail_upsell_mavatar&_gl=1*hthmbt*_gcl_au*MTUxNzU1MDk2NS4xNzk1NzkyNTg2*_ga*MTY4NzYwNjk5My4xNzk1NzkyNTk1*_ga_WC57KJ50ZZ*czE3OTU3OTI1OTQkbzEkZzEkdDE3OTU3OTI4ODMkajQ5JGwwJGgw",
+      "title": "one.google.com/ai?utm_source=gemini&utm_medium=windows&utm_campaign=gemini_ail_upsell_mavatar&_gl=1*hthmbt*_gcl_au*MTUxNzU1MDk2NS4xNzk1NzkyNTg2*_ga*MTY4NzYwNjk5My4xNzk1NzkyNTk1*_ga_WC57KJ50ZZ*czE3OTU3OTI1OTQkbzEkZzEkdDE3OTU3OTI4ODMkajQ5JGwwJGgw",
+      "host": "one.google.com"
+    },
+    {
+      "ts": 1795792900615,
+      "phase": "nav",
+      "url": "https://one.google.com/ai?utm_source=gemini&utm_medium=windows&utm_campaign=gemini_ail_upsell_mavatar&_gl=1*hthmbt*_gcl_au*MTUxNzU1MDk2NS4xNzk1NzkyNTg2*_ga*MTY4NzYwNjk5My4xNzk1NzkyNTk1*_ga_WC57KJ50ZZ*czE3OTU3OTI1OTQkbzEkZzEkdDE3OTU3OTI4ODMkajQ5JGwwJGgw",
+      "title": "500 内部服务器错误",
+      "host": "one.google.com"
+    }
+  ],
+  "categories": [
+    {
+      "category": "其他",
+      "ms": 12305915
+    },
+    {
+      "category": "AI 工具",
+      "ms": 5324457
+    },
+    {
+      "category": "浏览器",
+      "ms": 3696989
+    },
+    {
+      "category": "游戏",
+      "ms": 954606
+    },
+    {
+      "category": "系统工具",
+      "ms": 864493
+    },
+    {
+      "category": "开发",
+      "ms": 593842
+    },
+    {
+      "category": "聊天",
+      "ms": 243624
+    },
+    {
+      "category": "系统",
+      "ms": 217058
+    }
+  ],
+  "sites": [
+    {
+      "host": "bing.com",
+      "count": 32,
+      "category": "搜索"
+    },
+    {
+      "host": "chat.deepseek.com",
+      "count": 25,
+      "category": "AI"
+    },
+    {
+      "host": "gemini.google.com",
+      "count": 19,
+      "category": "搜索"
+    },
+    {
+      "host": "q.qq.com",
+      "count": 11,
+      "category": "其他"
+    },
+    {
+      "host": "gemini.google",
+      "count": 7,
+      "category": "其他"
+    },
+    {
+      "host": "one.google.com",
+      "count": 6,
+      "category": "搜索"
+    },
+    {
+      "host": "deepseek.com",
+      "count": 5,
+      "category": "AI"
+    },
+    {
+      "host": "pirategang.feishu.cn",
+      "count": 4,
+      "category": "其他"
+    },
+    {
+      "host": "mcnsnzafsrya.feishu.cn",
+      "count": 4,
+      "category": "其他"
+    },
+    {
+      "host": "platform.kimi.com",
+      "count": 4,
+      "category": "其他"
+    },
+    {
+      "host": "volcengine.com",
+      "count": 4,
+      "category": "其他"
+    },
+    {
+      "host": "signin.volcengine.com",
+      "count": 4,
+      "category": "其他"
+    },
+    {
+      "host": "cloud.google.com",
+      "count": 4,
+      "category": "搜索"
+    },
+    {
+      "host": "bot.q.qq.com",
+      "count": 3,
+      "category": "其他"
+    },
+    {
+      "host": "console.cloud.google.com",
+      "count": 3,
+      "category": "搜索"
+    },
+    {
+      "host": "fanyi.baidu.com",
+      "count": 2,
+      "category": "搜索"
+    },
+    {
+      "host": "chatgpt.com",
+      "count": 2,
+      "category": "其他"
+    },
+    {
+      "host": "github.com",
+      "count": 2,
+      "category": "开发文档"
+    },
+    {
+      "host": "console.volcengine.com",
+      "count": 2,
+      "category": "其他"
+    },
+    {
+      "host": "workspace.google.com",
+      "count": 2,
+      "category": "搜索"
+    },
+    {
+      "host": "gamesafe.qq.com",
+      "count": 1,
+      "category": "其他"
+    },
+    {
+      "host": "codingplan.fyi",
+      "count": 1,
+      "category": "其他"
+    },
+    {
+      "host": "wx.mail.qq.com",
+      "count": 1,
+      "category": "其他"
+    },
+    {
+      "host": "kimi.com",
+      "count": 1,
+      "category": "其他"
+    },
+    {
+      "host": "coderplan.ai",
+      "count": 1,
+      "category": "其他"
+    },
+    {
+      "host": "accounts.doubao.com",
+      "count": 1,
+      "category": "AI"
+    },
+    {
+      "host": "localhost",
+      "count": 1,
+      "category": "其他"
+    }
+  ],
+  "focus": {
+    "longestMs": 9124700,
+    "longestApp": "Kotana",
+    "avgSegmentMs": 62860,
+    "hourlySwitches": [
+      {
+        "hour": 15,
+        "count": 17
+      },
+      {
+        "hour": 16,
+        "count": 59
+      },
+      {
+        "hour": 17,
+        "count": 45
+      },
+      {
+        "hour": 18,
+        "count": 21
+      },
+      {
+        "hour": 19,
+        "count": 67
+      },
+      {
+        "hour": 22,
+        "count": 56
+      },
+      {
+        "hour": 23,
+        "count": 63
+      }
+    ]
+  },
+  "firstActivity": 1795764882714,
+  "lastActivity": 1795793538037,
+  "windowMs": 86400000
+}

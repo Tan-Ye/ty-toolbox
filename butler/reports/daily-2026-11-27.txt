@@ -1,0 +1,64 @@
+2026-11-27 日报
+活跃 6小时43分 · 空闲 3小时56分 · 未记录 13小时20分 · 切换 219 次 · 点击 260 次
+首次活动 15:34 · 最后活动 23:32
+
+应用时长
+  Kotana                 3小时3分   45%
+  DeepSeek Harness       1小时29分  22%
+  Chrome                 1小时2分   15%
+  英雄联盟               16分       4%
+  Dnf                    15分       4%
+  Clash Verge            11分       3%
+  Trae                   8分        2%
+  资源管理器             4分        1%
+  QQ                     3分        1%
+  任务管理器             3分        1%
+  Gemini                 2分        1%
+  Code - insiders        2分        0%
+  …… 另有 10 个应用
+
+用途分布
+  其他         3小时25分  51%
+  AI 工具      1小时29分  22%
+  浏览器       1小时2分   15%
+  游戏         16分       4%
+  系统工具     14分       4%
+  开发         10分       2%
+  聊天         4分        1%
+  系统         4分        1%
+
+站点分布（按访问次数）
+  bing.com                             32 次  搜索
+  chat.deepseek.com                    25 次  AI
+  gemini.google.com                    19 次  搜索
+  q.qq.com                             11 次  其他
+  gemini.google                         7 次  其他
+  one.google.com                        6 次  搜索
+  deepseek.com                          5 次  AI
+  pirategang.feishu.cn                  4 次  其他
+  mcnsnzafsrya.feishu.cn                4 次  其他
+  platform.kimi.com                     4 次  其他
+  volcengine.com                        4 次  其他
+  signin.volcengine.com                 4 次  其他
+
+搜索与提问
+  Gemini（Bing，16:03）
+  codex订阅（Bing，16:41）
+  vmware tools（Bing，17:04）
+  dsh插件市场（Bing，17:06）
+  qqbot（Bing，18:04）
+  dsh-pet（Bing，18:40）
+  kimi3.1pro（Bing，22:42）
+  codeplan（Bing，22:44）
+  gemni（Bing，23:05）
+  gemini订阅（Bing，23:05）
+
+专注与碎片
+  最长连续 Kotana 2小时32分
+  平均每段 1分，共切换 219 次
+  每小时切换：15点 17 次，16点 59 次，17点 45 次，18点 21 次，19点 67 次，22点 56 次，23点 63 次
+
+数据空档
+  15:40-16:02  21分
+  17:11-17:40  30分
+  19:55-22:27  2小时32分
