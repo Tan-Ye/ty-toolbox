@@ -1,11 +1,14 @@
 {
   "name": "@ty-toolbox/pet",
   "version": "0.1.0",
-  "description": "Kotana 桌宠集成层：外部 dsh-pet 的启停、说话、工作状态、设置读写、版本更新与碎碎念调度",
+  "description": "自渲染的 Windows 桌面桌宠 + 本地 HTTP/CLI 控制接口（Tauri 2）",
   "license": "MIT",
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
+  "bin": {
+    "pet": "./dist/cli/pet.js"
+  },
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
@@ -27,6 +30,9 @@
   },
   "scripts": {
     "build": "tsc -p tsconfig.build.json",
+    "app:dev": "tauri dev --config src-tauri/tauri.conf.json",
+    "app:build": "tauri build --config src-tauri/tauri.conf.json",
+    "app:build:dir": "tauri build --debug --no-bundle --config src-tauri/tauri.conf.json",
     "clean": "node --input-type=module -e \"import { rmSync } from 'node:fs'; rmSync('dist', { recursive: true, force: true });\"",
     "prepare": "tsc -p tsconfig.build.json",
     "typecheck": "tsc --noEmit",
@@ -34,6 +40,7 @@
     "test:watch": "vitest"
   },
   "devDependencies": {
+    "@tauri-apps/cli": "^2.12.6",
     "@types/node": "^22.10.2",
     "typescript": "^5.7.2",
     "vitest": "^3.0.5"

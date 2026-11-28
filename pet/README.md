@@ -1,18 +1,14 @@
 # @ty-toolbox/pet
 
-Kotana 桌宠集成层，从 `kotana-runtime` 中抽出的独立 TypeScript 包。
+自渲染的 Windows 桌面桌宠，同时保留原 TypeScript 控制层。
 
-它负责「让外部 dsh-pet 动起来」这一层：
+仓库里有两块：
 
-- 启动、停止、认领外部 `dsh-pet.exe`（Electron 独立版），通过 CDP 在页面里说话、播动作
-- 读写 dsh-pet 的 `main-config.jsonc`（显示模式、大小、角落、音量、字体等）
-- 从 GitHub Releases 检查、下载、解压并切换桌宠版本
-- 碎碎念调度（`PetChatterService`），台词生成由宿主注入
-- 桌宠配置装载（环境变量、`companion.json`、更新指针的优先级）
-- asar 解包 / CDP 调用等底层工具
+- **桌面应用**：`src-tauri/` + `web/`，Tauri 2 透明置顶窗口，包含设置面板、托盘、本地 HTTP 与 `pet` CLI。
+- **控制库**：`src/`（构建到 `dist/` 后发布到 npm），负责启动/停止外部 dsh-pet、读写其配置、更新、碎碎念与 asar/CDP 工具。
 
-**不包含**：Tauri 透明窗口与 `web/public/pet/` 里的内置桌宠页面（它们是宿主 WebView 资源），
-也不包含 dsh-pet 程序本体或任何美术素材。
+桌面应用不依赖 dsh-pet；两者可以各自运行，也可以由宿主通过 HTTP/CLI 控制本应用。
+
 
 ## 安装与构建
 
@@ -20,10 +16,67 @@ Kotana 桌宠集成层，从 `kotana-runtime` 中抽出的独立 TypeScript 包�
 pnpm install
 pnpm typecheck
 pnpm test
-pnpm build      # 产出 dist/index.js 与 dist/index.d.ts
+pnpm build          # 库 + CLI → dist/
+pnpm app:dev        # Tauri 开发模式启动桌面桌宠
+pnpm app:build      # 打 Windows NSIS 安装包
 ```
 
-要求 Node.js >= 22（用到全局 `fetch` 与 `WebSocket`）。包本身没有运行时依赖。
+要求 Node.js >= 22（库用到全局 `fetch` 与 `WebSocket`）。桌面应用另外需要
+Rust 工具链、WebView2 运行时与 Windows SDK；Tauri CLI 由 devDependency
+`@tauri-apps/cli` 提供，不需要全局安装。
+
+## 桌面应用（Windows）
+
+- 窗口：320×440、透明、无边框、始终置顶、不进入任务栏；关闭窗口只隐藏，退出走托盘或 `quit`。
+- 托盘：显示桌宠 / 隐藏桌宠 / 桌宠设置 / 退出。
+- 设置：右键桌宠 → 设置。可调人物大小（80–140%）、停靠角落、是否置顶、气泡字号、
+  空闲动作与间隔、点击回应、拖拽动画、气泡时长与碎碎念。
+- 配置：`%APPDATA%\com.ty-toolbox.pet\prefs.json`（Tauri `app_data_dir`）；文件损坏时
+  自动备份为 `prefs.json.broken-<时间戳>` 并回退默认值。
+- 便携/测试：`PET_DATA_DIR` 可覆盖配置目录，`PET_WEBVIEW_DATA_DIR` 可覆盖 WebView2
+  缓存目录；`PET_HTTP_PORT` 可改控制接口端口。
+- 单实例：重复启动只显示已有窗口。
+- 暂未包含：开机自启、自动更新、多宠物实例。
+
+`pnpm app:build` 的安装包在 `src-tauri/target/release/bundle/nsis/`；
+只想快速验证二进制时可以跑 `pnpm app:build:dir`（不打包）。
+
+## 命令行与 HTTP
+
+先 `pnpm build`，然后：
+
+```bash
+node dist/cli/pet.js status
+node dist/cli/pet.js say "我在这儿。"
+node dist/cli/pet.js work working "整理今天的记录"
+node dist/cli/pet.js clear
+node dist/cli/pet.js play idle
+node dist/cli/pet.js show
+node dist/cli/pet.js prefs
+node dist/cli/pet.js prefs set '{"appearance":{"scale":120}}'
+```
+
+`npm link` 或把 `dist/cli/pet.js` 放进 PATH 后，可以直接用 `pet ...`。
+CLI 默认连 `http://127.0.0.1:7340`，可用 `PET_HTTP_URL` 改完整地址，或
+`PET_HTTP_PORT` 只改端口。
+
+桌面应用启动后会监听 `127.0.0.1:7340`（`PET_HTTP_PORT` 可覆盖）：
+
+| 方法 | 路径 | 说明 |
+| --- | --- | --- |
+| GET | `/health` | 存活检查 |
+| GET | `/status` | 运行状态与窗口可见性 |
+| GET | `/prefs` | 当前偏好 |
+| PUT/POST | `/prefs` | 深合并偏好并即时生效 |
+| POST | `/say` | `{ "text": "...", "durationMs": 5000 }` |
+| POST | `/work` | `{ "state": "working", "task": "..." }`，state 为 thinking/working/result/waiting/success/error |
+| POST | `/work/clear` | 清除工作状态 |
+| POST | `/play` | `{ "animation": "idle" }`，可选 idle/look/drag/click-happy/click-shy/click-wave/sleep/walk |
+| POST | `/show`、`/hide` | 显示/隐藏桌宠 |
+| POST | `/settings` | 打开设置窗口 |
+| POST | `/quit` | 退出应用 |
+
+HTTP 只绑定回环地址、没有鉴权，不要转发到公网或局域网。
 
 ## 用法
 
@@ -136,9 +189,9 @@ pnpm 会把目录复制进虚拟 store，重新构建后需要再跑一次 `pnpm
 用 link/file 时都要先在 pet 目录执行 `pnpm build`（或在 kotana 的
 `prebuild` / `pretest` 里加 `pnpm --dir ../ty-toolbox/pet build`）。
 
-## 内置桌宠页面（仅仓库，不进 npm）
+## 内置桌宠页面与素材（仅仓库，不进 npm）
 
-`web/` 是从 kotana-runtime 的 `web/public/pet/` 复制过来的内置桌宠页面与 8 个 webm 动画，方便在本仓库查看/联调。它**不会**发布到 npm：`package.json` 的 `files` 只包含 `dist` 与文档。
+`web/` 是桌面应用的 Tauri 前端：`index.html` / `pet.js` / `pet.css` 与 `settings.*`，以及 8 个 webm 动画。它会随安装包一起打包，但**不会**发布到 npm：`package.json` 的 `files` 只包含 `dist` 与文档。
 
 素材授权见 [web/NOTICE.md](web/NOTICE.md)：大肥鱼形象为 CC BY-NC-SA 4.0，仅限非商业使用。
 

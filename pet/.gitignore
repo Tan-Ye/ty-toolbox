@@ -3,3 +3,5 @@ dist/
 *.log
 *.tsbuildinfo
 .tmp/
+src-tauri/target/
+src-tauri/gen/

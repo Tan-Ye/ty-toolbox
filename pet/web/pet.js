@@ -2,8 +2,8 @@
   "use strict";
 
   // dev 下 vite 热更新可能让脚本执行两次，重复建池会出现两个人物叠在一起。
-  if (window.__kotanaPetBooted) return;
-  window.__kotanaPetBooted = true;
+  if (window.__petBooted) return;
+  window.__petBooted = true;
 
   var tauri = window.__TAURI__ || {};
   var invoke = tauri.core && tauri.core.invoke;
@@ -32,11 +32,11 @@
   var DESIGN_WIDTH = 320;
   var DESIGN_HEIGHT = 440;
 
-  // 与内置桌宠的默认偏好保持一致（后端 <dataDir>/pet/prefs.json 是权威，这里是兜底）。
+  // 后端 prefs.json 是权威，这里是页面首帧的兜底。
   var DEFAULT_PREFS = {
     appearance: { scale: 100, corner: "bottom-right", alwaysOnTop: true, bubbleFontSize: 15 },
-    behavior: { idleActions: true, idleIntervalMin: 3, clickReact: true, dragAnimation: true },
-    speech: { bubbleDurationSec: 6, chatter: true, chatterIntervalMin: 6, chatterLines: [] },
+    behavior: { idleActions: true, idleIntervalMin: 4, clickReact: true, dragAnimation: true },
+    speech: { bubbleDurationSec: 6, chatter: true, chatterIntervalMin: 8, chatterLines: [] },
   };
 
   var prefs = DEFAULT_PREFS;
@@ -48,6 +48,17 @@
   var idleTimer = null;
   var menuOpen = false;
   var drag = null;
+  var workEl = document.getElementById("work");
+  var workTimer = null;
+  var WORK_LABELS = {
+    thinking: "在想…",
+    working: "干活中…",
+    result: "有结果了",
+    waiting: "等你",
+    success: "完成",
+    error: "出错了",
+  };
+  var CLIP_ALIASES = { "click-happy": "happy", "click-shy": "shy", "click-wave": "wave" };
 
   // 每段素材预加载一个 video，切换时只切显示，避免改 src 造成闪烁/黑帧。
   function buildClips() {
@@ -133,14 +144,10 @@
   }
 
   var MENU_ITEMS = [
-    { id: "qq", label: "连接 QQ" },
-    { sep: true },
-    { id: "pause", label: "暂停采集" },
-    { id: "resume", label: "恢复采集" },
-    { sep: true },
     { id: "settings", label: "桌宠设置" },
-    { id: "main", label: "打开主界面" },
     { id: "hide", label: "隐藏桌宠" },
+    { sep: true },
+    { id: "quit", label: "退出" },
   ];
 
   function buildMenu() {
@@ -177,46 +184,11 @@
 
   function request(method, payload) {
     if (!invoke) return Promise.resolve(null);
-    return invoke("kotana_request", { method: method, payload: payload || {} });
+    return invoke("pet_request", { method: method, payload: payload || {} });
   }
 
   function runAction(id) {
     hideMenu();
-    if (id === "qq") {
-      say("正在生成 QQ 绑定二维码…", 4000);
-      request("qq.bind.start")
-        .then(function (result) {
-          if (result && result.url) {
-            showQrPanel(result.url);
-          } else {
-            say("二维码没拿到，稍后再试。", 5000);
-          }
-        })
-        .catch(function (error) {
-          say("QQ 绑定没成功：" + String((error && error.message) || error), 6000);
-        });
-      return;
-    }
-    if (id === "pause") {
-      request("collector.pause")
-        .then(function () {
-          say("采集已暂停，先歇一会儿。", 4000);
-        })
-        .catch(function (error) {
-          say("暂停失败：" + String((error && error.message) || error), 5000);
-        });
-      return;
-    }
-    if (id === "resume") {
-      request("collector.resume")
-        .then(function () {
-          say("采集恢复了，继续记着。", 4000);
-        })
-        .catch(function (error) {
-          say("恢复失败：" + String((error && error.message) || error), 5000);
-        });
-      return;
-    }
     if (id === "settings") {
       if (invoke) {
         invoke("pet_settings_open").catch(function (error) {
@@ -225,69 +197,13 @@
       }
       return;
     }
-    if (id === "main") {
-      if (invoke) invoke("kotana_focus_main").catch(function () {});
-      return;
-    }
     if (id === "hide") {
       if (invoke) invoke("pet_hide").catch(function () {});
+      return;
     }
-  }
-
-  var qrPanel = null;
-
-  function showQrPanel(url) {
-    hideQrPanel();
-    qrPanel = document.createElement("div");
-    qrPanel.className = "menu qr-panel";
-    qrPanel.style.top = "8px";
-    qrPanel.style.right = "8px";
-    var title = document.createElement("div");
-    title.className = "qr-title";
-    title.textContent = "手机 QQ 扫码绑定";
-    var image = document.createElement("img");
-    image.className = "qr-image";
-    image.alt = "QQ 绑定二维码";
-    image.src = qrImageUrl(url);
-    var hint = document.createElement("div");
-    hint.className = "qr-hint";
-    hint.textContent = "扫完自动连接，完成后气泡会提示。";
-    qrPanel.appendChild(title);
-    qrPanel.appendChild(image);
-    qrPanel.appendChild(hint);
-    app.appendChild(qrPanel);
-    pollQrBind();
-  }
-
-  function hideQrPanel() {
-    if (qrPanel && qrPanel.parentNode) qrPanel.parentNode.removeChild(qrPanel);
-    qrPanel = null;
-  }
-
-  function qrImageUrl(url) {
-    // 后端返回 data URL（qrcode 生成）；不是图片地址时按普通 URL 处理。
-    return url;
-  }
-
-  function pollQrBind() {
-    request("qq.bind.status")
-      .then(function (status) {
-        if (!qrPanel) return;
-        if (status && status.state === "bound") {
-          hideQrPanel();
-          say("QQ 连上了，有事在 QQ 里说。", 6000);
-          return;
-        }
-        if (status && status.state === "failed") {
-          hideQrPanel();
-          say("QQ 绑定失败：" + (status.error || "未知原因"), 6000);
-          return;
-        }
-        window.setTimeout(pollQrBind, 2000);
-      })
-      .catch(function () {
-        if (qrPanel) window.setTimeout(pollQrBind, 3000);
-      });
+    if (id === "quit") {
+      if (invoke) invoke("pet_quit").catch(function () {});
+    }
   }
 
   hit.addEventListener("contextmenu", function (event) {
@@ -297,7 +213,6 @@
 
   document.addEventListener("click", function (event) {
     if (menuOpen && !menu.contains(event.target)) hideMenu();
-    if (qrPanel && !qrPanel.contains(event.target)) hideQrPanel();
   });
 
   function currentWindow() {
@@ -515,6 +430,37 @@
     listen("pet:settings", function (event) {
       applyPrefs(event && event.payload ? event.payload : null);
     }).catch(function () {});
+    listen("pet:work", function (event) {
+      applyWork(event && event.payload ? event.payload : null);
+    }).catch(function () {});
+    listen("pet:play", function (event) {
+      var payload = event && event.payload ? event.payload : {};
+      var name = CLIP_ALIASES[payload.animation] || payload.animation;
+      if (!CLIPS[name]) return;
+      if (name === "idle") play("idle", { once: false });
+      else play(name, { once: true, then: "idle" });
+    }).catch(function () {});
+  }
+
+  function applyWork(payload) {
+    if (!workEl) return;
+    payload = payload || {};
+    if (payload.clear) {
+      workEl.hidden = true;
+      workEl.dataset.state = "";
+      return;
+    }
+    var label = WORK_LABELS[payload.state];
+    if (!label) return;
+    workEl.textContent = payload.task ? label + " · " + payload.task : label;
+    workEl.dataset.state = payload.state;
+    workEl.hidden = false;
+    window.clearTimeout(workTimer);
+    if (payload.state === "success" || payload.state === "error") {
+      workTimer = window.setTimeout(function () {
+        workEl.hidden = true;
+      }, 4000);
+    }
   }
 
   // 应用偏好：缩放窗口、气泡字号、置顶、四角定位、行为节奏。
@@ -550,7 +496,8 @@
   window.addEventListener("resize", function () {
     syncStageScale();
     placeWindow();
-  });buildClips();
+  });
+  buildClips();
   syncStageScale();
   placeWindow();
   play("idle", { once: false });
@@ -564,12 +511,5 @@
       })
       .catch(function () {});
     invoke("pet_ready").catch(function () {});
-    request("collector.status")
-      .then(function (status) {
-        if (status && status.running === false) {
-          say("采集好像没在跑，右键我可以启动它。", 6000);
-        }
-      })
-      .catch(function () {});
   }
 })();

@@ -141,30 +141,38 @@ body {
   background: #eee9e1;
 }
 
-.qr-panel {
-  min-width: 0;
-  padding: 12px;
-  text-align: center;
+/* 工作状态由 kotana / HTTP 接口推送，常驻在左上角；气泡出现时会被气泡盖住。 */
+.work {
+  position: absolute;
+  top: 4px;
+  left: 8px;
+  z-index: 9;
+  max-width: 170px;
+  box-sizing: border-box;
+  padding: 4px 9px;
+  border-radius: 999px;
+  border: 1px solid #e6e2dc;
+  background: rgba(255, 253, 249, 0.94);
+  color: #5a5148;
+  font-size: 11px;
+  line-height: 1.4;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  pointer-events: none;
 }
 
-.qr-title {
-  font-size: 14px;
-  color: #2b2b2b;
-  margin-bottom: 8px;
+.work[data-state="working"] {
+  color: #8a6417;
+  border-color: #e7d6ae;
 }
 
-.qr-image {
-  display: block;
-  width: 200px;
-  height: 200px;
-  margin: 0 auto;
-  border-radius: 6px;
-  background: #ffffff;
+.work[data-state="error"] {
+  color: #a33a3a;
+  border-color: #e5b4b4;
 }
 
-.qr-hint {
-  margin-top: 8px;
-  font-size: 12px;
-  line-height: 1.5;
-  color: #6b6b6b;
+.work[data-state="success"] {
+  color: #2f6b46;
+  border-color: #b8d8c2;
 }
