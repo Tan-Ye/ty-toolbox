@@ -113,12 +113,25 @@ export function buildTimeline(events, { from, to }) {
     idles.push(currentIdle);
   }
 
-  // 事件空档：采集器没运行或没有窗口变化，超过 10 分钟标出来
+  // 事件空档：采集器没运行或没有窗口变化，超过 10 分钟标出来（含区间首尾空档）
   const gaps = [];
-  for (let i = 1; i < events.length; i++) {
-    const delta = events[i].ts - events[i - 1].ts;
-    if (delta > GAP_THRESHOLD_MS) {
-      gaps.push({ from: events[i - 1].ts, to: events[i].ts, ms: delta });
+  if (events.length === 0) {
+    if (to - from > GAP_THRESHOLD_MS) {
+      gaps.push({ from, to, ms: to - from });
+    }
+  } else {
+    if (events[0].ts - from > GAP_THRESHOLD_MS) {
+      gaps.push({ from, to: events[0].ts, ms: events[0].ts - from });
+    }
+    for (let i = 1; i < events.length; i++) {
+      const delta = events[i].ts - events[i - 1].ts;
+      if (delta > GAP_THRESHOLD_MS) {
+        gaps.push({ from: events[i - 1].ts, to: events[i].ts, ms: delta });
+      }
+    }
+    const tail = to - events[events.length - 1].ts;
+    if (tail > GAP_THRESHOLD_MS) {
+      gaps.push({ from: events[events.length - 1].ts, to, ms: tail });
     }
   }
 

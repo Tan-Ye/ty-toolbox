@@ -24,8 +24,8 @@ export function parseTimeArg(str, defaultDate = new Date()) {
 }
 
 /** 解析 --date，返回当天零点。 */
-export function parseDateArg(str) {
-  if (!str) return startOfDay(new Date()).getTime();
+export function parseDateArg(str, defaultDate = new Date()) {
+  if (!str) return startOfDay(defaultDate).getTime();
   const m = String(str).trim().match(/^(\d{4})-(\d{2})-(\d{2})$/);
   if (!m) throw new Error(`日期格式应为 YYYY-MM-DD: ${str}`);
   return new Date(+m[1], +m[2] - 1, +m[3]).getTime();

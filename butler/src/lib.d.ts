@@ -2,17 +2,14 @@
 
 /** 一行原始事件（已把 data 解析成对象）。 */
 export interface ButlerEvent {
-  id: number;
   ts: number;
   kind: string;
-  source: string | null;
-  pid: number | null;
   hwnd: number | null;
   app: string | null;
   title: string | null;
   url: string | null;
   session: string | null;
-  data: Record<string, unknown> | null;
+  data: Record<string, unknown>;
 }
 
 /** 一段前台占用（同一应用同一标题同一 URL 连续）。 */
@@ -156,17 +153,3 @@ export function formatRange(
   options?: { appFilter?: string | null; showAll?: boolean },
 ): string;
 export function formatDaily(result: DailyAnalysis, options?: { dateMs?: number }): string;
-
-export function pushQq(text: string, options?: { outboxPath?: string }): Promise<{ id: string; path: string }>;
-
-export function renderDailyContent(daily: DailyAnalysis, options: { date: string }): string;
-export function buildDailyMemory(
-  daily: DailyAnalysis,
-  options: {
-    dateMs: number;
-    reportTxt?: string | null;
-    reportJson?: string | null;
-    dbPath?: string | null;
-  },
-): { id: string; memory: Record<string, unknown> };
-export function writeMemory(memoriesDir: string, memory: Record<string, unknown>): string;
