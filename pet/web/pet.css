@@ -1,0 +1,170 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  overflow: hidden;
+  font-family: "Segoe UI", system-ui, -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+#app {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* 设计稿按 320×440 摆人物和命中区；窗口放大时整体 scale，坐标不用重算。
+   transform-origin 固定在左上角，跟 Tauri 窗口的像素原点一致。 */
+.stage {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 320px;
+  height: 440px;
+  transform-origin: top left;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+/* 只有人物身上这块矩形接鼠标：拖拽、右键菜单、点击回应都走它。
+   位置按 .anim 的换算得出：窗口 320×440，人物约在 x[84,298]、y[60,434]。 */
+.hit {
+  position: absolute;
+  left: 84px;
+  top: 60px;
+  width: 214px;
+  height: 374px;
+  cursor: grab;
+  z-index: 5;
+  pointer-events: auto;
+}
+
+.hit:active {
+  cursor: grabbing;
+}
+
+.anim {
+  position: absolute;
+  /* 素材固定 640×360，人物在素材内约 x[225,430]、y[45,350]。
+     窗口 320×440：把素材放大到 755×425（人物约 242×360），
+     再左移 386px、下移 7px，让人物正好居中、脚贴底、头顶上方留出气泡区。 */
+  width: 755px;
+  height: 425px;
+  left: 50%;
+  top: 7px;
+  margin-left: -386px;
+  pointer-events: none;
+  filter: drop-shadow(0 10px 18px rgba(0, 0, 0, 0.18));
+}
+
+.bubble {
+  position: absolute;
+  top: 4px;
+  left: 50%;
+  z-index: 10;
+  max-width: 290px;
+  box-sizing: border-box;
+  padding: 10px 14px;
+  border-radius: 14px;
+  border: 1px solid #e6e2dc;
+  background: #fffdf9;
+  color: #2b2b2b;
+  font-size: var(--bubble-font, 15px);
+  line-height: 1.5;
+  box-shadow: 0 8px 22px rgba(60, 45, 20, 0.14);
+  word-break: break-word;
+  white-space: pre-wrap;
+  opacity: 0;
+  transform: translate(-50%, 4px);
+  transition: opacity 160ms ease, transform 160ms ease;
+  pointer-events: none;
+}
+
+.bubble.show {
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
+
+.bubble::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -7px;
+  width: 12px;
+  height: 12px;
+  background: #fffdf9;
+  border-right: 1px solid #e6e2dc;
+  border-bottom: 1px solid #e6e2dc;
+  transform: translateX(-50%) rotate(45deg);
+}
+
+.menu {
+  position: absolute;
+  top: 12px;
+  right: 10px;
+  min-width: 148px;
+  box-sizing: border-box;
+  padding: 6px;
+  border-radius: 10px;
+  border: 1px solid #e6e2dc;
+  background: #fffdf9;
+  box-shadow: 0 12px 28px rgba(60, 45, 20, 0.18);
+  z-index: 20;
+}
+
+.menu-item {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 7px 10px;
+  border: 0;
+  border-radius: 7px;
+  background: transparent;
+  color: #2b2b2b;
+  font-size: 14px;
+  line-height: 1.4;
+  text-align: left;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.menu-item:hover {
+  background: #f3efe8;
+}
+
+.menu-sep {
+  height: 1px;
+  margin: 4px 8px;
+  background: #eee9e1;
+}
+
+.qr-panel {
+  min-width: 0;
+  padding: 12px;
+  text-align: center;
+}
+
+.qr-title {
+  font-size: 14px;
+  color: #2b2b2b;
+  margin-bottom: 8px;
+}
+
+.qr-image {
+  display: block;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  border-radius: 6px;
+  background: #ffffff;
+}
+
+.qr-hint {
+  margin-top: 8px;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #6b6b6b;
+}

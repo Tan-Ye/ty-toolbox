@@ -136,6 +136,12 @@ pnpm 会把目录复制进虚拟 store，重新构建后需要再跑一次 `pnpm
 用 link/file 时都要先在 pet 目录执行 `pnpm build`（或在 kotana 的
 `prebuild` / `pretest` 里加 `pnpm --dir ../ty-toolbox/pet build`）。
 
+## 内置桌宠页面（仅仓库，不进 npm）
+
+`web/` 是从 kotana-runtime 的 `web/public/pet/` 复制过来的内置桌宠页面与 8 个 webm 动画，方便在本仓库查看/联调。它**不会**发布到 npm：`package.json` 的 `files` 只包含 `dist` 与文档。
+
+素材授权见 [web/NOTICE.md](web/NOTICE.md)：大肥鱼形象为 CC BY-NC-SA 4.0，仅限非商业使用。
+
 ## 许可
 
 自有代码 MIT。外部 dsh-pet 程序与上游素材的署名要求见 [NOTICE.md](NOTICE.md)。
